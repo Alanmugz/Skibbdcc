@@ -66,7 +66,7 @@
 		
 		<div id="newsscroll"> 
 			<div id='pageheader'>
-				100 Isle Night Navigation Trial 30th-31st January 2016
+				100 Isle Night Navigation Trial 30th - 31st January 2016
 			</div >
 			
 			<!--<span class="newstitle">100 Isle Night Navigation Trial Results</span><span class="newsdate">1st February 2015</span>
