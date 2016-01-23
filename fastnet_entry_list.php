@@ -30,7 +30,7 @@
 	 
 	<div id='cssmenu' style="margin-bottom:-13px;">  
 		<?php 
-			include ('menu.html'); 
+			include ('include/menu.html'); 
 		?>
 	</div>
 		<div id="submenu2" style="position:relative;top:14px;z-index:1;">
@@ -209,14 +209,14 @@
 		 
 	<div id="newsrow"> 
 		<?php 
-			include ('sidebar.html'); 
+			include ('include/sidebar.html'); 
 		?>	
 	</div> 
 	   
 	<!-- footer -->
 		<div id="footer">
 			<?php 
-				include ('footer.html'); 
+				include ('include/footer.html'); 
 			?>
 		</div>	
 

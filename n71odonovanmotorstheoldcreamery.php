@@ -41,7 +41,7 @@
 	<!-- header -->
 	<div id="header">
 		<?php 
-			include ('header.html');  
+			include ('include/header.html');  
 		?>
     </div>
 	
@@ -73,7 +73,7 @@
 	<div id="menu">
 		<div id='cssmenu'> 
 			<?php
-				include ('menu.html');
+				include ('include/menu.html');
 			?>
 		</div>
 	</div>
@@ -97,7 +97,7 @@
 		 
 		<div id="newsrow">
 			<?php 
-				include ('sidebar.html'); 
+				include ('include/sidebar.html'); 
 			?>
 		</div>
 
@@ -131,7 +131,7 @@
 	<!-- footer -->
 	<div id="footer"> 
 		<?php
-			include ('footer.html');
+			include ('include/footer.html');
 		?>
 	</div>	
 
