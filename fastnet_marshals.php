@@ -12,7 +12,7 @@
   <title>Westlodge Fastnet Rally 2015 - Marshals</title> 
   
   <script type="text/javascript" src="global.js"></script>
-  <link rel="stylesheet" type="text/css" href="global.css"/>
+  <link rel="stylesheet" type="text/css" href="css/global.css"/>
   <link rel="icon" type="image/png" href="images/favicon.png"/> 
 	 
   </head>  

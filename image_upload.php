@@ -17,7 +17,7 @@
   <title>Skibbereen &amp; District Car Club</title>
   <script type="text/javascript" src="jquery/jquery.js"></script>
   <script type="text/javascript" src="global.js"></script>
-  <link rel="stylesheet" type="text/css" href="global.css"/>
+  <link rel="stylesheet" type="text/css" href="css/global.css"/>
   <link rel="icon" type="image/png" href="images/favicon.png"/>
   <link href="/maps/documentation/javascript/examples/default.css" rel="stylesheet"> 
   <link type="text/css" href="jquery.jscrollpane.css" rel="stylesheet" media="all" />

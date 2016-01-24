@@ -8,7 +8,7 @@
   <title>Update Area</title>
   
   <script type='text/javascript' src='jquery/jquery.js'></script>
-  <link rel="stylesheet" type="text/css" href="global.css"/>
+  <link rel="stylesheet" type="text/css" href="css/global.css"/>
   <script type="text/javascript" src="global.js"></script>
   <link rel="icon" type="image/png" href="images/favicon.png"/>
   

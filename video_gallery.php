@@ -17,7 +17,7 @@
   <title>Video Gallery</title>
   
   <script type="text/javascript" src="global.js"></script>
-  <link rel="stylesheet" type="text/css" href="global.css"/>
+  <link rel="stylesheet" type="text/css" href="css/global.css"/>
   <link rel="icon" type="image/png" href="images/favicon.png"/> 
   
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
