@@ -48,7 +48,7 @@
   <script type="text/javascript">var _siteRoot='index.html',_root='index.html';</script>
   <script type="text/javascript" src="jquery/jquery.js"></script>
   <script type="text/javascript" src="scripts.js"></script>
-  <script type="text/javascript" src="global.js"></script>
+  <script type="text/javascript" src="javascript/global.js"></script>
   <link rel="stylesheet" type="text/css" href="css/global.css"/>
   <link rel="icon" type="image/png" href="images/favicon.png"/>  
   

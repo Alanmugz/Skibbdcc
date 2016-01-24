@@ -40,7 +40,7 @@ if(isset($_POST['email'])) {
   
   <title>Error</title>
   
-  <script type="text/javascript" src="global.js"></script>
+  <script type="text/javascript" src="javascript/global.js"></script>
   <link rel="stylesheet" type="text/css" href="css/global.css"/>
   <link rel="icon" type="image/png" href="images/favicon.png"/> 
 	 
@@ -175,7 +175,7 @@ $headers = 'From: '.$email_from."\r\n".
   
   <title>Confirmation - Message sent</title>
   
-  <script type="text/javascript" src="global.js"></script>
+  <script type="text/javascript" src="javascript/global.js"></script>
   <link rel="stylesheet" type="text/css" href="css/global.css"/>
   <link rel="icon" type="image/png" href="images/favicon.png"/> 
 	 

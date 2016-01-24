@@ -9,7 +9,7 @@
   
   <link rel="icon" type="image/png" href="images/favicon.png"/>
   <link rel="stylesheet" type="text/css" href="css/global.css"/>
-  <script type="text/javascript" src="global.js"></script>
+  <script type="text/javascript" src="javascript/global.js"></script>
   
   </head>
   <body onload="checkForMeeting(MyJSStringVar)">
