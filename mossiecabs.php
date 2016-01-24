@@ -15,7 +15,7 @@
   <meta name="robots" content="index, follow"/>
   
   <title>Skibbereen &amp; District Car Club</title>
-  <link rel="stylesheet" href="include/style.css" type="text/css" media="screen" />
+  <link rel="stylesheet" href="include/css/style.css" type="text/css" media="screen" />
   <script type="text/javascript">var _siteRoot='index.html',_root='index.html';</script>
   <script type="text/javascript" src="jquery/jquery.js"></script>
   <script type="text/javascript" src="scripts.js"></script>
