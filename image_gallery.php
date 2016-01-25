@@ -20,9 +20,9 @@
   <link rel="stylesheet" type="text/css" href="css/global.css"/>
   <link rel="icon" type="image/png" href="images/favicon.png"/>
   <link href="/maps/documentation/javascript/examples/default.css" rel="stylesheet"> 
-  <link type="text/css" href="jquery.jscrollpane.css" rel="stylesheet" media="all" />
+  <link type="text/css" href="jquery/jquery.jscrollpane.css" rel="stylesheet" media="all" />
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-  <script type="text/javascript" src="jquery.jscrollpane.min.js"></script>  
+  <script type="text/javascript" src="jquery/jquery.jscrollpane.min.js"></script>  
   
   <link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
   <script src="//code.jquery.com/jquery-1.10.2.js"></script>
