@@ -11,7 +11,7 @@
 		
 		function ConnectToDb(dbName)
 		{
-			mysqli_connect("$host","$dbusername","$password",dbName);
+			return mysqli_connect("$host","$dbusername","$password",dbName);
 		}
 				 
 	?>  
