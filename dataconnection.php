@@ -5,9 +5,14 @@
 		$password = "fastnetrally85"; 
 		
 		
-		mysqli_connect("localhost","skibbdcc_usernam","fastnetrally85","skibbdcc_login");
+		mysqli_connect("$host","$dbusername","$password","skibbdcc_login");
 		
-		$con=mysqli_connect("localhost","skibbdcc_usernam","fastnetrally85","skibbdcc_meeting"); 
+		$con=mysqli_connect("$host","$dbusername","$password","skibbdcc_meeting"); 
+		
+		function ConnectToDb(dbName)
+		{
+			mysqli_connect("$host","$dbusername","$password",dbName);
+		}
 				 
 	?>  
 
