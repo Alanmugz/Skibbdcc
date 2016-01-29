@@ -141,8 +141,7 @@
 		   
 		   <?php
 			// Create connection
-			//$connection = mysqli_connect("$host","$dbusername","$password","skibbdcc_video");
-			$connection = ConnectToDb("skibbdcc_video");
+			$connection=mysqli_connect("$host","$dbusername","$password","skibbdcc_video");
 
 			// Check connection
 			if (mysqli_connect_errno($connection))
