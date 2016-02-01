@@ -46,10 +46,10 @@
 		<div id="submenu">
 			<ul id="nav">
 				<li><a href="100_isles_night_nav.php" class="selected">Latest</a></li>
-				<li><a href="files/100Isles/2016_regs.pdf">Regs</a></li>
-				<li><a href="files/100Isles/2016_regs.pdf">Entry Form</a></li>
+				<li><a href="files/100Isles/2016/regs.pdf">Regs</a></li>
+				<li><a href="files/100Isles/2016/regs.pdf">Entry Form</a></li>
 				<li><a href="map_100_isles_night_nav.php">Map</a></li> 
-				<li><a href="#">Results</a></li> 
+				<li><a href="files/100Isles/2016/results.xlsx">Results</a></li> 
 			</ul>
 		</div>	
 	</div>
