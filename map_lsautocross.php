@@ -68,7 +68,7 @@
 <script>
 	
 function initialize() {
-  var myLatlng = new google.maps.LatLng(51.655848, -8.909451); 
+  var myLatlng = new google.maps.LatLng(51.7813958, -9.0926125); 
   var mapOptions = {
     zoom: 12,
     center: myLatlng,
@@ -80,7 +80,7 @@ function initialize() {
   var contentString = 
 	  '<div style="background-color:black;padding:10px;">'+ 
       '<p style="color:white;">Loose Surface AutoCross</p>'+
-      '<p style="color:white;">Campbells Pit, Grancore, Clonakilty</p>'+
+      '<p style="color:white;">Kilnadur, Dunmanway, Co Cork</p>'+
       '</div>'; 
 
   var infowindow = new google.maps.InfoWindow({
