@@ -43,10 +43,10 @@
 	<div id="submenu">
 				<ul id="nav"> 
 					<li><a href="loose_surface_autocross.php" class="selected">Latest</a></li>
-					<li><a href="#">Regs</a></li>
-					<li><a href="#">Entry Form</a></li>
+					<li><a href="files/ls_autocross/2016/regs.doc">Regs</a></li>
+					<li><a href="files/ls_autocross/2016/regs.doc">Entry Form</a></li>
 					<li><a href="map_lsautocross.php">Map</a></li>  
-					<li><a href="#">Results</a></li> 
+					<li><a href="#">Results</a></li>   
 				</ul>
 			</div>	 
 	</div>

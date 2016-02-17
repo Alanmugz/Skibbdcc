@@ -69,7 +69,7 @@
 			<div id='pageheader'>
 				Loose Surface Autocross 28th February 2016
 			</div >
-			<span class="newstitle">Loose Surface Autocross</span><span class="newsdate">1st July 2015</span>
+			<span class="newstitle">Loose Surface Autocross</span><span class="newsdate">17th February 2015</span>
 			<p class="setmargin"> 
 			The February Autocross, a counting round of the Munster AutoCross Championship will take place on Sunday 28th February 2016 in Kilnadur, Dunmanway, Co Cork.
 			The event will be Arrowed from Kilmichael, Coppeen & Dunmanway.  Venue GPS: N51.7813958  W9.0926125.<br />
