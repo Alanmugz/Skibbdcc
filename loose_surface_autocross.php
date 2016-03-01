@@ -50,7 +50,7 @@
 					<li><a href="files/ls_autocross/2016/regs.doc">Regs</a></li>
 					<li><a href="files/ls_autocross/2016/regs.doc">Entry Form</a></li>
 					<li><a href="map_lsautocross.php">Map</a></li>  
-					<li><a href="#">Results</a></li>  
+					<li><a href="files/ls_autocross/2016/results.pdf">Results</a></li>  
 				</ul> 
 			</div>	 	 
 	</div>
@@ -69,13 +69,18 @@
 			<div id='pageheader'>
 				Loose Surface Autocross 28th February 2016
 			</div >
-			<span class="newstitle">Loose Surface Autocross</span><span class="newsdate">17th February 2015</span>
+			<span class="newstitle">Loose Surface Autocross</span><span class="newsdate">1st March 2016</span>
+			<p class="setmargin"> 
+			Autocross results can now be downloaded by clicking the tab marked results above.<br />
+			A detailed list of all award winner is also available to download by clicking <a href="files/ls_autocross/2016/awards.pdf" style="color:red; text-decoration:underline;">here</a>
+			</p> 
+			<span class="newstitle">Loose Surface Autocross</span><span class="newsdate">17th February 2016</span>
 			<p class="setmargin"> 
 			The February Autocross, a counting round of the Munster AutoCross Championship will take place on Sunday 28th February 2016 in Kilnadur, Dunmanway, Co Cork.
 			The event will be Arrowed from Kilmichael, Coppeen & Dunmanway.  Venue GPS: N51.7813958  W9.0926125.<br />
 			C.O.C of the Event is Eoghan Mc Carthy<br />
 			<br />			
-			Regs and entry form are availabe to download from the tab's above marks "regs" and "entry form" respectively.
+			Regs and entry form are available to download from the tab's above marks "regs" and "entry form" respectively.
 			</p> 			 
 		</div> 
 		 
