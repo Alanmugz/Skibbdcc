@@ -73,7 +73,10 @@
 			<p class="setmargin">
 			<p class="setmargin">Images by Pablo Photography & Ted O'Connell</p>
 			<?php
-			$images = array("IMG_0513-2.jpg","IMG_0145.jpg","IMG_0317.jpg", "IMG_9923.jpg", "IMG_0147.jpg", "IMG_0410-2.jpg", "IMG_0755.jpg", "IMG_1168.jpg", "IMG_9923.jpg", "IMG_1106.jpg", "IMG_9621.jpg", "IMG_0877.jpg");
+			$dir = 'files/ls_autocross/2016/images';
+			$folders = array('..', '.', 'folder');
+			$images = array_diff(scandir($dir), $folders);
+			//$images = array("IMG_0513-2.jpg","IMG_0145.jpg","IMG_0317.jpg", "IMG_9923.jpg", "IMG_0147.jpg", "IMG_0410-2.jpg", "IMG_0755.jpg", "IMG_1168.jpg", "IMG_9923.jpg", "IMG_1106.jpg", "IMG_9621.jpg", "IMG_0877.jpg");
 			$count = 0;
 			foreach ($images as &$image) {
 				?>
