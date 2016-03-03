@@ -69,7 +69,26 @@
 			<div id='pageheader'>
 				Loose Surface Autocross 28th February 2016
 			</div >
-			<span class="newstitle">Loose Surface Autocross</span><span class="newsdate">1st March 2016</span>
+			<span class="newstitle">Loose Surface Autocross Images</span><span class="newsdate">3rd March 2016</span>
+			<p class="setmargin">
+			Images by Pablo photography & Ted O'Connell
+			<?php
+			$images = array("IMG_0513-2.jpg","IMG_0145.jpg","IMG_0317.jpg", "IMG_9923.jpg", "IMG_0147.jpg", "IMG_0410-2.jpg", "IMG_0755.jpg", "IMG_1168.jpg", "IMG_9923.jpg", "IMG_1106.jpg", "IMG_9621.jpg", "IMG_0877.jpg");
+			$count = 0;
+			foreach ($images as &$image) {
+				?>
+				<div id="displayvideo"><img src="<?php echo 'files/ls_autocross/2016/images/'.$image;?>" width="200px" height="156px" style="border:solid 2px white;margin-left:15px;"></div>
+				<?php
+				$count++;
+				if($count % 3 === 0)
+				{
+					echo "<br /><br /><br />";  
+				}
+			}
+			?>
+			</p> 
+			
+			<span class="newstitle">Loose Surface Autocross Results</span><span class="newsdate">1st March 2016</span>
 			<p class="setmargin"> 
 			Autocross results can now be downloaded by clicking the tab marked results above.<br />
 			A detailed list of all award winner is also available to download by clicking <a href="files/ls_autocross/2016/awards.pdf" style="color:red; text-decoration:underline;">here</a>
