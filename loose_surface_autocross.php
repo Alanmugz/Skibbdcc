@@ -71,7 +71,7 @@
 			</div >
 			<span class="newstitle">Loose Surface Autocross Images</span><span class="newsdate">3rd March 2016</span>
 			<p class="setmargin">
-			Images by Pablo photography & Ted O'Connell
+			<p class="setmargin">Images by Pablo Photography & Ted O'Connell</p>
 			<?php
 			$images = array("IMG_0513-2.jpg","IMG_0145.jpg","IMG_0317.jpg", "IMG_9923.jpg", "IMG_0147.jpg", "IMG_0410-2.jpg", "IMG_0755.jpg", "IMG_1168.jpg", "IMG_9923.jpg", "IMG_1106.jpg", "IMG_9621.jpg", "IMG_0877.jpg");
 			$count = 0;
