@@ -262,7 +262,7 @@ background:#E4F3F6;}
 						<h3 class = "panel-title">Club News</h3>
 					</div>
 					<?php 
-						include("/home/skibbdcc/public_html/scriptfolder/news.php");
+						include("/home/skibbdcc/public_html/scriptfolderbootstrap/news.php");
 					?>    
 				</div>
 			</div>
