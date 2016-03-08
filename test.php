@@ -392,7 +392,7 @@ background:#E4F3F6;}
 function timer()
 {
 	$now = new DateTime();
-	$event_date = new DateTime('2016-02-28 15:00:00');
+	$event_date = new DateTime('2016-03-09 15:00:00');
 	
 	$interval = date_diff($now, $event_date);
 	
