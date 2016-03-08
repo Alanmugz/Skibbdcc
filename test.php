@@ -290,7 +290,7 @@ background:#E4F3F6;}
 						{
 							?>
 							<div class = "panel-body">
-								<h1 class="alt-1" style="border:solid red 1px;padding-left:20px"><?php echo $result[1]; ?></h1>
+								<h1 class="alt-1" style="padding-left:20px"><?php echo $result[1]; ?></h1>
 							</div>
 							<?php
 						}
