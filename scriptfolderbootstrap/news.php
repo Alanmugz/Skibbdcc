@@ -790,7 +790,7 @@ if ($_REQUEST["id"]>0) {
         // pagination starts. It can be shown wherever we need
         if($lastpage > 1) {	
         ?>
-        <div class="pagination">
+        <div class="pagination" style="padding-bottom:0px; margin-left: auto; margin-right:auto; width:100%">
             <?php
             //previous button starts
             if ($page > 1) {
