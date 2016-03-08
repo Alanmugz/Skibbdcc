@@ -192,7 +192,7 @@ background:#E4F3F6;}
 					<li data-target="#myCarousel" data-slide-to="3"></li>
 					<li data-target="#myCarousel" data-slide-to="4"></li>
 					<li data-target="#myCarousel" data-slide-to="5"></li>
-				</ol>   
+				</ol>
 				<!-- Wrapper for carousel items -->
 				<div class="carousel-inner">
 					<div class="item active">
@@ -202,7 +202,7 @@ background:#E4F3F6;}
 						<img src="imagesbootstrap/slider/img18.jpg" alt="Second Slide">
 					</div>
 					<div class="item">
-						<img src="imagesbootstrap/slider/img16.jpg" alt="Second Slide">
+						<img src="imagesbootstrap/slider/img19.jpg" alt="Second Slide">
 					</div>
 					<div class="item">
 						<img src="imagesbootstrap/slider/img4.jpg" alt="Second Slide">
