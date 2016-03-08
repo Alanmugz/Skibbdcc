@@ -597,7 +597,7 @@ if ($_REQUEST["id"]>0) {
 		if (mysql_num_rows($sql_result)>0) {
 			$height = 10;	$paddingright = 12;
 		?>
-        <div style="float:right; padding-bottom:9px;padding-top:1px;">
+        <div style="float:right; padding-bottom:0px;padding-top:8px;">
 		<select name="cat_id" onchange="window.location.href='<?php echo $thisPage; ?>?cat_id='+this.value">
 			<option value="0">ALL</option>
 			<?php
