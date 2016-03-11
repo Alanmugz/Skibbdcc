@@ -228,20 +228,16 @@ background:#E4F3F6;}
 						</div>
 						<div class="collapse navbar-collapse navbar-menubuilder">
 							<ul class="nav navbar-nav navbar-justified">
-								<li><a href="/">Home</a>
+								<li><a href="/">Home</a></li>
+								<li><a href="#">Westlodge Fastnet Rally 2016</a>
+									<ul class="dropdown-menu">Hello</ul>
 								</li>
-								<li><a href="#">Westlodge Fastnet Rally 2018</a>
-								</li>
-								<li><a href="#">Club Events</a>
-								</li>
-								<li><a href="#">Gallery</a>
-								</li>
-								<li><a href="#">Club Championship 2015</a>
-								</li>
-								<li><a href="#">History</a>
-								</li>
-								<li><a href="/contact">Contact Us</a>
-								</li>
+								<li><a href="#">Club Events</a></li>
+								<li><a href="#">Gallery</a></li>
+								<li><a href="#">Club Championship 2015</a></li>
+								<li><a href="#">History</a></li>
+								<li><a href="/contact">Contact Us</a></li>
+								<li><a href="/contact">Club History</a></li>
 							</ul>
 						</div>
 					</div>
@@ -321,6 +317,7 @@ background:#E4F3F6;}
 				    </div>
 				   
 				    <div class = "panel-body">
+						<!--https://twitter.com/settings/widgets/708238291645145088/edit?notice=WIDGET_UPDATED-->
 						<a class="twitter-timeline" href="https://twitter.com/Skibbdcc" data-widget-id="708238291645145088">Tweets by @Skibbdcc</a>
 						<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 				    </div>
