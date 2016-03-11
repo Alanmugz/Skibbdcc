@@ -205,7 +205,7 @@ background:#E4F3F6;}
 		</div>
 		<div class="row hidden-lg">
 			<div class="col-md-12">
-				<header class="navbar navbar-inverse navbar-fixed-top bs-docs-nav" role="banner">
+				<header class="navbar navbar-inverse bs-docs-nav" role="banner">
 					<div class="container">
 					<div class="navbar-header">
 						<button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
