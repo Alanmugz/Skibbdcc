@@ -230,7 +230,27 @@ background:#E4F3F6;}
 							<ul class="nav navbar-nav navbar-justified">
 								<li><a href="/">Home</a></li>
 								<li><a href="#">Westlodge Fastnet Rally 2016</a>
-									<ul class="dropdown-menu">Hello</ul>
+									<ul class="dropdown-menu">
+										<li><a href="#">Login</a></li>
+										<li class="dropdown-submenu">
+										  <a tabindex="-1" href="#">More options</a>
+										  <ul class="dropdown-menu">
+											<li><a tabindex="-1" href="#">Second level</a></li>
+											<li class="dropdown-submenu">
+											  <a href="#">More..</a>
+											  <ul class="dropdown-menu">
+												  <li><a href="#">3rd level</a></li>
+												  <li><a href="#">3rd level</a></li>
+											  </ul>
+											</li>
+											<li><a href="#">Second level</a></li>
+											<li><a href="#">Second level</a></li>
+										  </ul>
+										</li>
+										<li><a href="#">Register</a></li>
+										<li class="divider"></li>
+										<li><a href="#">Logout</a></li>
+									</ul>
 								</li>
 								<li><a href="#">Club Events</a></li>
 								<li><a href="#">Gallery</a></li>
