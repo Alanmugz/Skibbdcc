@@ -328,7 +328,8 @@ background:#E4F3F6;}
 				    </div>
 				   
 				    <div class = "panel-body">
-						This is a Basic panel
+						<a class="twitter-timeline" href="https://twitter.com/Skibbdcc" data-widget-id="708227933484290048">Tweets by @Skibbdcc</a>
+						<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 				    </div>
 				</div>
 			</div>
