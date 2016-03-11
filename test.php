@@ -105,44 +105,29 @@
 .border10 {
     padding: 10px;
 }
-#custom-bootstrap-menu.navbar-default .navbar-brand {
-    color: rgba(119, 119, 119, 1);
-}
-#custom-bootstrap-menu.navbar-default {
-    font-size: 14px;
-    background-color: rgba(8, 8, 8, 1);
-    border-width: 1px;
-    border-radius: 3px;
-}
-#custom-bootstrap-menu.navbar-default .navbar-nav>li>a {
-    color: rgba(255, 255, 255, 1);
-    background-color: rgba(0, 0, 0, 1);
-}
-#custom-bootstrap-menu.navbar-default .navbar-nav>li>a:hover,
-#custom-bootstrap-menu.navbar-default .navbar-nav>li>a:focus {
-    color: rgba(255, 255, 255, 1);
-    background-color: rgba(255, 0, 0, 1);
-}
-#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a,
-#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a:hover,
-#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a:focus {
-    color: rgba(255, 255, 255, 1);
-    background-color: rgba(250, 0, 0, 1);
-}
-#custom-bootstrap-menu.navbar-default .navbar-toggle {
-    border-color: #fa0000;
-}
-#custom-bootstrap-menu.navbar-default .navbar-toggle:hover,
-#custom-bootstrap-menu.navbar-default .navbar-toggle:focus {
-    background-color: #fa0000;
-}
-#custom-bootstrap-menu.navbar-default .navbar-toggle .icon-bar {
-    background-color: #fa0000;
-}
-#custom-bootstrap-menu.navbar-default .navbar-toggle:hover .icon-bar,
-#custom-bootstrap-menu.navbar-default .navbar-toggle:focus .icon-bar {
-    background-color: #080808;
-}
+
+.navbar-inverse { background-color: #222222}
+.navbar-inverse .navbar-nav>.active>a:hover,.navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus { background-color: #}
+.navbar-inverse .navbar-nav>.active>a,.navbar-inverse .navbar-nav>.open>a,.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover,.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover, .navbar-inverse .navbar-nav>.open>a:focus { background-color: #080808}
+.dropdown-menu { background-color: #ffffff}
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus { background-color: #428bca}
+.navbar-inverse { background-image: none; }
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus { background-image: none; }
+.navbar-inverse { border-color: #080808}
+.navbar-inverse .navbar-brand { color: #999999}
+.navbar-inverse .navbar-brand:hover { color: #ffffff}
+.navbar-inverse .navbar-nav>li>a { color: #999999}
+.navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus { color: #ffffff}
+.navbar-inverse .navbar-nav>.active>a,.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover, .navbar-inverse .navbar-nav>.open>a:focus { color: #ffffff}
+.navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:focus { color: #ffffff}
+.dropdown-menu>li>a { color: #333333}
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus { color: #ffffff}
+.navbar-inverse .navbar-nav>.dropdown>a .caret { border-top-color: #999999}
+.navbar-inverse .navbar-nav>.dropdown>a:hover .caret { border-top-color: #ffffff}
+.navbar-inverse .navbar-nav>.dropdown>a .caret { border-bottom-color: #999999}
+.navbar-inverse .navbar-nav>.dropdown>a:hover .caret { border-bottom-color: #ffffff}
+
+
 .bottom-buffer { margin-bottom:20px; }
 .height { background-color : white;}
 .height1 { height : 42px; background-color : white; margin-left: 0px; margin-right: 0px}
@@ -220,48 +205,56 @@ background:#E4F3F6;}
 		</div>
 		<div class="row hidden-lg">
 			<div class="col-md-12">
-				<div id="custom-bootstrap-menu" class="navbar navbar-default" role="navigation">
-					<div class="container-fluid">
-						<div class="navbar-header"><a class="navbar-brand" href="#">Skibbdcc</a>
-							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-menubuilder"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
-							</button>
-						</div>
-						<div class="collapse navbar-collapse navbar-menubuilder">
-							<ul class="nav navbar-nav navbar-justified">
-								<li><a href="/">Home</a></li>
-								<li><a href="#">Westlodge Fastnet Rally 2016</a>
-									<ul class="dropdown-menu">
-										<li><a href="#">Login</a></li>
-										<li class="dropdown-submenu">
-										  <a tabindex="-1" href="#">More options</a>
-										  <ul class="dropdown-menu">
-											<li><a tabindex="-1" href="#">Second level</a></li>
-											<li class="dropdown-submenu">
-											  <a href="#">More..</a>
-											  <ul class="dropdown-menu">
-												  <li><a href="#">3rd level</a></li>
-												  <li><a href="#">3rd level</a></li>
-											  </ul>
-											</li>
-											<li><a href="#">Second level</a></li>
-											<li><a href="#">Second level</a></li>
-										  </ul>
-										</li>
-										<li><a href="#">Register</a></li>
-										<li class="divider"></li>
-										<li><a href="#">Logout</a></li>
-									</ul>
-								</li>
-								<li><a href="#">Club Events</a></li>
-								<li><a href="#">Gallery</a></li>
-								<li><a href="#">Club Championship 2015</a></li>
-								<li><a href="#">History</a></li>
-								<li><a href="/contact">Contact Us</a></li>
-								<li><a href="/contact">Club History</a></li>
-							</ul>
-						</div>
+				<header class="navbar navbar-inverse navbar-fixed-top bs-docs-nav" role="banner">
+					<div class="container">
+					<div class="navbar-header">
+						<button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					  </button>
+					  <a href="./" class="navbar-brand">Skibbdcc</a>
 					</div>
-				</div>
+					<nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+						<ul class="nav navbar-nav">
+							<li>
+							  <a href="#">Home</a>
+							</li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Westlodge Fastnet Rally 2016 <b class="caret"></b></a>
+								<ul class="dropdown-menu">
+								  <li><a href="#">Action</a></li>
+								</ul>
+							</li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Club Events <b class="caret"></b></a>
+								<ul class="dropdown-menu">
+								  <li><a href="#">Action</a></li>
+								</ul>
+							</li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Gallery <b class="caret"></b></a>
+								<ul class="dropdown-menu">
+								  <li><a href="#">Action</a></li>
+								</ul>
+							</li>
+							<li>
+							  <a href="#">Club Championship 2015</a>
+							</li>
+							<li>
+							  <a href="#">History</a>
+							</li>
+							<li>
+							  <a href="#">Contact Us</a>
+							</li>
+							<li>
+							  <a href="#">Club History</a>
+							</li>
+						</ul>
+					</nav>
+					</div>
+				</header>
 			</div>
 		</div>
 		<div class="row">
