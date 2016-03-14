@@ -257,6 +257,7 @@ background:#E4F3F6;}
 				    <div class = "panel-heading">
 						<h3 class = "panel-title">Next Event:</h3>
 				    </div>
+					<a href="">
 				    <div>
 						<h3 align="center">Westlodge Fastnet Rally 2016</h3>
 						<ul class="countdown">
@@ -285,6 +286,7 @@ background:#E4F3F6;}
 							});
 						</script> 
 					</div>
+					</a>
 				</div>
 				<div class = "panel panel-default font">
 				   <div class = "panel-heading">
