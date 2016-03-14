@@ -187,7 +187,7 @@ background:#E4F3F6;}
 			</div>
 		</div>
 		<div class="row hidden-lg">
-			<div class="col-md-12">
+			<div class="col-md-12" style="font-size:10px">
 				<header class="navbar navbar-inverse bs-docs-nav" role="banner">
 					<div class="container">
 					<div class="navbar-header">
@@ -204,22 +204,24 @@ background:#E4F3F6;}
 							<li>
 							  <a href="#">Home</a>
 							</li>
-							<li class="dropdown">
-								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Westlodge Fastnet Rally 2016 <b class="caret"></b></a>
-								<ul class="dropdown-menu">
-								  <li><a href="#">Action</a></li>
-								</ul>
+							<li>
+							  <a href="#">Westlodge Fastnet Rally 2016 </a>
 							</li>
 							<li class="dropdown">
 								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Club Events <b class="caret"></b></a>
 								<ul class="dropdown-menu">
-								  <li><a href="#">Action</a></li>
+								  <li><a href="#">LS AutoCross</a></li>
+								  <li><a href="#">Autotest</a></li>
+								  <li><a href="#">Economy Run</a></li>
+								  <li><a href="#">100 Isles Night Nav</a></li>
+								  <li><a href="#">Carbery Night Nav</a></li>
 								</ul>
 							</li>
 							<li class="dropdown">
 								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Gallery <b class="caret"></b></a>
 								<ul class="dropdown-menu">
-								  <li><a href="#">Action</a></li>
+								  <li><a href="#">Image Gallery</a></li>
+								  <li><a href="#">Video Gallery</a></li>
 								</ul>
 							</li>
 							<li>
@@ -320,7 +322,7 @@ background:#E4F3F6;}
 				    </div>
 				   
 				    <div class = "panel-body">
-						<!--https://twitter.com/settings/widgets/708238291645145088/edit?notice=WIDGET_UPDATED-->
+						<!-- https://twitter.com/settings/widgets/708238291645145088/edit?notice=WIDGET_UPDATED-->
 						<a class="twitter-timeline" href="https://twitter.com/Skibbdcc" data-widget-id="708238291645145088">Tweets by @Skibbdcc</a>
 						<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 				    </div>
