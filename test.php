@@ -109,18 +109,6 @@ ul.countdown li p {
 color: #a7abb1;
 font-size: 14px;
 }
-.source {
-width: 405px;
-margin: 0 auto;
-background: #4f5861;
-color: #a7abb1;
-font-weight: bold;
-display: block;
-white-space: pre;
--webkit-border-radius: 3px;
--moz-border-radius: 3px;
-border-radius: 3px;
-}
 
 
 .bottom-buffer { margin-bottom:20px; }
@@ -275,7 +263,7 @@ background:#E4F3F6;}
 							<li> <span class="days">00</span>
 							<p class="days_ref">days</p>
 							</li>
-							<li class="seperator">.</li>
+							<li class="seperator"></li>
 							<li> <span class="hours">00</span>
 							<p class="hours_ref">hours</p>
 							</li>
@@ -291,7 +279,7 @@ background:#E4F3F6;}
 						<script type="text/javascript" src="jquery/jquery.downCount.js"></script> 
 						<script type="text/javascript">
 							$('.countdown').downCount({
-								date: '09/09/2016 12:00:00',
+								date: '10/30/2016 12:00:00',
 								offset: +10
 							});
 						</script> 
