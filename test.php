@@ -102,7 +102,7 @@ line-height: 40px;
 }
 ul.countdown li.seperator {
 font-size: 20px;
-line-height: 35px;
+line-height: 40px;
 vertical-align: top;
 }
 ul.countdown li p {
@@ -258,7 +258,7 @@ background:#E4F3F6;}
 						<h3 class = "panel-title">Next Event:</h3>
 				    </div>
 				    <div>
-						<h1 align="center">Westlodge Fastnet Rally 2016</h1>
+						<h3 align="center">Westlodge Fastnet Rally 2016</h3>
 						<ul class="countdown">
 							<li> <span class="days">00</span>
 							<p class="days_ref">days</p>
