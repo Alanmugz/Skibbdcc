@@ -187,7 +187,7 @@ background:#E4F3F6;}
 			</div>
 		</div>
 		<div class="row hidden-lg">
-			<div class="col-md-12" style="font-size:10px">
+			<div class="col-md-12 font">
 				<header class="navbar navbar-inverse bs-docs-nav" role="banner">
 					<div class="container">
 					<div class="navbar-header">
