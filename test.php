@@ -96,12 +96,12 @@ ul.countdown li {
 display: inline-block;
 }
 ul.countdown li span {
-font-size: 40px;
+font-size: 20px;
 font-weight: 300;
 line-height: 80px;
 }
 ul.countdown li.seperator {
-font-size: 80px;
+font-size: 20px;
 line-height: 70px;
 vertical-align: top;
 }
