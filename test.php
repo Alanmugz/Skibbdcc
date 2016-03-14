@@ -288,7 +288,6 @@ background:#E4F3F6;}
 							<p class="seconds_ref">seconds</p>
 							</li>
 						</ul>
-						<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> 
 						<script type="text/javascript" src="jquery.downCount.js"></script> 
 						<script type="text/javascript">
 							$('.countdown').downCount({
