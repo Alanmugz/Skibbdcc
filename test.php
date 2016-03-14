@@ -97,7 +97,7 @@ display: inline-block;
 }
 ul.countdown li span {
 font-size: 20px;
-font-weight: 300;
+font-weight: 150;
 line-height: 80px;
 }
 ul.countdown li.seperator {
