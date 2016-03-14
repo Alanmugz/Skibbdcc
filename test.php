@@ -24,10 +24,9 @@
     <link type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/redmond/jquery-ui.css" rel="stylesheet" /> 
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1/jquery-ui.min.js"></script>
     <script type="text/javascript" src="jquery/jquery.youtubepopup.min.js"></script>
-
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:600,700' rel='stylesheet' type='text/css'>
-	<link href="http://fonts.googleapis.com/css?family=Righteous" rel="stylesheet" type="text/css">
-	<link rel="stylesheet" href="countdown.demo.css" type="text/css">
+	
+	<!-- Timer -->
+	<link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
 	
     <script type="text/javascript">
 		$(function () {
@@ -36,49 +35,6 @@
     </script>
 </head>
 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-        <script src="jquery.countdown.js"></script>
-        <script>
-        window.jQuery(function ($) {
-            "use strict";
-
-            $('time').countDown({
-                with_separators: false
-            });
-            $('.alt-1').countDown({
-                css_class: 'countdown-alt-1'
-            });
-            $('.alt-2').countDown({
-                css_class: 'countdown-alt-2'
-            });
-
-        });
-		
-		function countdownTimer()
-		{
-			// get total seconds between the times
-			var delta = Math.abs(date_future - date_now) / 1000;
-
-			// calculate (and subtract) whole days
-			var days = Math.floor(delta / 86400);
-			delta -= days * 86400;
-
-			// calculate (and subtract) whole hours
-			var hours = Math.floor(delta / 3600) % 24;
-			delta -= hours * 3600;
-
-			// calculate (and subtract) whole minutes
-			var minutes = Math.floor(delta / 60) % 60;
-			delta -= minutes * 60;
-
-			// what's left is seconds
-			var seconds = delta % 60;  // in theory the modulus is not required
-			
-			alert(2);
-			return "102h00m59s";
-		}
-		
-        </script>
 
 <style type="text/css">
 
@@ -126,6 +82,45 @@
 .navbar-inverse .navbar-nav>.dropdown>a:hover .caret { border-top-color: #ffffff}
 .navbar-inverse .navbar-nav>.dropdown>a .caret { border-bottom-color: #999999}
 .navbar-inverse .navbar-nav>.dropdown>a:hover .caret { border-bottom-color: #ffffff}
+
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400);
+ul.countdown {
+list-style: none;
+margin: 0px 0;
+padding: 0;
+display: block;
+text-align: center;
+}
+ul.countdown li {
+display: inline-block;
+}
+ul.countdown li span {
+font-size: 80px;
+font-weight: 300;
+line-height: 80px;
+}
+ul.countdown li.seperator {
+font-size: 80px;
+line-height: 70px;
+vertical-align: top;
+}
+ul.countdown li p {
+color: #a7abb1;
+font-size: 14px;
+}
+.source {
+width: 405px;
+margin: 0 auto;
+background: #4f5861;
+color: #a7abb1;
+font-weight: bold;
+display: block;
+white-space: pre;
+-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+border-radius: 3px;
+}
 
 
 .bottom-buffer { margin-bottom:20px; }
@@ -274,29 +269,34 @@ background:#E4F3F6;}
 				    <div class = "panel-heading">
 						<h3 class = "panel-title">Next Event:</h3>
 				    </div>
-				    <div style="margin:20px auto -10px auto; width:90%; text-align: center; font: 15px arial, sans-serif;">
-						Skibbdcc AutoCross<br />
-						28th February 2016
+				    <div>
+						<h1 align="center" style="margin-top:150px;">Westlodge Fastnet Rally</h1>
+						<ul class="countdown">
+							<li> <span class="days">00</span>
+							<p class="days_ref">days</p>
+							</li>
+							<li class="seperator">.</li>
+							<li> <span class="hours">00</span>
+							<p class="hours_ref">hours</p>
+							</li>
+							<li class="seperator">:</li>
+							<li> <span class="minutes">00</span>
+							<p class="minutes_ref">minutes</p>
+							</li>
+							<li class="seperator">:</li>
+							<li> <span class="seconds">00</span>
+							<p class="seconds_ref">seconds</p>
+							</li>
+						</ul>
+						<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> 
+						<script type="text/javascript" src="jquery.downCount.js"></script> 
+						<script type="text/javascript">
+							$('.countdown').downCount({
+								date: '09/09/2016 12:00:00',
+								offset: +10
+							});
+						</script> 
 					</div>
-					<?php 
-						$result = timer();
-						if($result[0] >= 24)
-						{
-							?>
-							<div class = "panel-body">
-								<h1 class="alt-1" ><?php echo $result[1]; ?></h1>
-							</div>
-							<?php
-						}
-						else
-						{
-							?>
-							<div class = "panel-body">
-								<h1 class="alt-1" style="padding-left:20px"><?php echo $result[1]; ?></h1>
-							</div>
-							<?php
-						}
-					?>
 				</div>
 				<div class = "panel panel-default font">
 				   <div class = "panel-heading">
@@ -391,22 +391,3 @@ background:#E4F3F6;}
 		</div>
 	</div>
 </html>
-
-<?php
-function timer()
-{
-	$now = new DateTime();
-	$event_date = new DateTime('2016-03-09 15:00:00');
-	
-	$interval = date_diff($now, $event_date);
-	
-	$daysInHours = $interval->format('%d') * 24;
-	$hours = $interval->format('%h') + $daysInHours;
-	$minutes = $interval->format('%i');
-	$seconds = $interval->format('%s');
-	
-	$timer = $hours.'h'.$minutes.'m'.$seconds.'s';
-	
-	return array ($hours, $timer);
-}
-?>
