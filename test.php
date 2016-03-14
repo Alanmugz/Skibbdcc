@@ -96,7 +96,7 @@ ul.countdown li {
 display: inline-block;
 }
 ul.countdown li span {
-font-size: 80px;
+font-size: 40px;
 font-weight: 300;
 line-height: 80px;
 }
