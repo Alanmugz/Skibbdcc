@@ -258,7 +258,7 @@ background:#E4F3F6;}
 						<h3 class = "panel-title">Next Event:</h3>
 				    </div>
 				    <div>
-						<h1 align="center" style="margin-top:150px;">Westlodge Fastnet Rally</h1>
+						<h1 align="center">Westlodge Fastnet Rally 2016</h1>
 						<ul class="countdown">
 							<li> <span class="days">00</span>
 							<p class="days_ref">days</p>
@@ -279,6 +279,7 @@ background:#E4F3F6;}
 						<script type="text/javascript" src="jquery/jquery.downCount.js"></script> 
 						<script type="text/javascript">
 							$('.countdown').downCount({
+								//Month/Day/Year
 								date: '10/30/2016 12:00:00',
 								offset: +10
 							});
