@@ -288,7 +288,7 @@ background:#E4F3F6;}
 							<p class="seconds_ref">seconds</p>
 							</li>
 						</ul>
-						<script type="text/javascript" src="jquery.downCount.js"></script> 
+						<script type="text/javascript" src="jquery/jquery.downCount.js"></script> 
 						<script type="text/javascript">
 							$('.countdown').downCount({
 								date: '09/09/2016 12:00:00',
