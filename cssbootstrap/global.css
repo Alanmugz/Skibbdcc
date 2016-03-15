@@ -42,6 +42,8 @@
   right:15px;
   font-family:"Times New Roman", Times, serif;
   font-weight:bold;
+  font-size: 1.4em;
+  font-stretch: extra-expanded;
   color:white;
   }
   
@@ -161,6 +163,7 @@ src: url('font/Snickles.ttf')
   text-align:center;
   padding:10px 0px;
   color:grey;
+  font-size: 1.0em;
   }
   
   #footer
