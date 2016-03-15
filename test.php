@@ -179,9 +179,11 @@
 		</div>
 		<div class="row">
 			<div class="col-md-12">
-				<?php 
-					include('includebootstrap/copyright.html');
-				?>
+				<div id="copyright">
+					<?php 
+						include('includebootstrap/copyright.html');
+					?>
+				</div>
 			</div>
 		</div>
 	</div>
