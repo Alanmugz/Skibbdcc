@@ -75,8 +75,15 @@
 		});
     </script>
 </head>
+<?php
+	include ('getMeeting2.php'); 
+?>
 
-<html lang="en">
+<script type='text/javascript'>
+	var meetingDetails = "<?php Print($meetingDetails); ?>";
+	var isMeetingSet = "<?php Print($isMeetingSet); ?>";
+</script>
+<html lang="en" onload="checkForMeeting2(meetingDetails, isMeetingSet)">
 	<div class="container border10">	
 		<div class="row row-margin height visible-lg">
 			<div class="col-md-12">
@@ -123,9 +130,11 @@
 				    <div class = "panel-heading">
 						<h3 class = "panel-title">Next Event:</h3>
 				    </div>
-					<?php 
-						include('includebootstrap/countdowntimer.html');
-					?>
+					<div>
+						<?php
+							include('includebootstrap/countdowntimer.html');
+						?>
+					</div>
 				</div>
 				<div class = "panel panel-default font">
 				   <div class = "panel-heading">

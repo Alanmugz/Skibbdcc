@@ -102,6 +102,15 @@ function checkForMeeting(text, flag)
 	}
 }
 
+function checkForMeetingBootstrap(text, flag)
+{
+	if(flag == 1) 
+	{
+		document.getElementById("header_image_id").src="images/sticky_note.png"; 
+		document.getElementById("setText").innerHTML = "Next Club Meeting:<br />" + text;
+	}
+}
+
 document.addEventListener( "DOMContentLoaded" , checkForMeeting , false); 
 
 function validate(url)	

@@ -1,10 +1,10 @@
 <?php
-include 'dataconnection.php';
-// Check connection
+	include 'dataconnection.php';
+	// Check connection
 
-if ($con->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
+	if ($connection->connect_error) {
+		die("Connection failed: " . $conn->connect_error);
+	}
 	$day = $_POST[set_date];
 	//echo $day;
 	
@@ -55,38 +55,39 @@ if ($con->connect_error) {
 	$date = date("Y-m-j H:i:s",strtotime($str)); 
 	//echo "<br />".$date; 
 	$sql = "UPDATE meetingdetails 
-		SET day='$_POST[set_day]',date='$_POST[set_date]',month='$_POST[set_month]',venue='$_POST[set_venue]',time='$_POST[set_time]',year='$_POST[set_year]',meetingDate='$date'
-		WHERE id='1'";
+			SET day='$_POST[set_day]',date='$_POST[set_date]',month='$_POST[set_month]',venue='$_POST[set_venue]',time='$_POST[set_time]',year='$_POST[set_year]',meetingDate='$date'
+			WHERE id='1'";
 
-	if ($con->query($sql) === TRUE) { 
+	if ($connection->query($sql) === TRUE) { 
 		echo "<div id='pageheader'>
 					Your information has been saved <span id='logout'>Return to <a href='contributors_login.php'>Contributors Login</a></span>   
 			  </div>";
-	} else {
-		echo "Error updating record: " . $con->error;
+	} else 
+	{
+		echo "Error updating record: " . $connection->error;
 	}
 
-	$result = mysqli_query($con,"SELECT * FROM meetingdetails");
+	$result = mysqli_query($connection,"SELECT * FROM meetingdetails");
 
 	while($row = mysqli_fetch_array($result))
-	    {
-			$meetingDetails = $row['day'] . " " . $row['date'] . " " . $row['month'] . " " .$row['year'] . "<br />" . $row['venue'] . "<br />at " . $row['time']." Sharp";
-			$meetingDate = date("d-m-Y H:i:s", strtotime($row['meetingDate']));;
-			$now =  date('d-m-Y H:i:s'); 
-			
-			$meetingDate = new dateTime($meetingDate);
-			$now = new dateTime($now);
-			
-			if($now < $meetingDate)
-			{
-				$isMeetingSet =  1;
-			}
-			else
-			{
-				$isMeetingSet = 0;
-			}
-		}		
-		mysqli_close($con);
+	{
+		$meetingDetails = $row['day'] . " " . $row['date'] . " " . $row['month'] . " " .$row['year'] . "<br />" . $row['venue'] . "<br />at " . $row['time']." Sharp";
+		$meetingDate = date("d-m-Y H:i:s", strtotime($row['meetingDate']));;
+		$now =  date('d-m-Y H:i:s'); 
+		
+		$meetingDate = new dateTime($meetingDate);
+		$now = new dateTime($now);
+		
+		if($now < $meetingDate)
+		{
+			$isMeetingSet =  1;
+		}
+		else
+		{
+			$isMeetingSet = 0;
+		}
+	}		
+		mysqli_close($connection);
 ?>
 
 
