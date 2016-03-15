@@ -115,8 +115,8 @@
 		?>
 		
 		<script type='text/javascript'>
-			var meetingDetails = "<?php Print($meetingDetails); ?>";  
-			var isMeetingSet = "<?php Print($isMeetingSet); ?>"; 
+			var meetingDetails = "<?php Print($meetingDetails); ?>";
+			var isMeetingSet = "<?php Print($isMeetingSet); ?>";
 		</script>
 		
 		<div id="news">
