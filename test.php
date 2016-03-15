@@ -130,7 +130,7 @@
 				    <div class = "panel-heading">
 						<h3 class = "panel-title">Next Event:</h3>
 				    </div>
-					<div>
+					<div id="countdown-nextmeeting">
 						<?php
 							include('includebootstrap/countdowntimer.html');
 						?>

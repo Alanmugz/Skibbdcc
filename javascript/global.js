@@ -99,6 +99,9 @@ function checkForMeeting(text, flag)
 	{
 		document.getElementById("header_image_id").src="images/sticky_note.png"; 
 		document.getElementById("setText").innerHTML = "Next Club Meeting:<br />" + text;
+		
+		document.getElementById("countdown-nextmeeting").src="images/sticky_note.png"; 
+		document.getElementById("countdown-nextmeeting").innerHTML = "Next Club Meeting:<br />" + text;
 	}
 }
 
