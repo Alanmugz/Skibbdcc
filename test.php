@@ -61,60 +61,9 @@
 			</div>
 		</div>
 		<div class="row hidden-lg">
-			<div class="col-md-12 font">
-				<header class="navbar navbar-inverse bs-docs-nav" role="banner">
-					<div class="container">
-					<div class="navbar-header">
-						<button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					  </button>
-					  <a href="./" class="navbar-brand">Skibbdcc</a>
-					</div>
-					<nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
-						<ul class="nav navbar-nav">
-							<li>
-							  <a href="#">Home</a>
-							</li>
-							<li>
-							  <a href="#">Westlodge Fastnet Rally 2016 </a>
-							</li>
-							<li class="dropdown">
-								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Club Events <b class="caret"></b></a>
-								<ul class="dropdown-menu">
-								  <li><a href="#">LS AutoCross</a></li>
-								  <li><a href="#">Autotest</a></li>
-								  <li><a href="#">Economy Run</a></li>
-								  <li><a href="#">100 Isles Night Nav</a></li>
-								  <li><a href="#">Carbery Night Nav</a></li>
-								</ul>
-							</li>
-							<li class="dropdown">
-								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Gallery <b class="caret"></b></a>
-								<ul class="dropdown-menu">
-								  <li><a href="#">Image Gallery</a></li>
-								  <li><a href="#">Video Gallery</a></li>
-								</ul>
-							</li>
-							<li>
-							  <a href="#">Club Championship 2015</a>
-							</li>
-							<li>
-							  <a href="#">History</a>
-							</li>
-							<li>
-							  <a href="#">Contact Us</a>
-							</li>
-							<li>
-							  <a href="#">Club History</a>
-							</li>
-						</ul>
-					</nav>
-					</div>
-				</header>
-			</div>
+			<?php 
+				include ('includebootstrap/mobilemenu.html');
+			?>
 		</div>
 		<div class="row">
 			<div class="col-md-8">
@@ -133,36 +82,9 @@
 				    <div class = "panel-heading">
 						<h3 class = "panel-title">Next Event:</h3>
 				    </div>
-					<a href="" style="text-decoration:none">
-				    <div>
-						<h3 align="center">Westlodge Fastnet Rally 2016</h3>
-						<ul class="countdown">
-							<li> <span class="days">00</span>
-							<p class="days_ref">days</p>
-							</li>
-							<li class="seperator"></li>
-							<li> <span class="hours">00</span>
-							<p class="hours_ref">hours</p>
-							</li>
-							<li class="seperator">:</li>
-							<li> <span class="minutes">00</span>
-							<p class="minutes_ref">minutes</p>
-							</li>
-							<li class="seperator">:</li>
-							<li> <span class="seconds">00</span>
-							<p class="seconds_ref">seconds</p>
-							</li>
-						</ul>
-						<script type="text/javascript" src="jquery/jquery.downCount.js"></script> 
-						<script type="text/javascript">
-							$('.countdown').downCount({
-								//Month/Day/Year
-								date: '10/30/2016 12:00:00',
-								offset: +10
-							});
-						</script> 
-					</div>
-					</a>
+					<?php 
+						include('includebootstrap/countdowntimer.html');
+					?>
 				</div>
 				<div class = "panel panel-default font">
 				   <div class = "panel-heading">
