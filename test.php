@@ -14,7 +14,6 @@
 	 
 	$titlefb = ReadDB($News["title"]);
 	$descfb = ReadDB($News["summary"]);*/ 
-
 ?> 
 
 <!DOCTYPE html>
