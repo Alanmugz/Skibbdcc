@@ -42,8 +42,7 @@
   right:15px;
   font-family:"Times New Roman", Times, serif;
   font-weight:bold;
-  font-size: 1.4em;
-  font-stretch: extra-expanded;
+  font-size: 1.5em;
   color:white;
   }
   
@@ -159,11 +158,13 @@ src: url('font/Snickles.ttf')
   
   #copyright
    {
+  width:978px;
   border:solid 1px black;
   text-align:center;
-  padding:10px 0px;
+  padding:10px;
   color:grey;
-  font-size: 1.0em;
+  font-size:1.0em;
+  clear:both;
   }
   
   #footer
@@ -506,7 +507,7 @@ color:red;
   font-family: Helvetica, Arial, Verdana, sans-serif;
   font-size: 12px;
   line-height: 49px;
-  padding: 0 30.6px;
+  padding: 0 28px;
   text-decoration: none;
 }
 #cssmenu ul {
@@ -1036,6 +1037,99 @@ color:black;
   float: none;
 }
 
+
+/* Large desktop */
+@media (min-width: 1200px) {
+	.container {
+    width: 1025px;
+  }
+}
+ 
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) { 
+	.container {
+    width: 830px;
+  } 
+}
+ 
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) { ... }
+ 
+/* Landscape phones and down */
+@media (max-width: 480px) { ... }
+
+.border10 {
+    padding: 10px;
+}
+
+.navbar-inverse { background-color: #222222}
+.navbar-inverse .navbar-nav>.active>a:hover,.navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus { background-color: #}
+.navbar-inverse .navbar-nav>.active>a,.navbar-inverse .navbar-nav>.open>a,.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover,.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover, .navbar-inverse .navbar-nav>.open>a:focus { background-color: #080808}
+.dropdown-menu { background-color: #ffffff}
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus { background-color: #428bca}
+.navbar-inverse { background-image: none; }
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus { background-image: none; }
+.navbar-inverse { border-color: #080808}
+.navbar-inverse .navbar-brand { color: #999999}
+.navbar-inverse .navbar-brand:hover { color: #ffffff}
+.navbar-inverse .navbar-nav>li>a { color: #999999}
+.navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus { color: #ffffff}
+.navbar-inverse .navbar-nav>.active>a,.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover, .navbar-inverse .navbar-nav>.open>a:focus { color: #ffffff}
+.navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:focus { color: #ffffff}
+.dropdown-menu>li>a { color: #333333}
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus { color: #ffffff}
+.navbar-inverse .navbar-nav>.dropdown>a .caret { border-top-color: #999999}
+.navbar-inverse .navbar-nav>.dropdown>a:hover .caret { border-top-color: #ffffff}
+.navbar-inverse .navbar-nav>.dropdown>a .caret { border-bottom-color: #999999}
+.navbar-inverse .navbar-nav>.dropdown>a:hover .caret { border-bottom-color: #ffffff}
+
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400);
+ul.countdown {
+list-style: none;
+margin: 0px 0;
+padding: 0;
+display: block;
+text-align: center;
+}
+ul.countdown li {
+display: inline-block;
+}
+ul.countdown li span {
+font-size: 20px;
+font-weight: 15;
+line-height: 40px;
+}
+ul.countdown li.seperator {
+font-size: 20px;
+line-height: 40px;
+vertical-align: top;
+}
+ul.countdown li p {
+color: #a7abb1;
+font-size: 14px;
+}
+
+
+.bottom-buffer { margin-bottom:20px; }
+.height { background-color : white;}
+.height1 { height : 42px; background-color : white; margin-left: 0px; margin-right: 0px}
+.height2 { height : 100%; background-color : white; margin-left: 0px; margin-right: 0px}
+.border { border: solid red 1px}
+.padding { margin: 0px 1%}
+.carousel{
+    background: #2f4357;
+    margin-top: 20px;
+}
+.carousel .item img{
+    margin: 0 auto; /* Align slide image horizontally center */
+}
+.panel-body {
+background:#E4F3F6;}
+.font{ font-size: 1.3em}
+.fill{
+    height:150px;
+}
 
 
 
