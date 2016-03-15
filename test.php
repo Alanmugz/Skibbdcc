@@ -47,38 +47,9 @@
 			</div>
 		</div>
 		<div style="margin-top:-20px">
-			<div id="myCarousel" class="carousel slide" data-ride="carousel">
-				<!-- Carousel indicators -->
-				<ol class="carousel-indicators">
-					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-					<li data-target="#myCarousel" data-slide-to="1"></li>
-					<li data-target="#myCarousel" data-slide-to="2"></li>
-					<li data-target="#myCarousel" data-slide-to="3"></li>
-					<li data-target="#myCarousel" data-slide-to="4"></li>
-					<li data-target="#myCarousel" data-slide-to="5"></li>
-				</ol>
-				<!-- Wrapper for carousel items -->
-				<div class="carousel-inner">
-					<div class="item active">
-						<img src="imagesbootstrap/slider/img14.jpg" alt="First Slide">
-					</div>
-					<div class="item">
-						<img src="imagesbootstrap/slider/img18.jpg" alt="Second Slide">
-					</div>
-					<div class="item">
-						<img src="imagesbootstrap/slider/img19.jpg" alt="Second Slide">
-					</div>
-					<div class="item">
-						<img src="imagesbootstrap/slider/img4.jpg" alt="Second Slide">
-					</div>
-					<div class="item">
-						<img src="imagesbootstrap/slider/img12.jpg" alt="Second Slide">
-					</div>
-					<div class="item">
-						<img src="imagesbootstrap/slider/img2.jpg" alt="Second Slide">
-					</div>
-				</div>
-			</div>
+			<?php 
+				include ('includebootstrap/carousel.html');
+			?>
 		</div>
 		<div class="row visible-lg" style="padding-bottom:20px">
 			<div class="col-md-12">
