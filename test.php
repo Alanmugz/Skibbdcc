@@ -1,5 +1,47 @@
+<?php
+	include ('dataconnection.php'); 
+	
+	if(!isset($configs_are_set)) {
+		include("scriptfolder/configs.php");
+	}
+
+    //Facebook data from database
+	$sql = "SELECT title, summary FROM ".$TABLE["News"]." WHERE status='Published' AND id='".mysql_real_escape_string($_REQUEST["id"])."'";
+	$sql_result = mysql_query ($sql, $conn ) or die ('MySQL query error: '.$sql.'. Error: '.mysql_error());
+	if(mysql_num_rows($sql_result) > 0) {	
+		$News = mysql_fetch_assoc($sql_result);
+	}
+	 
+	$titlefb = ReadDB($News["title"]);
+	$descfb = ReadDB($News["summary"]);  
+
+?> 
+
 <!DOCTYPE html>
 <head>
+	<title>Skibbereen &amp; District Car Club</title>
+	
+	<meta name="generator" content="PSPad editor, www.pspad.com" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="description" content="Skibbereen &amp; District Car Club. Home of the Westlogde Fastent Rally"/>
+	<meta name="keywords" content="Skibbereen and District Car Club, Skibbdcc, Westlodge Hotel, Skibbereen Motor Club, Fastnet Rally"/>
+	<meta name="author" content="Alan Mulligan Web Design"/>
+	<meta name="robots" content="index, follow"/>
+	
+	<!-- for Facebook -->          
+	<meta property="og:title" content="<?php echo $titlefb; ?>" />
+	<meta property="og:type" content="article" />
+	<meta property="og:image" content="http://www.skibbdcc.com/images/facebook_skibbdcc_logo.png" />
+	<meta property="og:url" content="<?php echo "http://www.skibbdcc.com".$_SERVER['REQUEST_URI']; ?>" /> 
+	<meta property="og:description" content="<?php echo $descfb; ?>" />
+
+	<!-- for Twitter -->        
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:url" content="<?php echo "http://www.skibbdcc.com".$_SERVER['REQUEST_URI']; ?>">  
+	<meta name="twitter:title" content="<?php echo $titlefb; ?>">
+	<meta name="twitter:description" content="<?php echo $descfb; ?>">
+	<meta name="twitter:image" content="http://www.skibbdcc.com/images/facebook_skibbdcc_logo.png">
+	
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
@@ -10,7 +52,6 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 	
-	<title>Skibbereen &amp; District Car Club</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
     <script type="text/javascript">var _siteRoot='index.html',_root='index.html';</script>
