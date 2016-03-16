@@ -1,8 +1,8 @@
 <?php
-	include ('dataconnection.php'); 
+	/*include ('dataconnection.php'); 
 	
 	if(!isset($configs_are_set)) {
-		include("scriptfolder/configs.php");
+		include("scriptfolderbootstrap/configs.php");
 	}
 
     //Facebook data from database
@@ -13,8 +13,7 @@
 	}
 	 
 	$titlefb = ReadDB($News["title"]);
-	$descfb = ReadDB($News["summary"]);  
-
+	$descfb = ReadDB($News["summary"]);*/ 
 ?> 
 
 <!DOCTYPE html>
@@ -53,12 +52,12 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 	
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="cssbootstrap/style.css" type="text/css" media="screen" />
     <script type="text/javascript">var _siteRoot='index.html',_root='index.html';</script>
     <script type="text/javascript" src="jquery/jquery.js"></script>
     <script type="text/javascript" src="javascript/scripts.js"></script>
     <script type="text/javascript" src="javascript/global.js"></script>
-    <link rel="stylesheet" type="text/css" href="css/global.css"/>
+    <link rel="stylesheet" type="text/css" href="cssbootstrap/global.css"/>
     <link rel="icon" type="image/png" href="images/favicon.png"/>  
     
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
@@ -186,11 +185,13 @@
 				</div>			
 			</div>
 		</div>
-		<div class="row">
+		<div class="row visible-lg">
 			<div class="col-md-12">
-				<?php 
+				<div id="copyright">
+					<?php 
 						include('includebootstrap/copyright.html');
 					?>
+				</div>
 			</div>
 		</div>
 	</div>
