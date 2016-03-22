@@ -116,7 +116,7 @@
 					?>    
 				</div>
 				
-				<div class = "panel panel-default">
+				<div class = "panel panel-default visible-lg" style="background:#E4F3F6;">
 					<div class = "panel-heading">
 						<h3 class = "panel-title">Latest Videos</h3>
 					</div>
