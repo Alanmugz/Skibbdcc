@@ -1,9 +1,16 @@
 	
 	<?php
-		if(true)
+	
+		include('php/repository.php');
+		
+		$repository = new Repository;
+		$repository->connect("skibbdcc_meeting");
+	
+		if($repository->isMeetingWithinTheLast10Days())
 		{
 			?>
-				<img src="images/header_image1.png" class="img-responsive" alt="" style="border: solid red 1px; margin: 10px auto"> 
+				<img src="images/sticky_note.png" class="img-responsive" alt="" style="margin: 10px 22px">
+				<div id="setText">Next Club Meeting:<br /><?php echo $repository->meetingDetails(); ?></div>
 			<?php
 		}
 		else
