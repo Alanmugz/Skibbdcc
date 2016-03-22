@@ -115,6 +115,22 @@
 						include("/home/skibbdcc/public_html/scriptfolderbootstrap/news.php");
 					?>    
 				</div>
+				
+				<div class = "panel panel-default">
+					<div class = "panel-heading">
+						<h3 class = "panel-title">Latest Videos</h3>
+					</div>
+					<?php 
+						include('php/videorepository.php');
+		
+						$repository = new VideoRepository;
+						$repository->connect("skibbdcc_video");
+						
+						$repository->getLatestVideos();	
+						
+						$repository->close();
+					?>    
+				</div>
 			</div>
 			
 			<div class="col-md-4">

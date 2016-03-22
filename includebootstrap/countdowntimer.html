@@ -1,9 +1,9 @@
 	
 	<?php
 	
-		include('php/repository.php');
+		include('php/meetingrepository.php');
 		
-		$repository = new Repository;
+		$repository = new MeetingRepository;
 		$repository->connect("skibbdcc_meeting");
 	
 		if($repository->isMeetingWithinTheLast10Days())
@@ -48,4 +48,5 @@
 				</a>
 			<?php
 		}
+		$repository->close();
 	?>

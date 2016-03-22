@@ -1,5 +1,5 @@
 <?php
-class Repository {
+class MeetingRepository {
    
 	private $conn;
    
@@ -18,6 +18,12 @@ class Repository {
 			die("Connection failed: " . $this->conn->connect_error);
 		}
     }
+	
+	
+	function close()
+	{
+		$this->conn->close();
+	}
 		
 	
 	function isMeetingWithinTheLast10Days()
