@@ -1,6 +1,6 @@
 <?php
 
-$configs = include('config.php');
+include('config.php');
 
 class MeetingRepository {
    
