@@ -120,14 +120,8 @@
 						<h3 class = "panel-title">Latest Videos</h3>
 					</div>
 					<?php 
-						include('php/videorepository.php');
-		
-						$repository = new VideoRepository;
-						$repository->connect("skibbdcc_video");
-						
-						$repository->getLatestVideos();	
-						
-						$repository->close();
+						include('includebootstrap/video.html');
+	
 					?>    
 				</div>
 			</div>
