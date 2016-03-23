@@ -1127,8 +1127,15 @@ font-size: 14px;
 .carousel .item img{
     margin: 0 auto; /* Align slide image horizontally center */
 }
-.panel-body {
-background:#E4F3F6;}
+.panel-body 
+{
+background:#E4F3F6;
+}
+.backgroundColor
+{
+background:#E4F3F6;
+}
+
 .font{ font-size: 1.3em}
 .fill{
     height:150px;

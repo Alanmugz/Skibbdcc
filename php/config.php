@@ -5,4 +5,6 @@
     'db_username' => 'skibbdcc_usernam',
     'db_password' => 'fastnetrally85');
 	
+	$var = 'test';
+	
 ?>

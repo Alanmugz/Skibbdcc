@@ -1,7 +1,5 @@
 <?php
 
-require 'config.php';
-
 class MeetingRepository {
    
 	private $conn;
@@ -9,13 +7,11 @@ class MeetingRepository {
     function connect(
 		$dbname) 
 	{
-		echo $configs['db_servername'];
-		echo $configs['db_username'];
-		echo $configs['db_password'];
+		require 'config.php';
 		
-        $servername = 'localhost';
-		$username = 'skibbdcc_usernam';
-		$password = 'fastnetrally85';
+        $servername = $configs['db_servername'];
+		$username = $configs['db_username'];
+		$password = $configs['db_password'];
 
 		// Create connection
 		$this->conn = new mysqli($servername, $username, $password, $dbname);

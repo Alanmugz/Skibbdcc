@@ -115,7 +115,7 @@
 					?>    
 				</div>
 				
-				<div class = "panel panel-default visible-lg" style="background:#E4F3F6;">
+				<div class = "panel panel-default visible-lg backgroundColor">
 					<div class = "panel-heading">
 						<h3 class = "panel-title">Latest Videos</h3>
 					</div>
@@ -127,7 +127,7 @@
 			</div>
 			
 			<div class="col-md-4">
-				<div class = "panel panel-default" style="background:#E4F3F6;">
+				<div class = "panel panel-default backgroundColor">
 				    <div class = "panel-heading">
 						<h3 class = "panel-title">Next Event:</h3>
 				    </div>
