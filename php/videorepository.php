@@ -1,4 +1,7 @@
 <?php
+
+$configs = include('config.php');
+
 class VideoRepository {
    
 	private $conn;
@@ -6,7 +9,7 @@ class VideoRepository {
     function connect(
 		$dbname) 
 	{
-        $servername = "localhost";
+        $servername = $configs['db_servername'];
 		$username = "skibbdcc_usernam";
 		$password = "fastnetrally85";
 

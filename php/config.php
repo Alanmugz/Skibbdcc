@@ -1,6 +1,6 @@
 <?php
 
-return array(
-    'host' => 'localhost',
-    'username' => 'root',
-);
+return $config = array(
+    'db_servername' => 'localhost',
+    'db_username' => 'skibbdcc_usernam',
+    'db_password' => 'fastnetrally85');
