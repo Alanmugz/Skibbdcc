@@ -10,8 +10,8 @@ class VideoRepository {
 		$dbname) 
 	{
         $servername = $configs['db_servername'];
-		$username = "skibbdcc_usernam";
-		$password = "fastnetrally85";
+		$username = $configs['db_username'];
+		$password = $configs['db_password'];
 
 		// Create connection
 		$this->conn = new mysqli($servername, $username, $password, $dbname);
