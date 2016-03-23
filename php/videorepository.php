@@ -13,9 +13,9 @@ class VideoRepository {
 		echo $configs['db_username'];
 		echo $configs['db_password'];
 		
-        $servername = $configs['db_servername'];
-		$username = $configs['db_username'];
-		$password = $configs['db_password'];
+        $servername = 'localhost';
+		$username = 'skibbdcc_usernam';
+		$password = 'fastnetrally85';
 
 		// Create connection
 		$this->conn = new mysqli($servername, $username, $password, $dbname);
