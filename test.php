@@ -74,15 +74,7 @@
 		});
     </script>
 </head>
-<?php
-	include ('getMeeting2.php'); 
-?>
-
-<script type='text/javascript'>
-	var meetingDetails = "<?php Print($meetingDetails); ?>";
-	var isMeetingSet = "<?php Print($isMeetingSet); ?>";
-</script>
-<html lang="en" onload="checkForMeeting2(meetingDetails, isMeetingSet)">
+<html>
 	<div class="container border10">	
 		<div class="row row-margin height visible-lg">
 			<div class="col-md-12">
