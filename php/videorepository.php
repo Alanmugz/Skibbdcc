@@ -9,6 +9,10 @@ class VideoRepository {
     function connect(
 		$dbname) 
 	{
+		echo $configs['db_servername'];
+		echo $configs['db_username'];
+		echo $configs['db_password'];
+		
         $servername = $configs['db_servername'];
 		$username = $configs['db_username'];
 		$password = $configs['db_password'];
