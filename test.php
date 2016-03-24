@@ -8,6 +8,7 @@
 		}
 
 		//Facebook data from database
+		//$conn aquired from scriptfolderbootstrap/configs.php
 		$sql = "SELECT title, summary FROM ".$TABLE["News"]." WHERE status='Published' AND id='".mysql_real_escape_string($_REQUEST["id"])."'";
 		$sql_result = mysql_query ($sql, $conn ) or die ('MySQL query error: '.$sql.'. Error: '.mysql_error());
 		if(mysql_num_rows($sql_result) > 0) {	
@@ -30,14 +31,14 @@
 	<meta name="author" content="Alan Mulligan Web Design"/>
 	<meta name="robots" content="index, follow"/>
 	
-	<!-- for Facebook -->          
+	<!-- For Facebook -->          
 	<meta property="og:title" content="<?php echo $titlefb; ?>" />
 	<meta property="og:type" content="article" />
 	<meta property="og:image" content="http://www.skibbdcc.com/images/facebook_skibbdcc_logo.png" />
 	<meta property="og:url" content="<?php echo "http://www.skibbdcc.com".$_SERVER['REQUEST_URI']; ?>" /> 
 	<meta property="og:description" content="<?php echo $descfb; ?>" />
 
-	<!-- for Twitter -->        
+	<!-- For Twitter -->        
 	<meta name="twitter:card" content="summary">
 	<meta name="twitter:url" content="<?php echo "http://www.skibbdcc.com".$_SERVER['REQUEST_URI']; ?>">  
 	<meta name="twitter:title" content="<?php echo $titlefb; ?>">
