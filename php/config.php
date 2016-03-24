@@ -5,6 +5,6 @@
     'db_username' => 'skibbdcc_usernam',
     'db_password' => 'fastnetrally85');
 	
-	$environment = ($_SERVER['HTTP_HOST'] == 'admin') ? 'dev' : $_SERVER['HTTP_HOST'];
+	$environment = ($_SERVER['HTTP_HOST'] == 'www.skibbdcc.com') ? 'prod' : 'dev';
 	
 ?>

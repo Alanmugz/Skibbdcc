@@ -1,21 +1,24 @@
 <?php
 	require 'php/config.php'; 
-	echo $environment;
-	/*include ('dataconnection.php'); 
 	
-	if(!isset($configs_are_set)) {
-		include("scriptfolderbootstrap/configs.php");
-	}
+	if($environment != 'prod')
+	{
+		include ('dataconnection.php'); 
+	
+		if(!isset($configs_are_set)) {
+			include("scriptfolderbootstrap/configs.php");
+		}
 
-    //Facebook data from database
-	$sql = "SELECT title, summary FROM ".$TABLE["News"]." WHERE status='Published' AND id='".mysql_real_escape_string($_REQUEST["id"])."'";
-	$sql_result = mysql_query ($sql, $conn ) or die ('MySQL query error: '.$sql.'. Error: '.mysql_error());
-	if(mysql_num_rows($sql_result) > 0) {	
-		$News = mysql_fetch_assoc($sql_result);
+		//Facebook data from database
+		$sql = "SELECT title, summary FROM ".$TABLE["News"]." WHERE status='Published' AND id='".mysql_real_escape_string($_REQUEST["id"])."'";
+		$sql_result = mysql_query ($sql, $conn ) or die ('MySQL query error: '.$sql.'. Error: '.mysql_error());
+		if(mysql_num_rows($sql_result) > 0) {	
+			$News = mysql_fetch_assoc($sql_result);
+		}
+		 
+		$titlefb = ReadDB($News["title"]);
+		$descfb = ReadDB($News["summary"]);
 	}
-	 
-	$titlefb = ReadDB($News["title"]);
-	$descfb = ReadDB($News["summary"]);*/ 
 ?> 
 
 <!DOCTYPE html>
