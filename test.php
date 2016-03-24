@@ -1,8 +1,9 @@
 <?php
 	require 'php/config.php'; 
 	
-	if($environment != 'prod')
+	if($environment == 'prod')
 	{
+		echo 'hello';
 		include ('dataconnection.php'); 
 	
 		if(!isset($configs_are_set)) {
