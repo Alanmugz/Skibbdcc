@@ -1,4 +1,6 @@
 <?php
+	require 'php/config.php'; 
+	echo $environment;
 	/*include ('dataconnection.php'); 
 	
 	if(!isset($configs_are_set)) {
