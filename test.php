@@ -2,10 +2,7 @@
 	require 'php/config.php'; 
 	
 	if($environment == 'prod')
-	{
-		echo 'hello';
-		include ('dataconnection.php'); 
-	
+	{	
 		if(!isset($configs_are_set)) {
 			include("scriptfolderbootstrap/configs.php");
 		}
