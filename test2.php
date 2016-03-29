@@ -1,5 +1,24 @@
 <?php
-	require 'php/config.php'; 
+	require 'php/config.php';
+	
+	// Create connection
+	$conn = new mysqli('localhost', 'skibbdcc_usernam', 'fastnetrally85', 'skibbdcc_news');
+	// Check connection
+	if ($conn->connect_error) {
+		die("Connection failed: " . $conn->connect_error);
+	}
+
+	$sql = $sql = "SELECT publish_date, content, summary FROM pa_npro_news WHERE status='Published' AND cat_id=3 ORDER BY publish_date DESC";
+	$result = $conn->query($sql);
+
+	if ($result->num_rows > 0) {
+		// output data of each row
+		while($row = $result->fetch_assoc()) {
+			echo "id: " . $row["publish_date"]."<br>";
+		}
+	} else {
+		echo "0 results";
+	}	
 ?>
 
 <!DOCTYPE html>
@@ -70,23 +89,36 @@
 				include ('includebootstrap/mobilemenu.html');
 			?>
 		</div>		
-		<div style="display:inline-block;margin:-25px 0px 15px 0px">
+		<div style="display:inline-block;margin:-25px 0px 15px 0px;">
 			<h3>
-			<a href="autotest.php"><span class="label label-pill label-danger">Latest</span></a>
-			<a href="files/autotest/2015/Bandon_Autotest.doc"><span class="label label-pill label-danger">Regs</span></a>
-			<a href="files/autotest/2015/Bandon_Autotest.doc"><span class="label label-pill label-danger">Entry Form</span></a>
-			<a href="map_autotest.php"><span class="label label-pill label-danger">Map</span></a>
-			<a href="#"><span class="label label-pill label-danger">Results</span></a>
+			<a href="autotest.php" style="text-decoration:none;"><span class="label label-pill label-danger">Latest</span></a>
+			<a href="files/autotest/2015/Bandon_Autotest.doc" style="text-decoration:none;"><span class="label label-pill label-danger">Regs</span></a>
+			<a href="files/autotest/2015/Bandon_Autotest.doc" style="text-decoration:none;"><span class="label label-pill label-danger">Entry Form</span></a>
+			<a href="map_autotest.php" style="text-decoration:none;"><span class="label label-pill label-danger">Map</span></a>
+			<a href="#" style="text-decoration:none;"><span class="label label-pill label-danger">Results</span></a>
 			</h3>
 		</div>		
 		<div class="row">
 			<div class="col-md-8">
-				<div class = "panel panel-default">
+				<div class = "panel panel-default backgroundColor font">
 					<div class = "panel-heading">
-						<h3 class = "panel-title">Club News</h3>
+						<h3 class = "panel-title">Autotest 23rd & 24th May 2015</h3>
 					</div>
 					<div id='pageheader'>
-						Autotest 23rd & 24th May 2015
+						<span class="newstitle">Loose Surface Autocross Results</span><span class="newsdate">1st March 2016</span>
+					</div>
+					<p class="setmargin"> 
+						Skibbereen & District Car Club will hosting rounds 4 & 5 of the Premier Auto Parts Munster Autotest Championship on the 23rd & 24th May. Bandon Co-op in Kilbrogran, Bnadon will host the event. The club has devised new tests this year as well as a new surfaces, which is much smoother than previous years, they have been designed to be as flowing as possible.
+						<br /><br />
+						Regulations are now available to download <a href="files/autotest/2015/Bandon_Autotest.doc" style="Color:red">here</a>,regulations will follow soon,
+						<br /><br /> 
+						Times:<br />
+						Saturday: Sign on 14:00pm, Start 15:00pm<br />
+						Sunday: Sign on 10:00am, Start 11:00am<br /><br />
+						Marshals required, please contact Don Giles for more information 0868060604
+					</p>
+					<div id='pageheader'>
+						<span class="newstitle">Loose Surface Autocross Results</span><span class="newsdate">1st March 2016</span>
 					</div>
 					<p class="setmargin"> 
 						Skibbereen & District Car Club will hosting rounds 4 & 5 of the Premier Auto Parts Munster Autotest Championship on the 23rd & 24th May. Bandon Co-op in Kilbrogran, Bnadon will host the event. The club has devised new tests this year as well as a new surfaces, which is much smoother than previous years, they have been designed to be as flowing as possible.
@@ -106,7 +138,6 @@
 					</div>
 					<?php 
 						include('includebootstrap/video.html');
-	
 					?>    
 				</div>
 			</div>

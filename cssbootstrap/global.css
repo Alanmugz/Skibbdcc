@@ -454,12 +454,10 @@ margin-right:15px;
 .newsdate
 {
 float:right;
-margin-right:15px;
 }
 
 .newstitle
 {
-margin-left:15px;
 color:red;
 }
 
@@ -633,10 +631,6 @@ color:red;
 
 
 
-
-
-
-
 #menu
 {
 width:100%;
@@ -650,13 +644,13 @@ padding-bottom:0px;
 #pageheader 
 {
 color:black;
-width:651px;
+width:95%;
 margin-left:auto;
 margin-right:auto;
 margin-bottom:10px;
 padding-bottom:10px;
 padding-top:10px;
-border-bottom:solid 1px red;
+border-bottom:solid 1px #DDDDDD;
 }
 
 #pageheaderscroll
