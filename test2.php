@@ -70,16 +70,14 @@
 				include ('includebootstrap/mobilemenu.html');
 			?>
 		</div>
+		
 		<!-- Sub Menu -->
-		<div id="submenu">
-			<ul id="nav">
-				<li><a href="autotest.php" class="selected">Latest</a></li>
-				<li><a href="files/autotest/2015/Bandon_Autotest.doc">Regs</a></li>
-				<li><a href="files/autotest/2015/Bandon_Autotest.doc">Entry Form</a></li>
-				<li><a href="map_autotest.php">Map</a></li> 
-				<li><a href="#">Results</a></li>    
-			</ul>
-		</div>	 		 
+		<a href="autotest.php" class="selected"><span class="label label-danger">Latest</span></a>
+		<a href="files/autotest/2015/Bandon_Autotest.doc" class="selected"><span class="label label-danger">Regs</span></a>
+		<a href="files/autotest/2015/Bandon_Autotest.doc" class="selected"><span class="label label-danger">Entry Form</span></a>
+		<a href="map_autotest.php" class="selected"><span class="label label-danger">Map</span></a>
+		<a href="#" class="selected"><span class="label label-danger">Results</span></a> 	
+		
 		<div class="row">
 			<div class="col-md-8">
 				<div class = "panel panel-default">
