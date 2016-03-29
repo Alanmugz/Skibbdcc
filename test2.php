@@ -78,15 +78,13 @@
 				display:inline-block;
 			}
 		</style>
-		</head>
-		<body>
-			<div class="bs-example">
-			This is a <span class="label label-default">Default</span> label.
-			This is a <span class="label label-primary">Primary</span> label.
-			This is a <span class="label label-success">Success</span> label.
-			This is an <span class="label label-info">Info</span> label.
-			This is an <span class="label label-warning">Warning</span> label.
-			This is an <span class="label label-danger">Danger</span> label.
+		
+		<div class="bs-example">
+			<h3><a href="autotest.php" class="selected"><span class="label label-pill label-danger">Latest</span></a><h3>
+			<h3><a href="files/autotest/2015/Bandon_Autotest.doc" class="selected"><span class="label label-pill label-danger">Regs</span></a><h3>
+			<h3><a href="files/autotest/2015/Bandon_Autotest.doc" class="selected"><span class="label label-pill label-danger">Entry Form</span></a><h3>
+			<h3><a href="map_autotest.php" class="selected"><span class="label label-pill label-danger">Map</span></a><h3>
+			<h3><a href="#" class="selected"><span class="label label-pill label-danger">Results</span></a><h3>
 		</div>
 		
 		
