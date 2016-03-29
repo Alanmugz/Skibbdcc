@@ -80,11 +80,11 @@
 		</style>
 		
 		<div class="bs-example">
-			<h3><a href="autotest.php" class="selected"><span class="label label-pill label-danger">Latest</span></a><h3>
-			<h3><a href="files/autotest/2015/Bandon_Autotest.doc" class="selected"><span class="label label-pill label-danger">Regs</span></a><h3>
-			<h3><a href="files/autotest/2015/Bandon_Autotest.doc" class="selected"><span class="label label-pill label-danger">Entry Form</span></a><h3>
-			<h3><a href="map_autotest.php" class="selected"><span class="label label-pill label-danger">Map</span></a><h3>
-			<h3><a href="#" class="selected"><span class="label label-pill label-danger">Results</span></a><h3>
+			<a href="autotest.php" class="selected"><span class="label label-pill label-danger">Latest</span></a>
+			<a href="files/autotest/2015/Bandon_Autotest.doc" class="selected"><span class="label label-pill label-danger">Regs</span></a>
+			<a href="files/autotest/2015/Bandon_Autotest.doc" class="selected"><span class="label label-pill label-danger">Entry Form</span></a>
+			<a href="map_autotest.php" class="selected"><span class="label label-pill label-danger">Map</span></a>
+			<a href="#" class="selected"><span class="label label-pill label-danger">Results</span></a>
 		</div>
 		
 		
