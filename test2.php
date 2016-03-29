@@ -69,22 +69,16 @@
 			<?php 
 				include ('includebootstrap/mobilemenu.html');
 			?>
-		</div>
-		
-		
-		<style type="text/css">
-			.bs-example{
-				display:inline-block;
-			}
-		</style>
-		
-		<h3><div class="bs-example">
-			<a href="autotest.php" class="selected"><span class="label label-pill label-danger">Latest</span></a>
-			<a href="files/autotest/2015/Bandon_Autotest.doc" class="selected"><span class="label label-pill label-danger">Regs</span></a>
-			<a href="files/autotest/2015/Bandon_Autotest.doc" class="selected"><span class="label label-pill label-danger">Entry Form</span></a>
-			<a href="map_autotest.php" class="selected"><span class="label label-pill label-danger">Map</span></a>
-			<a href="#" class="selected"><span class="label label-pill label-danger">Results</span></a>
-		</div></h3>
+		</div>		
+		<h3>
+			<div style="display:inline-block;margin-top:-20px;">
+				<a href="autotest.php" class="selected"><span class="label label-pill label-danger">Latest</span></a>
+				<a href="files/autotest/2015/Bandon_Autotest.doc" class="selected"><span class="label label-pill label-danger">Regs</span></a>
+				<a href="files/autotest/2015/Bandon_Autotest.doc" class="selected"><span class="label label-pill label-danger">Entry Form</span></a>
+				<a href="map_autotest.php" class="selected"><span class="label label-pill label-danger">Map</span></a>
+				<a href="#" class="selected"><span class="label label-pill label-danger">Results</span></a>
+			</div>
+		</h3>
 		
 		
 		<div class="row">
