@@ -74,7 +74,6 @@
 		
 		<style type="text/css">
 			.bs-example{
-				margin: 20px;
 				display:inline-block;
 			}
 		</style>
