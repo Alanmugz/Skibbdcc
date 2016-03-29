@@ -1,14 +1,17 @@
 <?php
 
+	//Database config
 	$configs = array(
     'db_servername' => 'localhost',
     'db_username' => 'skibbdcc_usernam',
     'db_password' => 'fastnetrally85');
 	
+	//Environment
 	$environment = ($_SERVER['HTTP_HOST'] == 'www.skibbdcc.com') ? 'prod' : 'dev';
 	
+	//Timer
 	$countdownEventName = 'Westlodge Fastnet Rally 2016';
 	$countdownEventLink = 'fastnetrally.php';
-	$countdownEventDate = '10/30/2016 12:00:00';
+	//Timer date set in countdowntimer.html
 	
 ?>
