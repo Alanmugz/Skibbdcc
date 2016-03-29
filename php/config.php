@@ -15,5 +15,5 @@
 	//Timer date set in countdowntimer.html
 	
 	//Rally
-	rallyEventYear = '2015';
+	$rallyEventYear = '2015';
 ?>
