@@ -1,7 +1,11 @@
 
+	<?php
+		require 'php/config.php';
+	?>
+
 	<ul>
 	   <li class='has-sub'><a href='index.php'><span>Home</span></a></li>
-	   <li class='has-sub'><a href='fastnet_rally.php'><span>Westlodge Hotel Fastnet Rally 2015</span></a></li>     
+	   <li class='has-sub'><a href='fastnet_rally.php'><span>Westlodge Hotel Fastnet Rally <?php echo $rallyEventYear; ?></span></a></li>     
 	   <!--<li class='has-subRed'><a href='fastnet_results.html'><span>LIVE Results</span></a></li>-->
 	   <li class='has-sub'><a href='club_events.php'><span>Club Events</span></a>
 				<ul>

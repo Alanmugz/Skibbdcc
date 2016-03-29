@@ -11,7 +11,9 @@
 	
 	//Timer
 	$countdownEventName = 'Westlodge Fastnet Rally 2016';
-	$countdownEventLink = 'fastnetrally.php';
+	$countdownEventLink = 'fastnet_rally.php';
 	//Timer date set in countdowntimer.html
 	
+	//Rally
+	rallyEventYear = '2015';
 ?>
