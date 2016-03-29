@@ -70,7 +70,7 @@
 				include ('includebootstrap/mobilemenu.html');
 			?>
 		</div>		
-		<div style="display:inline-block;margin:-20px 0px 10px 0px">
+		<div style="display:inline-block;margin:-25px 0px 15px 0px">
 			<h3>
 			<a href="autotest.php"><span class="label label-pill label-danger">Latest</span></a>
 			<a href="files/autotest/2015/Bandon_Autotest.doc"><span class="label label-pill label-danger">Regs</span></a>
