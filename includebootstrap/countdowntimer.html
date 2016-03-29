@@ -1,6 +1,7 @@
 	
 	<?php
 	
+		require 'php/config.php';
 		include('php/meetingrepository.php');
 		
 		$repository = new MeetingRepository;
@@ -16,9 +17,9 @@
 		else
 		{
 			?>
-				<a href="" style="text-decoration:none">
+				<a href="<?php echo $countdownEventLink; ?>" style="text-decoration:none">
 					<div>
-						<h3 align="center">Westlodge Fastnet Rally 2016</h3>
+						<h3 align="center"><?php echo $countdownEventName; ?></h3>
 						<ul class="countdown">
 							<li> <span class="days">00</span>
 							<p class="days_ref">days</p>
@@ -40,7 +41,7 @@
 						<script type="text/javascript">
 							$('.countdown').downCount({
 								//Month/Day/Year
-								date: '10/30/2016 12:00:00',
+								date: <?php echo $countdownEventDate.','; ?>
 								offset: +10
 							});
 						</script> 
