@@ -72,7 +72,7 @@
 		</div>
 		
 		<!-- Sub Menu -->
-		<div class="row">
+		<div class="row" style="display:inline-block;">
 			<h3><a href="autotest.php" class="selected"><span class="label label-pill label-danger">Latest</span></a><h3>
 			<h3><a href="files/autotest/2015/Bandon_Autotest.doc" class="selected"><span class="label label-pill label-danger">Regs</span></a><h3>
 			<h3><a href="files/autotest/2015/Bandon_Autotest.doc" class="selected"><span class="label label-pill label-danger">Entry Form</span></a><h3>
