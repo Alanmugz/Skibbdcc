@@ -1,0 +1,11 @@
+
+<?php
+	include('php/videorepository.php');
+		
+	$repository = new VideoRepository;
+	$repository->connect("skibbdcc_video");
+	
+	$repository->getLatestVideos();	
+	
+	$repository->close();
+?>
