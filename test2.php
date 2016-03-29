@@ -72,11 +72,11 @@
 		</div>		
 		<div style="display:inline-block;margin:-20px 0px 10px 0px">
 			<h3>
-			<a href="autotest.php" class="selected" style="text-decoration: overline;"><span class="label label-pill label-danger">Latest</span></a>
-			<a href="files/autotest/2015/Bandon_Autotest.doc" class="selected"><span class="label label-pill label-danger">Regs</span></a>
-			<a href="files/autotest/2015/Bandon_Autotest.doc" class="selected"><span class="label label-pill label-danger">Entry Form</span></a>
-			<a href="map_autotest.php" class="selected"><span class="label label-pill label-danger">Map</span></a>
-			<a href="#" class="selected"><span class="label label-pill label-danger">Results</span></a>
+			<a href="autotest.php"><span class="label label-pill label-danger">Latest</span></a>
+			<a href="files/autotest/2015/Bandon_Autotest.doc"><span class="label label-pill label-danger">Regs</span></a>
+			<a href="files/autotest/2015/Bandon_Autotest.doc"><span class="label label-pill label-danger">Entry Form</span></a>
+			<a href="map_autotest.php"><span class="label label-pill label-danger">Map</span></a>
+			<a href="#"><span class="label label-pill label-danger">Results</span></a>
 			</h3>
 		</div>		
 		<div class="row">
