@@ -47,7 +47,7 @@ class NewsRepository {
 			$news = new News();
 			$news->setPublishDate($row['publish_date']);
 			$news->setContent($row['content']);
-			$news->setSummary($row['title']);
+			$news->setTitle($row['title']);
 			
 			array_push($newsItems, $news);
 		}

@@ -95,7 +95,7 @@
 						foreach ($newsItems as $news) {
 							?>
 								<div id='pageheader'>
-									<span class="newstitle"><?php echo $news->getSummary(); ?></span><span class="newsdate"><?php echo $news->getPublishDate(); ?></span>
+									<span class="newstitle"><?php echo $news->getTitle(); ?></span><span class="newsdate"><?php echo $news->getPublishDate(); ?></span>
 								</div>
 								
 								<p class="setmargin"> 

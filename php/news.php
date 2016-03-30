@@ -2,9 +2,10 @@
 class News {
     public $publish_date;
     public $content;
-    public $summary;
+    public $title;
 
     public function getPublishDate() {
+		$this->publish_date; = date_format($publishDate, 'd-m-Y H:i:s');
         return $this->publish_date;
     }
 
@@ -20,11 +21,11 @@ class News {
         $this->content = $content;
     }
 
-    public function getSummary() {
-        return $this->summary;
+    public function getTitle() {
+        return $this->title;
     }
 
-    public function setSummary($summary) {
-        $this->summary = $summary;
+    public function setTitle($title) {
+        $this->title = $title;
     }
 }
