@@ -42,12 +42,12 @@ class NewsRepository {
 		
 		while($row = mysqli_fetch_array($result))
 		{
-			$news = new news;
+			/* $news = new news;
 			$news->setPublishDate($row['publish_date']);
 			$news->setContent($row['content']);
-			$news->setSummary($row['summary']);
+			$news->setSummary($row['summary']); */
 			
-			array_push($newsItems, $news);
+			array_push($newsItems, "hello");
 		}
 		print_r ($newsItems);
 	}
