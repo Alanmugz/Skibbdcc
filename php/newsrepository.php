@@ -8,6 +8,7 @@ class NewsRepository {
 		$dbname) 
 	{
 		require 'config.php';
+		require 'news.php';
 		
         $servername = $configs['db_servername'];
 		$username = $configs['db_username'];
