@@ -34,19 +34,13 @@ class NewsRepository {
 	{
 		$sql = "SELECT publish_date, content, summary FROM pa_npro_news 
 		        WHERE status='Published'
-				AND publish_date > '2016-01-01T00:00:00.000Z'
 				AND cat_id=$category 
 				ORDER BY publish_date DESC";
 		$result = $this->conn->query($sql);
-		
-		while($row = mysqli_fetch_array($result))
-		{
-			echo $row['publish_date'];
-		}
-		
+
 		$newsItems = array();
 		
-		/*while($row = mysqli_fetch_array($result))
+		while($row = mysqli_fetch_array($result))
 		{
 			$news = new news;
 			$news->setPublishDate($row['publish_date']);
@@ -55,7 +49,7 @@ class NewsRepository {
 			
 			array_push($newsItems, $news);
 		}
-		return $newsItems; */
+		print_r ($newsItems);
 	}
 }
 ?> 
