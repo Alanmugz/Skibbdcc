@@ -42,7 +42,7 @@ class NewsRepository {
 		
 		while($row = mysqli_fetch_array($result))
 		{
-			$news = new News;
+			$news = new News();
 			$news->setPublishDate($row['publish_date']);
 			$news->setContent($row['content']);
 			$news->setSummary($row['summary']);
