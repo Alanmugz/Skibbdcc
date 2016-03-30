@@ -5,7 +5,7 @@ class News {
     public $title;
 
     public function getPublishDate() {
-		$this->publish_date = date_format($publishDate, 'd-m-Y H:i:s');
+		$this->publish_date = date_format($publish_date, 'd-m-Y H:i:s');
         return $this->publish_date;
     }
 
