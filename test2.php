@@ -1,7 +1,7 @@
 <?php
 require 'php/config.php';
 include 'php/newsrepository.php';
-include 'php/eventEnumeration.php';
+include 'php/eventenumertion.php';
 ?>
 
 <!DOCTYPE html>
@@ -85,7 +85,7 @@ include 'php/eventEnumeration.php';
                 $repository = new NewsRepository;
                 $repository->connect("skibbdcc_news");
 
-                $newsItems = $repository->getLatestNewsForCategory(14);
+                $newsItems = $repository->getLatestNewsForCategory(EventEnumertion::AutoTest);
 
                 foreach ($newsItems as $news) {
                     ?>
