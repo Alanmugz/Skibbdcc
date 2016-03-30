@@ -90,9 +90,9 @@
 						$repository = new NewsRepository;
 						$repository->connect("skibbdcc_news");
 						
-						$newsItems = $repository->getLatestNewsForCategory(3);
+						$repository->getLatestNewsForCategory(3);
 						
-						foreach ($newsItems as $news) {
+						/* foreach ($newsItems as $news) {
 							?>
 								<div id='pageheader'>
 									<span class="newstitle">Loose Surface Autocross Results</span><span class="newsdate">1st March 2016</span>
@@ -109,7 +109,7 @@
 									Marshals required, please contact Don Giles for more information 0868060604
 								</p>
 							<?php
-						}
+						} */
 						
 						$repository->close();
 					?>
