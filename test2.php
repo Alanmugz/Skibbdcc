@@ -85,7 +85,7 @@ include 'php/eventEnumeration.php';
                 $repository = new NewsRepository;
                 $repository->connect("skibbdcc_news");
 
-                $newsItems = $repository->getLatestNewsForCategory(3);
+                $newsItems = $repository->getLatestNewsForCategory(14);
 
                 foreach ($newsItems as $news) {
                     ?>
