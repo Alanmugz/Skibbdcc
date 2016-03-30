@@ -90,26 +90,19 @@
 						$repository = new NewsRepository;
 						$repository->connect("skibbdcc_news");
 						
-						$repository->getLatestNewsForCategory(3);
+						$newsItems = $repository->getLatestNewsForCategory(3);
 						
-						/* foreach ($newsItems as $news) {
+						foreach ($newsItems as $news) {
 							?>
 								<div id='pageheader'>
-									<span class="newstitle">Loose Surface Autocross Results</span><span class="newsdate">1st March 2016</span>
+									<span class="newstitle"><?php echo $news->getSummary(); ?></span><span class="newsdate"><?php echo $news->getPublishDate(); ?></span>
 								</div>
 								
 								<p class="setmargin"> 
-									Skibbereen & District Car Club will hosting rounds 4 & 5 of the Premier Auto Parts Munster Autotest Championship on the 23rd & 24th May. Bandon Co-op in Kilbrogran, Bnadon will host the event. The club has devised new tests this year as well as a new surfaces, which is much smoother than previous years, they have been designed to be as flowing as possible.
-									<br /><br />
-									Regulations are now available to download <a href="files/autotest/2015/Bandon_Autotest.doc" style="Color:red">here</a>,regulations will follow soon,
-									<br /><br /> 
-									Times:<br />
-									Saturday: Sign on 14:00pm, Start 15:00pm<br />
-									Sunday: Sign on 10:00am, Start 11:00am<br /><br />
-									Marshals required, please contact Don Giles for more information 0868060604
+									<?php echo $news->getContent(); ?>
 								</p>
 							<?php
-						} */
+						}
 						
 						$repository->close();
 					?>

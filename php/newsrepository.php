@@ -36,7 +36,8 @@ class NewsRepository {
 		$sql = "SELECT publish_date, content, summary FROM pa_npro_news 
 		        WHERE status='Published'
 				AND cat_id=$category 
-				ORDER BY publish_date DESC";
+				ORDER BY publish_date DESC
+				LIMIT 2";
 		$result = $this->conn->query($sql);
 
 		$newsItems = array();
@@ -50,7 +51,7 @@ class NewsRepository {
 			
 			array_push($newsItems, $news);
 		}
-		print_r ($newsItems);
+		return $newsItems;
 	}
 }
 ?> 
