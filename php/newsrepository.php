@@ -40,6 +40,7 @@ class NewsRepository {
 				AND cat_id=$category 
 				AND YEAR(publish_date) =$currentYear
 				ORDER BY publish_date DESC";
+				
 		$result = $this->conn->query($sql);
 
 		$newsItems = array();
