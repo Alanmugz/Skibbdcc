@@ -119,7 +119,7 @@ include 'php/eventenumertion.php';
 					google.maps.event.addDomListener(window, 'load', initialize);
 				</script>
 	
-			<div id="map-canvas" style="width:650px;height:400px;margin-left:15px;margin-right:15px;"></div>
+			<div id="map-canvas" style="width:97%;height:400px;"></div>
             </div>
 
             <div class = "panel panel-default visible-lg backgroundColor">
