@@ -33,24 +33,27 @@ class MeetingRepository {
 	{
 		$sql = "SELECT * FROM meetingdetails";
 		$result = $this->conn->query($sql);
+		$meetingDate = "";
+		$now = date("Y-m-d");
 
 		while($row = mysqli_fetch_array($result))
 	    {
-			$meetingDetails = $row['day'] . " " . $row['date'] . " " . $row['month'] . " " .$row['year'] . "<br />" . $row['venue'] . "<br />at " . $row['time']." Sharp";
-			$meetingDate = date("d-m-Y H:i:s", strtotime($row['meetingDate']));
-			$now =  date('d-m-Y H:i:s'); 
+			$meetingDate = date("d-m-Y", strtotime($row['meetingDate'])); 
+		}
+		
+		if($now <= $meetingDate)
+		{
+			$diff = abs(strtotime($meetingDate) - strtotime($now));
 			
-			$meetingDate = new dateTime($meetingDate);
-			$now = new dateTime($now);
+			$years = floor($diff / (365*60*60*24));
+			$months = floor(($diff - $years * 365*60*60*24) / (30*60*60*24));
+			$days = floor(($diff - $years * 365*60*60*24 - $months*30*60*60*24)/ (60*60*24));
 			
-			if(($now <= $meetingDate && $now > $meetingDate->sub(new DateInterval('P10D'))))
+			if(($days >= 0 && $days <= 10) && $months == 0 && $years == 0)
 			{
 				return true;
 			}
-			else
-			{
-				return false;
-			}
+			return false;
 		}
 	}
 	
