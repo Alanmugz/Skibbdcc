@@ -70,7 +70,7 @@ include 'php/eventenumertion.php';
         include ('includebootstrap/mobilemenu.html');
         ?>
     </div>		
-    <div style="display:inline-block;margin:-25px 0px 15px 0px;">
+    <div class="eventmenu">
         <?php
         include ('includebootstrap/autotestmenu.html');
         ?>

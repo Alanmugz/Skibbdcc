@@ -68,7 +68,7 @@
         include ('includebootstrap/mobilemenu.html');
         ?>
     </div>		
-    <div style="display:inline-block;margin:-25px 0px 15px 0px;">
+    <div class="eventmenu">
         <?php
         include ('includebootstrap/autotestmenu.html');
         ?>
@@ -113,7 +113,7 @@
 					google.maps.event.addDomListener(window, 'load', initialize);
 				</script>
 	
-			<div id="map-canvas" style="width:97%;height:400px; margin: 10px auto 10px auto"></div>
+			<div id="map-canvas" class="googlemaps"></div>
             </div>
 
             <div class = "panel panel-default visible-lg backgroundColor">

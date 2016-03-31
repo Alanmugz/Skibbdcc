@@ -1130,6 +1130,18 @@ background:#E4F3F6;}
     height:150px;
 }
 
+.googlemaps 
+{
+	width:97%;
+	height:400px;
+	margin: 10px auto 10px auto;
+}
+
+.eventmenu
+{
+	display:inline-block;
+	margin:-25px 0px 15px 0px;
+}
 
 
 
