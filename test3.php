@@ -1,9 +1,3 @@
-<?php
-require 'php/config.php';
-include 'php/newsrepository.php';
-include 'php/eventenumertion.php';
-?>
-
 <!DOCTYPE html>
 <head>
     <title>Autotest Map</title>
