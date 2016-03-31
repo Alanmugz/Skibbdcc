@@ -113,7 +113,7 @@
 					google.maps.event.addDomListener(window, 'load', initialize);
 				</script>
 	
-			<div id="map-canvas" style="width:97%;height:400px;"></div>
+			<div id="map-canvas" style="width:97%;height:400px; margin: 10px auto 10px auto"></div>
             </div>
 
             <div class = "panel panel-default visible-lg backgroundColor">
