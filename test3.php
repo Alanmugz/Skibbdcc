@@ -81,9 +81,9 @@
                 </div>
                 <script>
 					function initialize() {
-					  var myLatlng = new google.maps.LatLng(51.765327, -8.662052); 
+					  var myLatlng = new google.maps.LatLng(51.765327, -8.662052);  
 					  var mapOptions = {
-						zoom: 14,
+						zoom: 12,
 						center: myLatlng,
 						mapTypeId: google.maps.MapTypeId.ROADMAP
 					  }
@@ -91,10 +91,10 @@
 					  var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
 
 					  var contentString = 
-					  '<div style="background-color:black;padding:10px;">'+ 
-					  '<p style="color:white;">100 Isles Night Nav</p>'+
-					  '<p style="color:white;">Innishannon Parish Hall, Innishannon,Co.Cork</p>'+
-					  '</div>';  
+						  '<div style="background-color:black;padding:10px;">'+ 
+						  '<p style="color:white;">100 Isles Night Nav</p>'+
+						  '<p style="color:white;">Innishannon Parish Hall, Innishannon,Co.Cork</p>'+
+						  '</div>'; 
 
 					  var infowindow = new google.maps.InfoWindow({
 						  content: contentString
@@ -103,7 +103,7 @@
 					  var marker = new google.maps.Marker({
 						  position: myLatlng,
 						  map: map,
-						  title: 'Bandon Co-op, Kilbeg North, Bandon'
+						  title: 'Innishannon Parish Hall'
 					  });
 					  google.maps.event.addListener(marker, 'click', function() {
 						infowindow.open(map,marker);
