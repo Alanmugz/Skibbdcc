@@ -39,6 +39,10 @@ include 'php/eventenumertion.php';
 
     <!-- Timer -->
     <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+	
+	<!-- Maps -->
+	<link href="/maps/documentation/javascript/examples/default.css" rel="stylesheet">
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>  
 
 </head>
 <div class="container border10">	
