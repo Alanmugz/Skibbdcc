@@ -75,8 +75,8 @@
   @font-face
 {
 font-family: markerFont;
-src: url('font/Snickles.ttf')
-    ,url('font/Snickles.eot'); /* IE9 */
+src: url('../font/Snickles.ttf')
+    ,url('../font/Snickles.eot'); /* IE9 */
 }
  
   
