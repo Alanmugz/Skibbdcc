@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <head>
-    <title>Autotest Map</title>
+    <title>100 Isles Night Navigation Trial Map</title>
 
     <meta name="generator" content="PSPad editor, www.pspad.com" />
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="description" content="Skibbereen &amp; District Car Club. Home of the Westlogde Fastent Rally"/>
-    <meta name="keywords" content="Skibbereen and District Car Club, Skibbdcc, Westlodge Hotel, Skibbereen Motor Club, Fastnet Rally, autotest"/>
+    <meta name="keywords" content="Skibbereen and District Car Club, Skibbdcc, Westlodge Hotel, Skibbereen Motor Club, Fastnet Rally, 100 Isles Night Navigation Trial"/>
     <meta name="author" content="Alan Mulligan Web Design"/>
     <meta name="robots" content="index, follow"/>
 
@@ -70,7 +70,7 @@
     </div>		
     <div class="eventmenu">
         <?php
-        include ('includebootstrap/autotestmenu.html');
+        include ('includebootstrap/event/100islesmenu.html');
         ?>
     </div>		
     <div class="row">
@@ -81,7 +81,7 @@
                 </div>
                 <script>
 					function initialize() {
-					  var myLatlng = new google.maps.LatLng(51.757282, -8.730108); 
+					  var myLatlng = new google.maps.LatLng(51.765327, -8.662052); 
 					  var mapOptions = {
 						zoom: 14,
 						center: myLatlng,
@@ -91,10 +91,10 @@
 					  var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
 
 					  var contentString = 
-						  '<div style="background-color:black;padding:10px;">'+ 
-						  '<p style="color:white;">Autotest</p>'+
-						  '<p style="color:white;">Bandon Co-op Kilbrogan, Bandon</p>'+ 
-						  '</div>'; 
+					  '<div style="background-color:black;padding:10px;">'+ 
+					  '<p style="color:white;">100 Isles Night Nav</p>'+
+					  '<p style="color:white;">Innishannon Parish Hall, Innishannon,Co.Cork</p>'+
+					  '</div>';  
 
 					  var infowindow = new google.maps.InfoWindow({
 						  content: contentString

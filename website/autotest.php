@@ -72,7 +72,7 @@ include 'php/eventenumertion.php';
     </div>		
     <div class="eventmenu">
         <?php
-        include ('includebootstrap/autotestmenu.html');
+        include ('includebootstrap/event/autotestmenu.html');
         ?>
     </div>		
     <div class="row">

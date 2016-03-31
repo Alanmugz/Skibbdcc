@@ -6,12 +6,12 @@ include 'php/eventenumertion.php';
 
 <!DOCTYPE html>
 <head>
-    <title>Autotest</title>
+    <title>100 Isles Night Navigation Trial</title>
 
     <meta name="generator" content="PSPad editor, www.pspad.com" />
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="description" content="Skibbereen &amp; District Car Club. Home of the Westlogde Fastent Rally"/>
-    <meta name="keywords" content="Skibbereen and District Car Club, Skibbdcc, Westlodge Hotel, Skibbereen Motor Club, Fastnet Rally, autotest"/>
+    <meta name="keywords" content="Skibbereen and District Car Club, Skibbdcc, Westlodge Hotel, Skibbereen Motor Club, Fastnet Rally, 100 Isles Night Navigation Trial"/>
     <meta name="author" content="Alan Mulligan Web Design"/>
     <meta name="robots" content="index, follow"/>
 
@@ -72,20 +72,20 @@ include 'php/eventenumertion.php';
     </div>		
     <div class="eventmenu">
         <?php
-        include ('includebootstrap/autotestmenu.html');
+        include ('includebootstrap/event/100islesmenu.html');
         ?>
     </div>		
     <div class="row">
         <div class="col-md-8">
             <div class = "panel panel-default backgroundColor font">
                 <div class = "panel-heading">
-                    <h3 class = "panel-title">Autotest 23rd & 24th May 2015</h3>
+                    <h3 class = "panel-title">100 Isle Night Navigation Trial 30th - 31st January 2016</h3>
                 </div>
                 <?php
                 $repository = new NewsRepository;
                 $repository->connect("skibbdcc_news");
 
-                $newsItems = $repository->getLatestNewsForCategory(EventEnumertion::AutoTest);
+                $newsItems = $repository->getLatestNewsForCategory(EventEnumertion::IsleNightNav);
 
                 foreach ($newsItems as $news) {
                     ?>
