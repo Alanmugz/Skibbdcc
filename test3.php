@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <head>
-    <title>100 Isles Night Navigation Trial Map</title>
+    <title>Carbery Night Navigation Trial Map</title>
 
     <meta name="generator" content="PSPad editor, www.pspad.com" />
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="description" content="Skibbereen &amp; District Car Club. Home of the Westlogde Fastent Rally"/>
-    <meta name="keywords" content="Skibbereen and District Car Club, Skibbdcc, Westlodge Hotel, Skibbereen Motor Club, Fastnet Rally, 100 Isles Night Navigation Trial"/>
+    <meta name="keywords" content="Skibbereen and District Car Club, Skibbdcc, Westlodge Hotel, Skibbereen Motor Club, Fastnet Rally, Carbery Night Navigation Trial"/>
     <meta name="author" content="Alan Mulligan Web Design"/>
     <meta name="robots" content="index, follow"/>
 
@@ -70,7 +70,7 @@
     </div>		
     <div style="display:inline-block;margin:-25px 0px 15px 0px;">
         <?php
-        include ('includebootstrap/event/100islesmenu.html');
+        include ('includebootstrap/event/carberymenu.html');
         ?>
     </div>		
     <div class="row">
@@ -81,33 +81,33 @@
                 </div>
                 <script>
 					function initialize() {
-					  var myLatlng = new google.maps.LatLng(51.765327, -8.662052);  
-					  var mapOptions = {
-						zoom: 12,
-						center: myLatlng,
-						mapTypeId: google.maps.MapTypeId.ROADMAP
-					  }
-
-					  var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
-
-					  var contentString = 
-						  '<div style="background-color:black;padding:10px;">'+ 
-						  '<p style="color:white;">100 Isles Night Nav</p>'+
-						  '<p style="color:white;">Innishannon Parish Hall, Innishannon,Co.Cork</p>'+
-						  '</div>'; 
-
-					  var infowindow = new google.maps.InfoWindow({
-						  content: contentString
-					  });
-
-					  var marker = new google.maps.Marker({
-						  position: myLatlng,
-						  map: map,
-						  title: 'Innishannon Parish Hall'
-					  });
-					  google.maps.event.addListener(marker, 'click', function() {
-						infowindow.open(map,marker);
-					  });
+					    var myLatlng = new google.maps.LatLng(51.583723, -9.148854); 
+					    var mapOptions = {
+						  zoom: 12,
+						  center: myLatlng,
+						  mapTypeId: google.maps.MapTypeId.ROADMAP
+					    }
+                        
+					    var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+                        
+					    var contentString = 
+						    '<div style="background-color:black;padding:10px;">'+ 
+						    '<p style="color:white;">Carbery Night Nav</p>'+
+						    '<p style="color:white;">Killmacabea, Leap, Co.Cork</p>'+
+						    '</div>'; 
+                        
+					    var infowindow = new google.maps.InfoWindow({
+						    content: contentString
+					    });
+                        
+					    var marker = new google.maps.Marker({
+						    position: myLatlng,
+						    map: map,
+						    title: 'Quailty Hotel, Clonakilty, Co.Cork' 
+					    });
+					    google.maps.event.addListener(marker, 'click', function() {
+						  infowindow.open(map,marker);
+					    });
 					}
 
 					google.maps.event.addDomListener(window, 'load', initialize);
