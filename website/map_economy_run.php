@@ -1,9 +1,3 @@
-<?php
-require 'php/config.php';
-include 'php/newsrepository.php';
-include 'php/eventenumertion.php';
-?>
-
 <!DOCTYPE html>
 <head>
     <title>Treasure Hunt/Fun Day</title>
@@ -39,6 +33,10 @@ include 'php/eventenumertion.php';
 
     <!-- Timer -->
     <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+	
+	<!-- Maps -->
+	<link href="/maps/documentation/javascript/examples/default.css" rel="stylesheet">
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>  
 
 </head>
 <div class="container border10">	
@@ -72,34 +70,50 @@ include 'php/eventenumertion.php';
     </div>		
     <div style="display:inline-block;margin:-25px 0px 15px 0px;">
         <?php
-        include ('includebootstrap/event/economyrunmenu.html');
+        include ('includebootstrap/event/carberymenu.html');
         ?>
     </div>		
     <div class="row">
         <div class="col-md-8">
             <div class = "panel panel-default backgroundColor font">
                 <div class = "panel-heading">
-                    <h3 class = "panel-title">Economy Run</h3>
+                    <h3 class = "panel-title">Map</h3>
                 </div>
-                <?php
-                $repository = new NewsRepository;
-                $repository->connect("skibbdcc_news");
+                <script>
+					function initialize() {
+					  var myLatlng = new google.maps.LatLng(51.571809,-9.009964); 
+					  var mapOptions = {
+						zoom: 12,
+						center: myLatlng,
+						mapTypeId: google.maps.MapTypeId.ROADMAP
+					  }
 
-                $newsItems = $repository->getLatestNewsForCategory(EventEnumertion::EconomyRun);
+					  var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
 
-                foreach ($newsItems as $news) {
-                    ?>
-                    <div id='pageheader'>
-                        <span class="newstitle"><?php echo $news->getTitle(); ?></span><span class="newsdate"><?php echo $news->getPublishDate(); ?></span>
-                    </div>
+					  var contentString = 
+						  '<div style="background-color:black;padding:10px;">'+ 
+						  '<p style="color:white;">Treasure Hunt/Fun Day</p>'+
+						  '<p style="color:white;">Ryans Filling Station, Rosscarbery</p>'+
+						  '</div>'; 
 
-                    <p class="setmargin"> 
-                        <?php echo $news->getContent(); ?>
-                    </p>
-                    <?php
-                }
-                $repository->close();
-                ?>
+					  var infowindow = new google.maps.InfoWindow({
+						  content: contentString
+					  });
+
+					  var marker = new google.maps.Marker({
+						  position: myLatlng,
+						  map: map,
+						  title: 'Ryans Filling Station, Rosscarbery'
+					  });
+					  google.maps.event.addListener(marker, 'click', function() {
+						infowindow.open(map,marker);
+					  });
+					}
+
+					google.maps.event.addDomListener(window, 'load', initialize);
+				</script>
+	
+			<div id="map-canvas" style="width:97%;height:400px; margin: 10px auto 10px auto"></div>
             </div>
 
             <div class = "panel panel-default visible-lg backgroundColor">
