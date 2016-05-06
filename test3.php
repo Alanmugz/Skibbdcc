@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <head>
-    <title>Treasure Hunt/Fun Day</title>
+    <title>Loose Surface AutoCross</title>
 
     <meta name="generator" content="PSPad editor, www.pspad.com" />
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="description" content="Skibbereen &amp; District Car Club. Home of the Westlogde Fastent Rally"/>
-    <meta name="keywords" content="Skibbereen and District Car Club, Skibbdcc, Westlodge Hotel, Skibbereen Motor Club, Fastnet Rally, Economy run, fun day"/>
+    <meta name="keywords" content="Skibbereen and District Car Club, Skibbdcc, Westlodge Hotel, Skibbereen Motor Club, Fastnet Rally, Autocross"/>
     <meta name="author" content="Alan Mulligan Web Design"/>
     <meta name="robots" content="index, follow"/>
 
@@ -79,9 +79,9 @@
                 <div class = "panel-heading">
                     <h3 class = "panel-title">Map</h3>
                 </div>
-                <script>
+				<script>	
 					function initialize() {
-					  var myLatlng = new google.maps.LatLng(51.571809,-9.009964); 
+					  var myLatlng = new google.maps.LatLng(51.7813958, -9.0926125); 
 					  var mapOptions = {
 						zoom: 12,
 						center: myLatlng,
@@ -92,8 +92,8 @@
 
 					  var contentString = 
 						  '<div style="background-color:black;padding:10px;">'+ 
-						  '<p style="color:white;">Treasure Hunt/Fun Day</p>'+
-						  '<p style="color:white;">Ryans Filling Station, Rosscarbery</p>'+
+						  '<p style="color:white;">Loose Surface AutoCross</p>'+
+						  '<p style="color:white;">Kilnadur, Dunmanway, Co Cork</p>'+
 						  '</div>'; 
 
 					  var infowindow = new google.maps.InfoWindow({
@@ -103,7 +103,7 @@
 					  var marker = new google.maps.Marker({
 						  position: myLatlng,
 						  map: map,
-						  title: 'Ryans Filling Station, Rosscarbery'
+						  title: 'Grancore, Clonakilty, Co.Cork'
 					  });
 					  google.maps.event.addListener(marker, 'click', function() {
 						infowindow.open(map,marker);
@@ -112,7 +112,6 @@
 
 					google.maps.event.addDomListener(window, 'load', initialize);
 				</script>
-	
 			<div id="map-canvas" style="width:97%;height:400px; margin: 10px auto 10px auto"></div>
             </div>
 
