@@ -6,12 +6,12 @@ include 'php/eventenumertion.php';
 
 <!DOCTYPE html>
 <head>
-    <title>Loose Surface AutoCross</title>
+    <title>Treasure Hunt</title>
 
     <meta name="generator" content="PSPad editor, www.pspad.com" />
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="description" content="Skibbereen &amp; District Car Club. Home of the Westlogde Fastent Rally"/>
-    <meta name="keywords" content="Skibbereen and District Car Club, Skibbdcc, Westlodge Hotel, Skibbereen Motor Club, Fastnet Rally, Autocross"/>
+    <meta name="keywords" content="Skibbereen and District Car Club, Skibbdcc, Westlodge Hotel, Skibbereen Motor Club, Fastnet Rally, Treasure Hunt"/>
     <meta name="author" content="Alan Mulligan Web Design"/>
     <meta name="robots" content="index, follow"/>
 
@@ -79,13 +79,13 @@ include 'php/eventenumertion.php';
         <div class="col-md-8">
             <div class = "panel panel-default backgroundColor font">
                 <div class = "panel-heading">
-                    <h3 class = "panel-title">Economy Run</h3>
+                    <h3 class = "panel-title">Treasure Hunt</h3>
                 </div>
                 <?php
                 $repository = new NewsRepository;
                 $repository->connect("skibbdcc_news");
 
-                $newsItems = $repository->getLatestNewsForCategory(EventEnumertion::LSAutoCross);
+                $newsItems = $repository->getLatestNewsForCategory(EventEnumertion::TreasureHunt);
 
                 foreach ($newsItems as $news) {
                     ?>

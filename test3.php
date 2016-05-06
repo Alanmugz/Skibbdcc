@@ -70,7 +70,7 @@
     </div>		
     <div style="display:inline-block;margin:-25px 0px 15px 0px;">
         <?php
-        include ('includebootstrap/event/carberymenu.html');
+        include ('includebootstrap/event/lsautocrossmenu.html');
         ?>
     </div>		
     <div class="row">
@@ -81,7 +81,7 @@
                 </div>
 				<script>	
 					function initialize() {
-					  var myLatlng = new google.maps.LatLng(51.7813958, -9.0926125); 
+					  var myLatlng = new google.maps.LatLng(51.571809,-9.009964); 
 					  var mapOptions = {
 						zoom: 12,
 						center: myLatlng,
@@ -92,8 +92,8 @@
 
 					  var contentString = 
 						  '<div style="background-color:black;padding:10px;">'+ 
-						  '<p style="color:white;">Loose Surface AutoCross</p>'+
-						  '<p style="color:white;">Kilnadur, Dunmanway, Co Cork</p>'+
+						  '<p style="color:white;">Treasure Hunt/Fun Day</p>'+
+						  '<p style="color:white;">Ryans Filling Station, Rosscarbery</p>'+
 						  '</div>'; 
 
 					  var infowindow = new google.maps.InfoWindow({
@@ -103,7 +103,7 @@
 					  var marker = new google.maps.Marker({
 						  position: myLatlng,
 						  map: map,
-						  title: 'Grancore, Clonakilty, Co.Cork'
+						  title: 'Ryans Filling Station, Rosscarbery'
 					  });
 					  google.maps.event.addListener(marker, 'click', function() {
 						infowindow.open(map,marker);
