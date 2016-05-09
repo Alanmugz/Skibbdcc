@@ -17,7 +17,7 @@ function init()
 	
 	document.getElementById("setMembership").getElementsByTagName("a")[0].href = "club_membership.html";
 	document.getElementById("club_championship").getElementsByTagName("a")[0].href = "club_championship.html";
-	document.getElementById("upcoming_event").getElementsByTagName("a")[0].href = "fastnet_rally.html";
+	document.getElementById("upcoming_event").getElementsByTagName("a")[0].href = "autotest.html";
 
 }
 document.addEventListener( "DOMContentLoaded" , init , false);      
@@ -33,7 +33,7 @@ document.addEventListener( "DOMContentLoaded" , init , false);
  
 function cdtd()
 {
-	var fastnet = new Date("25 October, 2015 09:00:00");   
+	var fastnet = new Date("21 May, 2016 09:00:00");   
 	var now = new Date();
 	var timediff = fastnet.getTime() - now.getTime();
 	
