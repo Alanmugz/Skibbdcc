@@ -48,8 +48,8 @@
 	<div id="submenu">
 				<ul id="nav">
 					<li><a href="autotest.php" class="selected">Latest</a></li>
-					<li><a href="files/autotest/2015/Bandon_Autotest.doc">Regs</a></li>
-					<li><a href="files/autotest/2015/Bandon_Autotest.doc">Entry Form</a></li>
+					<li><a href="files/autotest/2016/regs.pdf">Regs</a></li>
+					<li><a href="files/autotest/2016/regs.pdf">Entry Form</a></li>
 					<li><a href="map_autotest.php">Map</a></li> 
 					<li><a href="#">Results</a></li>    
 				</ul>
@@ -68,17 +68,14 @@
 		
 		<div id="newsscroll">
 			<div id='pageheader'>
-				Autotest 23rd & 24th May 2015
+				Autotest 21st & 22nd May 2016
 			</div>
 			<p class="setmargin"> 
-				Skibbereen & District Car Club will hosting rounds 4 & 5 of the Premier Auto Parts Munster Autotest Championship on the 23rd & 24th May. Bandon Co-op in Kilbrogran, Bnadon will host the event. The club has devised new tests this year as well as a new surfaces, which is much smoother than previous years, they have been designed to be as flowing as possible.
+				Skibbereen & District Car Club's Norman Giles Autotest Weekend 21st & 22nd of May. This years event will take place in Bandon Co-op, Kilbrogan Hill, Bandon. Alan Clarke will be Clerk Of The Course for 2016.
 				<br /><br />
-				Regulations are now available to download <a href="files/autotest/2015/Bandon_Autotest.doc" style="Color:red">here</a>,regulations will follow soon,
+				Regulations are now available to download <a href="files/autotest/2016/regs.pdf" style="Color:red">here</a>,regulations will follow soon,
 				<br /><br /> 
-				Times:<br />
-				Saturday: Sign on 14:00pm, Start 15:00pm<br />
-				Sunday: Sign on 10:00am, Start 11:00am<br /><br />
-				Marshals required, please contact Don Giles for more information 0868060604
+				Note: This years Autotest will take place one week prior to the date specified MSI hand book.
 			</p>
 			
 		</div> 
