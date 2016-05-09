@@ -11,7 +11,7 @@ function init()
    	
 	document.getElementById("getYear" ).innerHTML = new Date().getFullYear();
 	
-	document.getElementById("upcoming_event").getElementsByTagName("img")[0].src = "images/fastnet_2015_poster.jpg";  /* 290 x 300 */  
+	document.getElementById("upcoming_event").getElementsByTagName("img")[0].src = "images/autotest_2016_flyer_sm.jpg";  /* 290 x 300 */  
  	document.getElementById("club_championship").getElementsByTagName("img")[0].src = "images/club_championship.png";
 	document.getElementById("setMembership").getElementsByTagName("img")[0].src = "images/join_our_club.png";     
 	
