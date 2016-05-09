@@ -33,7 +33,7 @@ document.addEventListener( "DOMContentLoaded" , init , false);
  
 function cdtd()
 {
-	var fastnet = new Date("21 May, 2016 09:00:00");   
+	var fastnet = new Date("25 October, 2015 09:00:00");   
 	var now = new Date();
 	var timediff = fastnet.getTime() - now.getTime();
 	
