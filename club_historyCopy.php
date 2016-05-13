@@ -78,11 +78,11 @@
 		</div>
 		<div class="row">
 			<div class="col-md-8">
-				<div class = "panel panel-default">
+				<div class = "panel panel-default backgroundColor font">
 					<div class = "panel-heading">
 						<h3 class = "panel-title">Club History</h3>
 					</div>
-						<p style="padding-left:15px;padding-right:15px;">Mr. Michael O'Driscoll, who lived in Skibbereen was keenly interested in car Rallies and motoring in 
+						Mr. Michael O'Driscoll, who lived in Skibbereen was keenly interested in car Rallies and motoring in 
 						general and early in 1961 he organized a Car Road Safety Rally in Skibbereen. A large Committee was 
 						formed to run this rally and it was a major success.<br /><br />
 
