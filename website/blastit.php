@@ -82,7 +82,7 @@
 					<div class = "panel-heading">
 						<h3 class = "panel-title">Advert</h3>
 					</div>
-					<img style = "margin-left: 15px; margin-right: 15px;" src="images/adverts_2015/blastit.jpg" class="img-fluid" alt="Responsive image">
+					<img style = "margin-left: 15px; margin-right: 15px;"src="images/adverts_2015/blastit.jpg" alt="?" width="100%"/>
 				</div>
 				
 				<div class = "panel panel-default visible-lg backgroundColor">
