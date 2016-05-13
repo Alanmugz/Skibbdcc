@@ -82,7 +82,9 @@
 					<div class = "panel-heading">
 						<h3 class = "panel-title">Advert</h3>
 					</div>
-					<img style = "width: 100%" src="images/adverts_2015/blastit.jpg" class="img-fluid" alt="Responsive image">
+					<div class = "padding">
+						<img style = "width: 100%" src="images/adverts_2015/blastit.jpg" class="img-fluid" alt="Responsive image">
+					</div>
 				</div>
 				
 				<div class = "panel panel-default visible-lg backgroundColor">
@@ -91,7 +93,6 @@
 					</div>
 					<?php 
 						include('includebootstrap/video.html');
-	
 					?>    
 				</div>
 			</div>
