@@ -86,9 +86,9 @@
 					<div class = "panel-heading">
 						<h3 class = "panel-title">Contact Us</h3>
 					</div>
-					<div class = "padding">
+					<div class = "backgroundColor padding">
 						<div>
-							Send attachments to webmaster@skibbdcc.com 
+							Send attachments to webmaster@skibbdcc.com<br /><br />
 						</div>
 						<div class="bootstrap-iso">
 						 <div class="container-fluid">
