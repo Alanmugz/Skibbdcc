@@ -42,7 +42,7 @@
 	
 	<!-- Contact Form https://formden.com/form-builder/ -->
 	<link rel="stylesheet" href="https://formden.com/static/cdn/bootstrap-iso.css" />
-	<style>.bootstrap-iso .formden_header h2, .bootstrap-iso .formden_header p, .bootstrap-iso form{font-family: Arial, Helvetica, sans-serif; color: black}.bootstrap-iso form button, .bootstrap-iso form button:hover{color: white !important;} .asteriskField{color: red;}</style>
+	<style>.bootstrap-iso .formden_header h2, .bootstrap-iso .formden_header p, .bootstrap-iso form{font-family: Arial, Helvetica, sans-serif; color: black}.bootstrap-iso form button, .bootstrap-iso form button:hover{color: #E4F3F6 !important;} .asteriskField{color: red;}</style>
 	
     <script type="text/javascript">
 		$(function () {
@@ -86,11 +86,11 @@
 					<div class = "panel-heading">
 						<h3 class = "panel-title">Contact Us</h3>
 					</div>
-					<div class = "padding">
+					<div class = "backgroundColor padding">
 						<div>
-							Send attachments to webmaster@skibbdcc.com 
+							Send attachments to webmaster@skibbdcc.com<br /><br />
 						</div>
-						<div class="bootstrap-iso">
+						<div class="bootstrap-iso backgroundColor">
 						 <div class="container-fluid">
 						  <div class="row">
 						   <div class="col-md-6 col-sm-6 col-xs-12">
