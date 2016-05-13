@@ -82,7 +82,9 @@
 					<div class = "panel-heading">
 						<h3 class = "panel-title">Carbery Plastics Club Championship 2016</h3>
 					</div>
+					<div class = "padding">
 					<!--Club Championship news here-->
+					</div>
 				</div>
 				
 				<div class = "panel panel-default visible-lg backgroundColor">
