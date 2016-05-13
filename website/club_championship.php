@@ -4,7 +4,7 @@
 
 <!DOCTYPE html>
 <head>
-	<title>Skibbereen &amp; District Car Club</title>
+	<title>Club Championship</title>
 	
 	<meta name="generator" content="PSPad editor, www.pspad.com" />
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
