@@ -91,12 +91,12 @@
 						 <div class="container-fluid">
 						  <div class="row">
 						   <div class="col-md-6 col-sm-6 col-xs-12">
-							<form method="post">
+							<form name="contactform" method="post" action="send_form_email.php" enctype="multipart/form-data">
 							 <div class="form-group ">
 							  <label class="control-label " for="select">
 							   Recipient
 							  </label>
-							  <select class="select form-control" id="select" name="select">
+							  <select class="select form-control" id="select" name="recipient">
 							   <option value="Skibbdcc">
 								Skibbdcc
 							   </option>
@@ -112,7 +112,7 @@
 								*
 							   </span>
 							  </label>
-							  <input class="form-control" id="name" name="name" type="text"/>
+							  <input class="form-control" id="name" name="full_name" type="text"/>
 							 </div>
 							 <div class="form-group ">
 							  <label class="control-label requiredField" for="email">
@@ -136,7 +136,7 @@
 							  <label class="control-label " for="message">
 							   Message
 							  </label>
-							  <textarea class="form-control" cols="40" id="message" name="message" rows="10"></textarea>
+							  <textarea class="form-control" cols="40" id="message" name="comments" rows="10"></textarea>
 							 </div>
 							 <div class="form-group">
 							  <div>
