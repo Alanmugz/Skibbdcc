@@ -90,7 +90,7 @@
 						<div>
 							Send attachments to webmaster@skibbdcc.com<br /><br />
 						</div>
-						<div class="bootstrap-iso">
+						<div class="bootstrap-iso backgroundColor">
 						 <div class="container-fluid">
 						  <div class="row">
 						   <div class="col-md-6 col-sm-6 col-xs-12">
