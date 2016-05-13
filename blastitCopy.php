@@ -4,7 +4,7 @@
 
 <!DOCTYPE html>
 <head>
-	<title>Club History</title>
+	<title>Advert</title>
 	
 	<meta name="generator" content="PSPad editor, www.pspad.com" />
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
@@ -82,7 +82,7 @@
 					<div class = "panel-heading">
 						<h3 class = "panel-title">Advert</h3>
 					</div>
-					<img style = "margin-left: 15px;"src="images/adverts_2015/blastit.jpg" alt="?" width="650px"/>
+					<img style = "margin-left: 15px; margin-right: 15px;"src="images/adverts_2015/blastit.jpg" alt="?" width="100%"/>
 				</div>
 				
 				<div class = "panel panel-default visible-lg backgroundColor">
