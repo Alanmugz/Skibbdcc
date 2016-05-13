@@ -78,7 +78,7 @@
 		</div>
 		<div class="row">
 			<div class="col-md-8">
-				<div class = "panel panel-default backgroundColor font padding">
+				<div class = "panel panel-default backgroundColor font">
 					<div class = "panel-heading">
 						<h3 class = "panel-title">Club History</h3>
 					</div>
