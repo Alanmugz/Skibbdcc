@@ -1,6 +1,6 @@
 <?php
 	require 'php/config.php'; 
-?> 
+?>
 
 <!DOCTYPE html>
 <head>
@@ -86,74 +86,157 @@
 					<div class = "panel-heading">
 						<h3 class = "panel-title">Contact Us</h3>
 					</div>
-					<div class = "backgroundColor padding">
-						<div>
-							Send attachments to webmaster@skibbdcc.com<br /><br />
-						</div>
-						<div class="bootstrap-iso backgroundColor">
-						 <div class="container-fluid">
-						  <div class="row">
-						   <div class="col-md-6 col-sm-6 col-xs-12">
-							<form name="contactform" method="post" action="send_form_email.php" enctype="multipart/form-data">
-							 <div class="form-group ">
-							  <label class="control-label " for="select">
-							   Recipient
-							  </label>
-							  <select class="select form-control" id="select" name="recipient">
-							   <option value="Skibbdcc">
-								Skibbdcc
-							   </option>
-							   <option value="Webmaster">
-								Webmaster
-							   </option>
-							  </select>
-							 </div>
-							 <div class="form-group ">
-							  <label class="control-label requiredField" for="name">
-							   Name
-							   <span class="asteriskField">
-								*
-							   </span>
-							  </label>
-							  <input class="form-control" id="name" name="full_name" type="text"/>
-							 </div>
-							 <div class="form-group ">
-							  <label class="control-label requiredField" for="email">
-							   Email
-							   <span class="asteriskField">
-								*
-							   </span>
-							  </label>
-							  <input class="form-control" id="email" name="email" type="text"/>
-							 </div>
-							 <div class="form-group ">
-							  <label class="control-label requiredField" for="subject">
-							   Subject
-							   <span class="asteriskField">
-								*
-							   </span>
-							  </label>
-							  <input class="form-control" id="subject" name="subject" type="text"/>
-							 </div>
-							 <div class="form-group ">
-							  <label class="control-label " for="message">
-							   Message
-							  </label>
-							  <textarea class="form-control" cols="40" id="message" name="comments" rows="10"></textarea>
-							 </div>
-							 <div class="form-group">
-							  <div>
-							   <button class="btn btn-primary " name="submit" type="submit">
-								Submit
-							   </button>
+					<?php if(!isset($_POST['email'])){ ?>
+						<div class = "padding">
+							<div>
+								Send attachments to webmaster@skibbdcc.com<br /><br />
+							</div>
+							<div class="bootstrap-iso ">
+							 <div class="container-fluid">
+							  <div class="row backgroundColor">
+							   <div class="col-md-6 col-sm-6 col-xs-12">
+								<form name="contactform" method="post" action="contact_us.php" enctype="multipart/form-data">
+								 <div class="form-group ">
+								  <label class="control-label " for="select">
+								   Recipient
+								  </label>
+								  <select class="select form-control" id="select" name="recipient">
+								   <option value="Skibbdcc">
+									Skibbdcc
+								   </option>
+								   <option value="Webmaster">
+									Webmaster
+								   </option>
+								  </select>
+								 </div>
+								 <div class="form-group ">
+								  <label class="control-label requiredField" for="name">
+								   Name
+								   <span class="asteriskField">
+									*
+								   </span>
+								  </label>
+								  <input class="form-control" id="name" name="full_name" type="text"/>
+								 </div>
+								 <div class="form-group ">
+								  <label class="control-label requiredField" for="email">
+								   Email
+								   <span class="asteriskField">
+									*
+								   </span>
+								  </label>
+								  <input class="form-control" id="email" name="email" type="text"/>
+								 </div>
+								 <div class="form-group ">
+								  <label class="control-label requiredField" for="subject">
+								   Subject
+								   <span class="asteriskField">
+									*
+								   </span>
+								  </label>
+								  <input class="form-control" id="subject" name="subject" type="text"/>
+								 </div>
+								 <div class="form-group ">
+								  <label class="control-label " for="message">
+								   Message
+								  </label>
+								  <textarea class="form-control" cols="40" id="message" name="comments" rows="10"></textarea>
+								 </div>
+								 <div class="form-group">
+								  <div>
+								   <button class="btn btn-primary " name="submit" type="submit">
+									Submit
+								   </button>
+								  </div>
+								 </div>
+								</form>
+							   </div>
 							  </div>
 							 </div>
-							</form>
-						   </div>
-						  </div>
-						 </div>
+							</div>
 						</div>
-					</div>
+					<?php 
+					} 
+					else
+					{						
+						if($_POST['recipient'] == 1)
+						{
+							$recipient = "webmaster@skibbdcc.com";   
+						}else
+						{
+							$recipient = "webmaster@skibbdcc.com";//if value = 0 send to pro
+						}
+							
+						// EDIT THE 2 LINES BELOW AS REQUIRED
+						$email_to = $recipient;
+						$email_subject = $_POST['subject'];  
+						 
+						 
+						function died($error) {
+							// your error code can go here
+							$displayError = "We are very sorry, but there were error(s) found with the form you submitted. These errors appear below.<br /><br />".$error."<br /><br />"."Please go back and fix these errors.<br /><br />";
+							die();
+						}
+						 
+						// validation expected data exists
+						if(!isset($_POST['full_name']) ||
+							!isset($_POST['subject']) ||
+							!isset($_POST['email']) || 
+							!isset($_POST['comments'])) {
+							died('We are sorry, but there appears to be a problem with the form you submitted.');       
+						}
+						 
+						$full_name = $_POST['full_name']; // required
+						$subject = $_POST['subject']; // required
+						$email_from = $_POST['email']; // required
+						$comments = $_POST['comments']; // required
+						 
+						$error_message = "";
+						$email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
+						if(!preg_match($email_exp,$email_from)) {
+							$error_message .= 'The Email Address you entered does not appear to be valid.<br />';
+						}
+						$string_exp = "/^[A-Za-z .'-]+$/";
+						
+						if(!preg_match($string_exp,$full_name)) {
+							$error_message .= 'The full Name you entered does not appear to be valid.<br />';
+						}
+						if(!preg_match($string_exp,$subject)) {
+							$error_message .= 'The subject you entered does not appear to be valid.<br />';
+						}
+						
+						if(strlen($comments) < 2) {
+							$error_message .= 'The Comments you entered do not appear to be valid.<br />';
+						}
+						
+						if(strlen($error_message) > 0) {
+							died($error_message);
+						} 
+						$email_message = "Form details below.\n\n";
+						 
+						function clean_string($string) {
+							$bad = array("content-type","bcc:","to:","cc:","href");
+							return str_replace($bad,"",$string);
+						}
+						 
+						$email_message .= "Full Name: ".clean_string($full_name)."\n";
+						$email_message .= "Email: ".clean_string($email_from)."\n";
+						$email_message .= "Subject: ".clean_string($subject)."\n";    
+						$email_message .= "Comments: ".clean_string($comments)."\n";
+						 
+						 
+						// create email headers
+						$headers = 'From: '.$email_from."\r\n".
+						'Reply-To: '.$email_from."\r\n" .
+						'X-Mailer: PHP/' . phpversion();
+						@mail($email_to, $email_subject, $email_message, $headers);
+						?>
+						<div class = "padding <?php if(!isset($_POST['email'])){echo ".hidden";} ?>">
+							Thank you for contacting us. We will be in touch with you very soon.
+						</div>
+						<?php
+					}
+					?>
 				</div>
 				<div class = "panel panel-default visible-lg backgroundColor">
 					<div class = "panel-heading">
