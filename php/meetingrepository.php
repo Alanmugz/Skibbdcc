@@ -29,7 +29,8 @@ class MeetingRepository {
 	}
 		
 	
-	function isMeetingWithinTheLast10Days()
+	function isMeetingWithinTheLast10Days(
+		$logger)
 	{
 		$sql = "SELECT * FROM meetingdetails";
 		$result = $this->conn->query($sql);
@@ -38,11 +39,13 @@ class MeetingRepository {
 
 		while($row = mysqli_fetch_array($result))
 	    {
-			$meetingDate = date("d-m-Y", strtotime($row['meetingDate'])); 
+			$meetingDate = date("Y-m-d", strtotime($row['meetingDate'])); 
 		}
-		
+		$logger->info('Meeting date: '.$meetingDate);
+		$logger->info('Now: '.$now);
 		if($now <= $meetingDate)
 		{
+			$logger->info("Now less then or equal to meeting date");
 			$diff = abs(strtotime($meetingDate) - strtotime($now));
 			
 			$years = floor($diff / (365*60*60*24));

@@ -1,5 +1,9 @@
 	
 	<?php
+		//Logger
+		include 'log4php_logger/class.php';
+		$loggerInstance = new LoggerInstance();
+		$logger = $loggerInstance->getLogger();
 	
 		require 'php/config.php';
 		include('php/meetingrepository.php');
@@ -7,7 +11,8 @@
 		$repository = new MeetingRepository;
 		$repository->connect("skibbdcc_meeting");
 	
-		if($repository->isMeetingWithinTheLast10Days())
+		if($repository->isMeetingWithinTheLast10Days(
+			$logger))
 		{
 			?>
 				<img src="images/sticky_note.png" class="img-responsive" alt="" style="margin: 10px 22px">
