@@ -88,7 +88,7 @@
 					</div>
 					<div class = "padding">
 						<?php
-						if ($_GET["isAuthenticated"] == 0) {
+						if (isset($_GET["isAuthenticated"]) && $_GET["isAuthenticated"] == 0) {
 							?>
 							<div class="alert alert-danger" role="alert">
 								Invalid Username or Password

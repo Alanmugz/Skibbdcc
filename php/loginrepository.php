@@ -30,16 +30,17 @@ class LoginRepository {
 		
 	
 	function isAuthenticatedUser(
-		$username)
+		$username,
+		$password)
 	{
 		$sql = "SELECT * FROM skibbdcclogin WHERE username='$username'";
 		$result = $this->conn->query($sql);
 
-		$numrows = mysql_num_rows($result);
+		$numrows = mysqli_num_rows($result);
 				
 		if($numrows != 0)
 		{
-			while($row = mysql_fetch_assoc($sql))
+			while($row = mysqli_fetch_assoc($result))
 			{
 				$dbusername = $row['username'];
 				$dbpassword = $row['password']; 
