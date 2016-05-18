@@ -87,9 +87,18 @@
 						<h3 class = "panel-title">Contact Us</h3>
 					</div>
 					<div class = "padding">
-					  <div class="bootstrap-iso">
+						<?php
+						if ($_GET["isAuthenticated"] == 0) {
+							?>
+							<div class="alert alert-danger" role="alert">
+								Invalid Username or Password
+							</div>
+							<?php
+						}
+						?>
+					    <div class="bootstrap-iso">
 						 <div class="container-fluid">
-						  <div class="row">
+						  <div class="row backgroundColor">
 						   <div class="col-md-6 col-sm-6 col-xs-12">
 							<form action="logged_in.php" method="post">
 							 <div class="form-group ">
@@ -109,10 +118,10 @@
 							  </select>
 							 </div>
 							 <div class="form-group ">
-							  <label class="control-label " for="name">
+							  <label class="control-label " for="username">
 							   Username
 							  </label>
-							  <input class="form-control" id="name" name="name" type="text"/>
+							  <input class="form-control" id="username" name="username" type="text"/>
 							 </div>
 							 <div class="form-group ">
 							  <label class="control-label " for="password">

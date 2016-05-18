@@ -85,22 +85,29 @@
 			<div class="col-md-8">
 				<div class = "panel panel-default backgroundColor font">
 					<div class = "panel-heading">
-						<h3 class = "panel-title">Login</h3>
-					</div>
-					<div class = "padding">
 						<?php
-							session_start(); 
-	
 							$username = $_POST['username'];
 							$password = $_POST['password'];
 							
 							if($username && $password)
 							{
-								$repository = new MeetingRepository;
+								$repository = new LoginRepository;
 								$repository->connect("skibbdcc_login");
 								
-								$isAuthenticated = $repository->isAuthenticatedUser($username);
-								echo $isAuthenticated;
+								$isAuthenticated = $repository->isAuthenticatedUser($username, $password);
+							}
+						?>
+						<h3 class = "panel-title"><?php if($isAuthenticated){echo "Welcome ".$_POST['username'];} else { echo "Invalid Username or password"; }  ?></h3>
+					</div>
+					<div class = "padding">
+						<?php 
+							if($isAuthenticated) 
+							{
+								echo "Choose to update meeting, videos or image gallery";
+							}
+							else 
+							{
+								?> <script type="text/javascript"> window.location = "contributors_login.php?isAuthenticated=false";</script> <?php
 							}
 						?>
 					</div>
