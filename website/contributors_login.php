@@ -123,7 +123,7 @@
 							 <div class="form-group">
 							  <div>
 							   <button class="btn btn-primary " name="submit" type="submit">
-								Submit
+								Login
 							   </button>
 							  </div>
 							 </div>
