@@ -67,7 +67,7 @@
 				Carbery Plastics Club Championship    
 			</div> 
 			<div style="margin-left:15px;margin-right:15px;"> 
-				<br />Carbery Plastics Club Championship 2015 standing after the West Cork Rally <a href="files/club_champ/2016/wcr.xlsx" style="text-decoration: underline;">standings</a> 
+				<br />Carbery Plastics Club Championship 2016 standing after the West Cork Rally <a href="files/club_champ/2016/wcr.xlsx" style="text-decoration: underline;">standings</a> 
 			</div>	
 		</div>  
 		  
