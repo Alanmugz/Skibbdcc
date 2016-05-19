@@ -66,17 +66,8 @@
 			<div id='pageheader'>
 				Carbery Plastics Club Championship    
 			</div> 
-			<div style="margin-left:15px;margin-right:15px;">
-				Amended Carbery Plastics Club Championship 2015 final standings <a href="files/club_champ/2015_final_amended.xlsx" style="text-decoration: underline;">final standings</a> 
-			</div><br /> 
-			<div style="margin-left:15px;margin-right:15px;">
-				Carbery Plastics Club Championship 2015 final standings <a href="files/club_champ/2015_final.xlsx" style="text-decoration: underline;">final standings</a> 
-			</div><br />
-			<div style="margin-left:15px;margin-right:15px;">
-				Updated - Carbery Plastics Club Championship 2015 <a href="files/club_champ/regs_2015b.docx" style="text-decoration: underline;">regulations</a> 
-			</div>
 			<div style="margin-left:15px;margin-right:15px;"> 
-				<br />Carbery Plastics Club Championship 2015 standing after Westlodge Hotel Fastnet Rally <a href="files/club_champ/14_15_westlodge_fastnet_rally.xlsx" style="text-decoration: underline;">standings</a> 
+				<br />Carbery Plastics Club Championship 2015 standing after the West Cork Rally <a href="files/club_champ/2016/wcr.xlsx" style="text-decoration: underline;">standings</a> 
 			</div>	
 		</div>  
 		  
