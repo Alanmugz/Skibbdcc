@@ -97,49 +97,49 @@
 						}
 						?>
 					    <div class="bootstrap-iso">
-						 <div class="container-fluid">
-						  <div class="row backgroundColor">
-						   <div class="col-md-6 col-sm-6 col-xs-12">
-							<form action="logged_in.php" method="post">
-							 <div class="form-group ">
-							  <label class="control-label " for="select">
-							   Select a Choice
-							  </label>
-							  <select onchange="redirect(value)" class="select form-control" id="select" name="select">
-							   <option value="meeting">
-								Update Club Meeting Dates
-							   </option>
-							   <option value="news">
-								Update Home Page News
-							   </option>
-							   <option value="email">
-								Club Email
-							   </option>
-							  </select>
-							 </div>
-							 <div class="form-group ">
-							  <label class="control-label " for="username">
-							   Username
-							  </label>
-							  <input class="form-control" id="username" name="username" type="text"/>
-							 </div>
-							 <div class="form-group ">
-							  <label class="control-label " for="password">
-							   Password
-							  </label>
-							  <input class="form-control" id="password" name="password" type="password"/>
-							 </div>
-							 <div class="form-group">
-							  <div>
-							   <button class="btn btn-primary " name="submit" type="submit">
-								Login
-							   </button>
-							  </div>
-							 </div>
-							</form>
-						   </div>
-						  </div>
-						 </div>
+							<div class="container-fluid">
+								<div class="row backgroundColor">
+									<div class="col-md-6 col-sm-6 col-xs-12">
+										<form action="logged_in.php" method="post">
+											<div class="form-group ">
+												<label class="control-label " for="select">
+												Select a Choice
+												</label>
+												<select onchange="redirect(value)" class="select form-control" id="select" name="select">
+													<option value="meeting">
+														Update Club Meeting Dates
+													</option>
+													<option value="news">
+														Update Home Page News
+													</option>
+													<option value="email">
+														Club Email
+													</option>
+												</select>
+											</div>
+											<div class="form-group ">
+												<label class="control-label " for="username">
+												Username
+												</label>
+												<input class="form-control" id="username" name="username" type="text"/>
+											</div>
+											<div class="form-group ">
+												<label class="control-label " for="password">
+												Password
+												</label>
+												<input class="form-control" id="password" name="password" type="password"/>
+											</div>
+											<div class="form-group">
+												<div>
+													<button class="btn btn-primary " name="submit" type="submit">
+													Login
+													</button>
+												</div>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
 						</div>	
 					</div>
 				</div>

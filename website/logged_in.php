@@ -61,15 +61,13 @@
 	<!-- Contact Form https://formden.com/form-builder/ -->
 	<link rel="stylesheet" href="https://formden.com/static/cdn/bootstrap-iso.css" />
 	<style>.bootstrap-iso .formden_header h2, .bootstrap-iso .formden_header p, .bootstrap-iso form{font-family: Arial, Helvetica, sans-serif; color: black}.bootstrap-iso form button, .bootstrap-iso form button:hover{color: #E4F3F6 !important;} .asteriskField{color: red;}</style>
-	
-	<script type="text/javascript" src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="/bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
-	
-    <script type="text/javascript">
+		
+	<script type="text/javascript">
 		$(function () {
 			$("a.youtube").YouTubePopup({ autoplay: 0 });
 		});
-    </script>
+	</script>
+
 </head>
 <html>
 	<div class="container border10">	
@@ -112,48 +110,37 @@
 							if($isAuthenticated) 
 							{								
 								?>
-									<div class="bootstrap-iso">
-									 <div class="container-fluid">
-									  <div class="row backgroundColor">
-									   <div class="col-md-6 col-sm-6 col-xs-12">
-										<form method="post">
-										 <div class="form-group ">
-										    <div class="container">
-												<div class="row">
-													<div class='col-sm-6'>
-														<div class="form-group">
-															<div class='input-group date' id='datetimepicker1'>
-																<input type='text' class="form-control" />
-																<span class="input-group-addon">
-																	<span class="glyphicon glyphicon-calendar"></span>
-																</span>
-															</div>
+								<div class="bootstrap-iso">
+									<div class="container-fluid">
+										<div class="row backgroundColor">
+											<div class="col-md-6 col-sm-6 col-xs-12">
+												<form method="post">
+													<div class="form-group ">
+														<label class="control-label" for="venue">
+														Date
+														</label>
+														<?php 
+															include ('forms/meeting.html');
+															?>
+													</div>
+													<div class="form-group ">
+														<label class="control-label " for="venue">
+														Venue
+														</label>
+														<input class="form-control" id="venue" name="venue" type="text"/>
+													</div>
+													<div class="form-group">
+														<div>
+															<button class="btn btn-primary " name="submit" type="submit">
+															Submit
+															</button>
 														</div>
 													</div>
-													<script type="text/javascript">
-														$(function () {
-															$('#datetimepicker1').datetimepicker();
-														});
-													</script>
-												</div>
+												</form>
 											</div>
-										  <label class="control-label " for="venue">
-										   Venue
-										  </label>
-										  <input class="form-control" id="venue" name="venue" type="text"/>
-										 </div>
-										 <div class="form-group">
-										  <div>
-										   <button class="btn btn-primary " name="submit" type="submit">
-											Submit
-										   </button>
-										  </div>
-										 </div>
-										</form>
-									   </div>
-									  </div>
-									 </div>
+										</div>
 									</div>
+								</div>
 								<?php
 							}
 							else 
