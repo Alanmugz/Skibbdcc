@@ -1,112 +1,186 @@
 <?php
-	include 'dataconnection.php'; 
+require 'php/config.php';
+include 'php/newsrepository.php';
+include 'php/eventenumertion.php';
 ?>
 
+<!DOCTYPE html>
+<head>
+    <title>Treasure Hunt</title>
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
- <head><!--  ščřžýŠČŘŽÝ -->
-  <meta name="generator" content="PSPad editor, www.pspad.com" />
-  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-  <meta name="description" content="Skibbereen &amp; District Car Club. Home of the Westlogde Fastent Rally">
-  <meta name="keywords" content="Skibbereen and District Car Club, Skibbdcc, Westlodge Hotel, Skibbereen Motor Club, Fastnet Rally">
-  <meta name="author" content="Alan Mulligan Web Design">
-  <meta name="robots" content="index, follow"> 
-  
-  <title>Treasure Hunt/Fun Day</title>
-  
-  <script type="text/javascript" src="jquery/jquery.js"></script>
-  <script type="text/javascript" src="javascript/global.js"></script>
-  <link rel="stylesheet" type="text/css" href="css/global.css"/>
-  <link rel="icon" type="image/png" href="images/favicon.png"/>
-  <link href="/maps/documentation/javascript/examples/default.css" rel="stylesheet"> 
-  <link type="text/css" href="jquery/jquery.jscrollpane.css" rel="stylesheet" media="all" />
-  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-  <script type="text/javascript" src="jquery/jquery.jscrollpane.min.js"></script>
-  
-  </head>  
-  <body onload="checkForMeeting(MyJSStringVar)">  
-   
-  <div id="container">
-	<!-- header -->
-	<div id="header">
-		<?php 
-			include ('include/header.html'); 
-		?>
+    <meta name="generator" content="PSPad editor, www.pspad.com" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="Skibbereen &amp; District Car Club. Home of the Westlogde Fastent Rally"/>
+    <meta name="keywords" content="Skibbereen and District Car Club, Skibbdcc, Westlodge Hotel, Skibbereen Motor Club, Fastnet Rally, Treasure Hunt"/>
+    <meta name="author" content="Alan Mulligan Web Design"/>
+    <meta name="robots" content="index, follow"/>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="cssbootstrap/style.css" type="text/css" media="screen" />
+    <script type="text/javascript" src="jquery/jquery.js"></script>
+    <script type="text/javascript" src="javascript/scripts.js"></script>
+    <script type="text/javascript" src="javascript/global.js"></script>
+    <link rel="stylesheet" type="text/css" href="cssbootstrap/global.css"/>
+    <link rel="icon" type="image/png" href="images/favicon.png"/>  
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <link type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/redmond/jquery-ui.css" rel="stylesheet" /> 
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1/jquery-ui.min.js"></script>
+
+    <!-- Timer -->
+    <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+
+</head>
+<div class="container border10">	
+    <div class="row row-margin height visible-lg">
+        <div class="col-md-12">
+            <div id="header">
+                <?php
+                include ('includebootstrap/header.html');
+                ?>
+            </div>
+        </div>
     </div>
-	<!-- Menu Bar -->
-	<div id="menu">
-	 
-	<div id='cssmenu' style="margin-bottom:-13px;"> 
-		<?php 
-			include ('include/menu.html'); 
-		?>
-	</div>
-	<div id="submenu">
-				<ul id="nav">
-					<li><a href="economy_run.php" class="selected">Latest</a></li>
-					<li><a href="map_treasurehunt.php">Map</a></li>
-				</ul>
-			</div>	 
-	</div>  
-  	
-	<!-- Main Content --> 
-	<div class="wrapper">
-		<?php
-			include 'getMeeting2.php';  
-		?>
-		
-		<script type='text/javascript'>
-			var MyJSStringVar = "<?php Print($meetingDetails); ?>";  
-		</script>
-		
-		<div id="newsscroll"> 
-			<div id='pageheader'>
-				Treasure Hunt/Fun Day  
-			</div>
-			
-			<span class="newstitle">Treasure Hunt/Fun Day</span><span class="newsdate">11th September 2013</span>
-			<p class="setmargin">
-			Skibbereen and District Car Club are delighted to be organising a Club information day and treasure hunt. The event will take place at Ryan's Filling Station in Rosscarbery on next weekend sunday 15 September.<br />
-			The treasure hunt will be getting underway at 1pm with a €20 entry fee per car.. This is a new look event and for fun to break up the seriousness of competing giving the competitor a chance to relax and enjoy the "Craic"with family, friends and fellow clubs and club members.<br /><br />
+    <div style="margin-top:-20px">
+        <?php
+        include ('includebootstrap/carousel.html');
+        ?>
+    </div>
+    <div class="row visible-lg" style="padding-bottom:20px">
+        <div class="col-md-12">
+            <div id='cssmenu'> 
+                <?php
+                include ('includebootstrap/menu.html');
+                ?>
+            </div>
+        </div>
+    </div>
+    <div class="row hidden-lg">
+        <?php
+        include ('includebootstrap/mobilemenu.html');
+        ?>
+    </div>		
+    <div style="display:inline-block;margin:-25px 0px 15px 0px;">
+        <?php
+        include ('includebootstrap/event/treasurehuntmenu.html');
+        ?>
+    </div>		
+    <div class="row">
+        <div class="col-md-8">
+            <div class = "panel panel-default backgroundColor font">
+                <div class = "panel-heading">
+                    <h3 class = "panel-title">Treasure Hunt</h3>
+                </div>
+                <?php
+                $repository = new NewsRepository;
+                $repository->connect("skibbdcc_news");
 
-			Skibbdcc will also be running a club information day along side the treasure hunt for patrons of motorsport that are interested in joining a motorsport club or finding information on what types of motor sport that they could get involved with, Autocross cars, night nav cars, rally cars, Autotest cars and some other interesting machines will be in attendance. <br />
-			Officials of Skibbdcc and dedicated members will be on hand too help you with any questions you may need answered.<br /><br />  
+                $newsItems = $repository->getLatestNewsForCategory(EventEnumertion::TreasureHunt);
 
-			Skibbdcc strive to raise awareness for many charities and on this event we are helping to raise funds for these two very worthy charities..<br /><br />
+                foreach ($newsItems as $news) {
+                    ?>
+                    <div id='pageheader'>
+                        <span class="newstitle"><?php echo $news->getTitle(); ?></span><span class="newsdate"><?php echo $news->getPublishDate(); ?></span>
+                    </div>
 
-			The Barry Collins Fund.<br /><br />
+                    <p class="setmargin"> 
+                        <?php echo $news->getContent(); ?>
+                    </p>
+                    <?php
+                }
+                $repository->close();
+                ?>
+            </div>
 
-			Mary Mount Hospice Cancer Treatment.<br /><br />
+            <div class = "panel panel-default visible-lg backgroundColor">
+                <div class = "panel-heading">
+                    <h3 class = "panel-title">Latest Videos</h3>
+                </div>
+                <?php
+                include('includebootstrap/video.html');
+                ?>    
+            </div>
+        </div>
 
-			This event is sure to be a great day out for all, so please call down and support this event. <br />
-
-			For more information contact<br /><br />
-
-			Brian:+353 (86) 403 1079<br /> 
-			Colm:(086) 862 6001
-		    </p>
-			
-		</div> 
-		 
-	<div id="newsrow">
-		<?php 
-			include ('include/sidebar.html'); 
-		?>
-	</div> 
-	   
-	<!-- footer -->
-		<div id="footer">
-			<?php 
-				include ('include/footer.html'); 
-			?>		
-		</div>	
-
-	
-	<!-- Copyright -->
-		<div id="copyright">&copy; Skibbereen &amp; District Car Club 2011 - <span id="getYear"></span><br />Designed by Alan Mulligan Web Design</div>
-		
-	</div>
-  </body>
-  </html>
+        <div class="col-md-4">
+            <div class = "panel panel-default backgroundColor">
+                <div class = "panel-heading">
+                    <h3 class = "panel-title">Next Event:</h3>
+                </div>
+                <div id="countdown-nextmeeting">
+                    <?php
+                    include('includebootstrap/countdowntimer.html');
+                    ?>
+                </div>
+            </div>
+            <div class = "panel panel-default font">
+                <div class = "panel-heading">
+                    <h3 class = "panel-title">Club Sponsors</h3>
+                </div>
+                <?php
+                include('includebootstrap/sponsors.html');
+                ?>
+            </div>
+            <div class = "panel panel-default">
+                <div class = "panel-heading">
+                    <h3 class = "panel-title">Social Media</h3>
+                </div>
+                <?php
+                include('includebootstrap/socialmedia.html');
+                ?>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <div class = "panel panel-default font">
+                <div class = "panel-heading">
+                    <h3 class = "panel-title">Contact Us:</h3>
+                </div>
+                <?php
+                include('includebootstrap/contactus.html');
+                ?>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class = "panel panel-default font">
+                <div class = "panel-heading">
+                    <h3 class = "panel-title">Club Events:</h3>
+                </div>
+                <?php
+                include('includebootstrap/clubevents.html');
+                ?>
+            </div>			
+        </div>
+        <div class="col-md-4">
+            <div class = "panel panel-default font">
+                <div class = "panel-heading">
+                    <h3 class = "panel-title">In Association With:</h3>
+                </div>
+                <?php
+                include('includebootstrap/association.html');
+                ?>
+            </div>			
+        </div>
+    </div>
+    <div class="row visible-lg">
+        <div class="col-md-12">
+            <div id="copyright">
+                <?php
+                include('includebootstrap/copyright.html');
+                ?>
+            </div>
+        </div>
+    </div>
+</div>
+</html>

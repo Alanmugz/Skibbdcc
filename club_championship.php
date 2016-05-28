@@ -1,104 +1,172 @@
 <?php
-	include ('dataconnection.php'); 
-?>
+	require 'php/config.php'; 
+?> 
 
-
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
- <head><!--  ščřžýŠČŘŽÝ -->
-  <meta name="generator" content="PSPad editor, www.pspad.com" />
-  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-  <meta name="description" content="The Carbery Plastics sponsored, Skibbereen &amp; District Car Club, Club Championship.">
-  <meta name="keywords" content="Carbery Plastics, Club Championship, Skibbereen and District Car Club, Skibbdcc, Westlodge Hotel, Skibbereen Motor Club, Fastnet Rally">
-  <meta name="author" content="Alan Mulligan Web Design">
-  <meta name="robots" content="index, follow"> 
-  
-  <title>Carbery Plastics Club Championship</title>
-  
-  <script type="text/javascript" src="javascript/global.js"></script>
-  <link rel="stylesheet" type="text/css" href="css/global.css"/>
-  <link rel="icon" type="image/png" href="images/favicon.png"/> 
-	 
-  </head>  
-  <body onload="checkForMeeting(MyJSStringVar)">  
-   
-  <div id="container">
-	<!-- header -->
-	<div id="header">
-		<img src="images/header.jpg" alt="image header" />
-		<div id="header_font"><img src="images/club_championship_header.png" alt="image header" /></div>
-		<div id="header_image"><img src="" /></div>
-		<div id="setText"></div>
-		<div id="logo"><img src="images/skibbdcc_logo.png" /></div>
-		<div id="banner"><img src="images/banner.png" alt="Official Skibbereen &amp; District Car Club" /></div>
-		  <div class="fb-like-button"><iframe src="https://www.facebook.com/plugins/like.php?href=https://www.facebook.com/pages/The-OFFICIALSkibbereen-and-District-Car-Club-page/503817079653581?ref=ts&fref=ts"
-			  scrolling="no" frameborder="0" style="border:none; width:50px; height:25px"></iframe>
-		  </div> 
-		  <div style="position:absolute;top:15px;left:268px; z-index:2;">		  
-			  <a href="https://twitter.com/Skibbdcc" class="twitter-follow-button" data-show-count="false">Follow @Skibbdcc</a>
-			  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>  
-		  </div>
-		<span id="official">SKIBBDCC.COM - THE OFFICIAL WEBSITE</span>
-    </div>
-	<!-- Menu Bar -->
-	<div id="menu">
-	 
-	<div id='cssmenu'> 
-		<?php
-			include ('include/menu.html');
-		?>
-	</div>
-	 
-	</div>
-  	
-	<!-- Main Content --> 
-	<div class="wrapper">
-		<?php
-			include 'getMeeting2.php'; 
-		?>
-		
-		<script type='text/javascript'>
-			var MyJSStringVar = "<?php Print($meetingDetails); ?>";  
-		</script>
-		
-		<div id="news">
-			<div id='pageheader'>
-				Carbery Plastics Club Championship    
-			</div> 
-			<div style="margin-left:15px;margin-right:15px;">
-				Amended Carbery Plastics Club Championship 2015 final standings <a href="files/club_champ/2015_final_amended.xlsx" style="text-decoration: underline;">final standings</a> 
-			</div><br /> 
-			<div style="margin-left:15px;margin-right:15px;">
-				Carbery Plastics Club Championship 2015 final standings <a href="files/club_champ/2015_final.xlsx" style="text-decoration: underline;">final standings</a> 
-			</div><br />
-			<div style="margin-left:15px;margin-right:15px;">
-				Updated - Carbery Plastics Club Championship 2015 <a href="files/club_champ/regs_2015b.docx" style="text-decoration: underline;">regulations</a> 
-			</div>
-			<div style="margin-left:15px;margin-right:15px;"> 
-				<br />Carbery Plastics Club Championship 2015 standing after Westlodge Hotel Fastnet Rally <a href="files/club_champ/14_15_westlodge_fastnet_rally.xlsx" style="text-decoration: underline;">standings</a> 
-			</div>	
-		</div>  
-		  
-		<div id="newsrow">
-			<?php 
-				include ('include/sidebar.html'); 
-			?>
-	    </div>
-		
-	</div> 
-	   
-	<!-- footer -->
-		<div id="footer">
-			<?php
-				include ('include/footer.html');
-			?>
-		</div>	
-
+<!DOCTYPE html>
+<head>
+	<title>Club Championship</title>
 	
-	<!-- Copyright -->
-		<div id="copyright">&copy; Skibbereen &amp; District Car Club 2011 - <span id="getYear"></span><br />Designed by Alan Mulligan Web Design</div>
-		
+	<meta name="generator" content="PSPad editor, www.pspad.com" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="description" content="Skibbereen &amp; District Car Club. Home of the Westlogde Fastent Rally"/>
+	<meta name="keywords" content="Skibbereen and District Car Club, Skibbdcc, Westlodge Hotel, Skibbereen Motor Club, Fastnet Rally, Club Championship, Carbery Plastics"/>
+	<meta name="author" content="Alan Mulligan Web Design"/>
+	<meta name="robots" content="index, follow"/>
+	
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="cssbootstrap/style.css" type="text/css" media="screen" />
+    <script type="text/javascript">var _siteRoot='index.html',_root='index.html';</script>
+    <script type="text/javascript" src="jquery/jquery.js"></script>
+    <script type="text/javascript" src="javascript/scripts.js"></script>
+    <script type="text/javascript" src="javascript/global.js"></script>
+    <link rel="stylesheet" type="text/css" href="cssbootstrap/global.css"/>
+    <link rel="icon" type="image/png" href="images/favicon.png"/>  
+    
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <link type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/redmond/jquery-ui.css" rel="stylesheet" /> 
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="jquery/jquery.youtubepopup.min.js"></script>
+	
+	<!-- Timer -->
+	<link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+	
+    <script type="text/javascript">
+		$(function () {
+			$("a.youtube").YouTubePopup({ autoplay: 0 });
+		});
+    </script>
+</head>
+<html>
+	<div class="container border10">	
+		<div class="row row-margin height visible-lg">
+			<div class="col-md-12">
+				<div id="header">
+					<?php 
+						include ('includebootstrap/header.html');
+					?>
+				</div>
+			</div>
+		</div>
+		<div style="margin-top:-20px">
+			<?php 
+				include ('includebootstrap/carousel.html');
+			?>
+		</div>
+		<div class="row visible-lg" style="padding-bottom:20px">
+			<div class="col-md-12">
+				<div id='cssmenu'> 
+					<?php
+						include ('includebootstrap/menu.html');
+					?>
+				</div>
+			</div>
+		</div>
+		<div class="row hidden-lg">
+			<?php 
+				include ('includebootstrap/mobilemenu.html');
+			?>
+		</div>
+		<div class="row">
+			<div class="col-md-8">
+				<div class = "panel panel-default backgroundColor font">
+					<div class = "panel-heading">
+						<h3 class = "panel-title">Carbery Plastics Club Championship 2016</h3>
+					</div>
+					<div class = "padding">
+					<!--Club Championship news here-->
+					</div>
+				</div>
+				
+				<div class = "panel panel-default visible-lg backgroundColor">
+					<div class = "panel-heading">
+						<h3 class = "panel-title">Latest Videos</h3>
+					</div>
+					<?php 
+						include('includebootstrap/video.html');
+	
+					?>    
+				</div>
+			</div>
+			
+			<div class="col-md-4">
+				<div class = "panel panel-default backgroundColor">
+				    <div class = "panel-heading">
+						<h3 class = "panel-title">Next Event:</h3>
+				    </div>
+					<div id="countdown-nextmeeting">
+						<?php
+							include('includebootstrap/countdowntimer.html');
+						?>
+					</div>
+				</div>
+				<div class = "panel panel-default font">
+				   <div class = "panel-heading">
+					  <h3 class = "panel-title">Club Sponsors</h3>
+				   </div>
+				   <?php 
+						include('includebootstrap/sponsors.html');
+					?>
+				</div>
+				<div class = "panel panel-default">
+				    <div class = "panel-heading">
+						<h3 class = "panel-title">Social Media</h3>
+				    </div>
+				   <?php 
+						include('includebootstrap/socialmedia.html');
+					?>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4">
+				<div class = "panel panel-default font">
+				    <div class = "panel-heading">
+						<h3 class = "panel-title">Contact Us:</h3>
+				    </div>
+				    <?php 
+						include('includebootstrap/contactus.html');
+					?>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class = "panel panel-default font">
+				    <div class = "panel-heading">
+						<h3 class = "panel-title">Club Events:</h3>
+				    </div>
+				    <?php 
+						include('includebootstrap/clubevents.html');
+					?>
+				</div>			
+			</div>
+			<div class="col-md-4">
+				<div class = "panel panel-default font">
+				    <div class = "panel-heading">
+						<h3 class = "panel-title">In Association With:</h3>
+				    </div>
+					<?php 
+						include('includebootstrap/association.html');
+					?>
+				</div>			
+			</div>
+		</div>
+		<div class="row visible-lg">
+			<div class="col-md-12">
+				<div id="copyright">
+					<?php 
+						include('includebootstrap/copyright.html');
+					?>
+				</div>
+			</div>
+		</div>
 	</div>
-  </body>
-  </html>
+</html>

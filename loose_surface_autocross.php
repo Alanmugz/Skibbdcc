@@ -1,128 +1,186 @@
 <?php
-	include 'dataconnection.php'; 
+require 'php/config.php';
+include 'php/newsrepository.php';
+include 'php/eventenumertion.php';
 ?>
 
+<!DOCTYPE html>
+<head>
+    <title>Loose Surface AutoCross</title>
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
- <head><!--  ščřžýŠČŘŽÝ -->
-  <meta name="generator" content="PSPad editor, www.pspad.com" />
-  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-  <meta name="description" content="Skibbereen &amp; District Car Club. Home of the Westlogde Fastent Rally">
-  <meta name="keywords" content="Skibbereen and District Car Club, Skibbdcc, Westlodge Hotel, Skibbereen Motor Club, Fastnet Rally">
-  <meta name="author" content="Alan Mulligan Web Design">
-  <meta name="robots" content="index, follow"> 
-  
-  <title>Loose Surface AutoCross</title>
-  
-  <script type="text/javascript" src="jquery/jquery.js"></script>
-  <script type="text/javascript" src="javascript/global.js"></script>
-  <link rel="stylesheet" type="text/css" href="css/global.css"/>
-  <link rel="icon" type="image/png" href="images/favicon.png"/>
-  <link href="/maps/documentation/javascript/examples/default.css" rel="stylesheet"> 
-  <link type="text/css" href="jquery/jquery.jscrollpane.css" rel="stylesheet" media="all" />
-  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-  <script type="text/javascript" src="jquery/jquery.jscrollpane.min.js"></script>
-  <script type="text/javascript" src="http://stratus.sc/stratus.js"></script>
-	 
-  </head>  
-  <body onload="checkForMeeting(MyJSStringVar)">  
-   
-  <div id="container">
-	<!-- header -->
-	<div id="header">
-		<?php 
-			include ('include/header.html'); 
-		?>
+    <meta name="generator" content="PSPad editor, www.pspad.com" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="Skibbereen &amp; District Car Club. Home of the Westlogde Fastent Rally"/>
+    <meta name="keywords" content="Skibbereen and District Car Club, Skibbdcc, Westlodge Hotel, Skibbereen Motor Club, Fastnet Rally, Autocross"/>
+    <meta name="author" content="Alan Mulligan Web Design"/>
+    <meta name="robots" content="index, follow"/>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="cssbootstrap/style.css" type="text/css" media="screen" />
+    <script type="text/javascript" src="jquery/jquery.js"></script>
+    <script type="text/javascript" src="javascript/scripts.js"></script>
+    <script type="text/javascript" src="javascript/global.js"></script>
+    <link rel="stylesheet" type="text/css" href="cssbootstrap/global.css"/>
+    <link rel="icon" type="image/png" href="images/favicon.png"/>  
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <link type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/redmond/jquery-ui.css" rel="stylesheet" /> 
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1/jquery-ui.min.js"></script>
+
+    <!-- Timer -->
+    <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+
+</head>
+<div class="container border10">	
+    <div class="row row-margin height visible-lg">
+        <div class="col-md-12">
+            <div id="header">
+                <?php
+                include ('includebootstrap/header.html');
+                ?>
+            </div>
+        </div>
     </div>
-	<!-- Menu Bar -->
-	<div id="menu">
-	 
-	<div id='cssmenu' style="margin-bottom:-13px;"> 
-		<?php 
-			include ('include/menu.html'); 
-		?>
-	</div>
-	<div id="submenu">
-				<ul id="nav">
-					<li><a href="loose_surface_autocross.php" class="selected">Latest</a></li>
-					<li><a href="files/ls_autocross/2016/regs.doc">Regs</a></li>
-					<li><a href="files/ls_autocross/2016/regs.doc">Entry Form</a></li>
-					<li><a href="map_lsautocross.php">Map</a></li>  
-					<li><a href="files/ls_autocross/2016/results.pdf">Results</a></li>  
-				</ul> 
-			</div>	 	 
-	</div>
-  	
-	<!-- Main Content --> 
-	<div class="wrapper">
-		<?php
-			include 'getMeeting2.php'; 
-		?>  
-		
-		<script type='text/javascript'>
-			var MyJSStringVar = "<?php Print($meetingDetails); ?>";  
-		</script>
-		 
-		<div id="newsscroll"> 
-			<div id='pageheader'>
-				Loose Surface Autocross 28th February 2016
-			</div >
-			<span class="newstitle">Loose Surface Autocross Images</span><span class="newsdate">3rd March 2016</span>
-			<p class="setmargin">
-			<p class="setmargin">Images by Pablo Photography & Ted O'Connell</p>
-			<?php
-			$dir = 'files/ls_autocross/2016/images';
-			$folders = array('..', '.', 'folder');
-			$images = array_diff(scandir($dir), $folders);
-			//$images = array("IMG_0513-2.jpg","IMG_0145.jpg","IMG_0317.jpg", "IMG_9923.jpg", "IMG_0147.jpg", "IMG_0410-2.jpg", "IMG_0755.jpg", "IMG_1168.jpg", "IMG_9923.jpg", "IMG_1106.jpg", "IMG_9621.jpg", "IMG_0877.jpg");
-			$count = 0;
-			foreach ($images as &$image) {
-				?>
-				<div id="displayvideo"><img src="<?php echo 'files/ls_autocross/2016/images/'.$image;?>" width="200px" height="156px" style="border:solid 2px white;margin-left:15px;"></div>
-				<?php
-				$count++;
-				if($count % 3 === 0)
-				{
-					echo "<br /><br /><br />";  
-				}
-			}
-			?>
-			</p> 
-			
-			<span class="newstitle">Loose Surface Autocross Results</span><span class="newsdate">1st March 2016</span>
-			<p class="setmargin"> 
-			Autocross results can now be downloaded by clicking the tab marked results above.<br />
-			A detailed list of all award winner is also available to download by clicking <a href="files/ls_autocross/2016/awards.pdf" style="color:red; text-decoration:underline;">here</a>
-			</p> 
-			<span class="newstitle">Loose Surface Autocross</span><span class="newsdate">17th February 2016</span>
-			<p class="setmargin"> 
-			The February Autocross, a counting round of the Munster AutoCross Championship will take place on Sunday 28th February 2016 in Kilnadur, Dunmanway, Co Cork.
-			The event will be Arrowed from Kilmichael, Coppeen & Dunmanway.  Venue GPS: N51.7813958  W9.0926125.<br />
-			C.O.C of the Event is Eoghan Mc Carthy<br />
-			<br />			
-			Regs and entry form are available to download from the tab's above marks "regs" and "entry form" respectively.
-			</p> 			 
-		</div> 
-		 
-	<div id="newsrow">
-		<?php 
-			include ('include/sidebar.html'); 
-		?>
-	</div> 
-	   
-	<!-- footer -->
-		<div id="footer">
-			<?php 
-				include ('include/footer.html'); 
-			?>		
-		</div>	
+    <div style="margin-top:-20px">
+        <?php
+        include ('includebootstrap/carousel.html');
+        ?>
+    </div>
+    <div class="row visible-lg" style="padding-bottom:20px">
+        <div class="col-md-12">
+            <div id='cssmenu'> 
+                <?php
+                include ('includebootstrap/menu.html');
+                ?>
+            </div>
+        </div>
+    </div>
+    <div class="row hidden-lg">
+        <?php
+        include ('includebootstrap/mobilemenu.html');
+        ?>
+    </div>		
+    <div style="display:inline-block;margin:-25px 0px 15px 0px;">
+        <?php
+        include ('includebootstrap/event/lsautocrossmenu.html');
+        ?>
+    </div>		
+    <div class="row">
+        <div class="col-md-8">
+            <div class = "panel panel-default backgroundColor font">
+                <div class = "panel-heading">
+                    <h3 class = "panel-title">Loose Surface Autocross 28th February 2016</h3>
+                </div>
+                <?php
+                $repository = new NewsRepository;
+                $repository->connect("skibbdcc_news");
 
-	
-	<!-- Copyright -->
-		<div id="copyright">&copy; Skibbereen &amp; District Car Club 2011 - <span id="getYear"></span><br />Designed by Alan Mulligan Web Design</div>
-		
-	</div>
-  </body>
-  </html>
+                $newsItems = $repository->getLatestNewsForCategory(EventEnumertion::LSAutoCross);
+
+                foreach ($newsItems as $news) {
+                    ?>
+                    <div id='pageheader'>
+                        <span class="newstitle"><?php echo $news->getTitle(); ?></span><span class="newsdate"><?php echo $news->getPublishDate(); ?></span>
+                    </div>
+
+                    <p class="setmargin"> 
+                        <?php echo $news->getContent(); ?>
+                    </p>
+                    <?php
+                }
+                $repository->close();
+                ?>
+            </div>
+
+            <div class = "panel panel-default visible-lg backgroundColor">
+                <div class = "panel-heading">
+                    <h3 class = "panel-title">Latest Videos</h3>
+                </div>
+                <?php
+                include('includebootstrap/video.html');
+                ?>    
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class = "panel panel-default backgroundColor">
+                <div class = "panel-heading">
+                    <h3 class = "panel-title">Next Event:</h3>
+                </div>
+                <div id="countdown-nextmeeting">
+                    <?php
+                    include('includebootstrap/countdowntimer.html');
+                    ?>
+                </div>
+            </div>
+            <div class = "panel panel-default font">
+                <div class = "panel-heading">
+                    <h3 class = "panel-title">Club Sponsors</h3>
+                </div>
+                <?php
+                include('includebootstrap/sponsors.html');
+                ?>
+            </div>
+            <div class = "panel panel-default">
+                <div class = "panel-heading">
+                    <h3 class = "panel-title">Social Media</h3>
+                </div>
+                <?php
+                include('includebootstrap/socialmedia.html');
+                ?>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <div class = "panel panel-default font">
+                <div class = "panel-heading">
+                    <h3 class = "panel-title">Contact Us:</h3>
+                </div>
+                <?php
+                include('includebootstrap/contactus.html');
+                ?>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class = "panel panel-default font">
+                <div class = "panel-heading">
+                    <h3 class = "panel-title">Club Events:</h3>
+                </div>
+                <?php
+                include('includebootstrap/clubevents.html');
+                ?>
+            </div>			
+        </div>
+        <div class="col-md-4">
+            <div class = "panel panel-default font">
+                <div class = "panel-heading">
+                    <h3 class = "panel-title">In Association With:</h3>
+                </div>
+                <?php
+                include('includebootstrap/association.html');
+                ?>
+            </div>			
+        </div>
+    </div>
+    <div class="row visible-lg">
+        <div class="col-md-12">
+            <div id="copyright">
+                <?php
+                include('includebootstrap/copyright.html');
+                ?>
+            </div>
+        </div>
+    </div>
+</div>
+</html>
