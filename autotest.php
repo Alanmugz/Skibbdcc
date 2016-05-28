@@ -79,7 +79,7 @@ include 'php/eventenumertion.php';
         <div class="col-md-8">
             <div class = "panel panel-default backgroundColor font">
                 <div class = "panel-heading">
-                    <h3 class = "panel-title">Autotest 23rd & 24th May 2015</h3>
+                    <h3 class = "panel-title">Autotest 21st & 22nd May 2016</h3>
                 </div>
                 <?php
                 $repository = new NewsRepository;
