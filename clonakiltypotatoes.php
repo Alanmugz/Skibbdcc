@@ -83,7 +83,7 @@
 						<h3 class = "panel-title">Advert</h3>
 					</div>
 					<div class = "padding">
-						<img style = "width: 100%" src="images/adverts/Clonakilty-Potatoes.jpg" class="img-fluid" alt="Responsive image">
+						<img style = "width: 100%" src="imagesbootstrap/adverts/Clonakilty-Potatoes.jpg" class="img-fluid" alt="Responsive image">
 					</div>
 				</div>
 				
