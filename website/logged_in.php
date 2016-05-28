@@ -1,4 +1,6 @@
 <?php
+	session_start();
+	
 	require 'php/config.php';
 	include('php/loginrepository.php');
 
@@ -12,10 +14,11 @@
 		
 		$isAuthenticated = $repository->isAuthenticatedUser($username, $password);
 		
+		$repository->close();
+		
 		if ($isAuthenticated){
 			$_SESSION['username'] = $username;
 			$_SESSION['password'] = $password;
-			session_start();
 		}
 	}
 ?>
@@ -59,9 +62,28 @@
 	<link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
 	
 	<!-- Contact Form https://formden.com/form-builder/ -->
+	<script type="text/javascript" src="https://formden.com/static/cdn/formden.js"></script>
+	<link rel="stylesheet" href="https://formden.com/static/cdn/bootstrap-iso.css" />
+	<link rel="stylesheet" href="https://formden.com/static/cdn/font-awesome/4.4.0/css/font-awesome.min.css" />
 	<link rel="stylesheet" href="https://formden.com/static/cdn/bootstrap-iso.css" />
 	<style>.bootstrap-iso .formden_header h2, .bootstrap-iso .formden_header p, .bootstrap-iso form{font-family: Arial, Helvetica, sans-serif; color: black}.bootstrap-iso form button, .bootstrap-iso form button:hover{color: #E4F3F6 !important;} .asteriskField{color: red;}</style>
-		
+
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
+
+	<script>
+		$(document).ready(function(){
+			var date_input=$('input[name="date"]'); //our date input has the name "date"
+			var container=$('.bootstrap-iso form').length>0 ? $('.bootstrap-iso form').parent() : "body";
+			date_input.datepicker({
+				format: 'yyyy/mm/dd',
+				container: container,
+				todayHighlight: true,
+				autoclose: true,
+			})
+		})
+	</script>
+
 	<script type="text/javascript">
 		$(function () {
 			$("a.youtube").YouTubePopup({ autoplay: 0 });
@@ -103,7 +125,7 @@
 			<div class="col-md-8">
 				<div class = "panel panel-default backgroundColor font">
 					<div class = "panel-heading">
-						<h3 class = "panel-title"><?php if($isAuthenticated){echo "Welcome ".$_POST['username'];} else { echo "Invalid Username or password"; }  ?></h3>
+						<h3 class = "panel-title"><?php if($isAuthenticated){echo "Welcome ".$_SESSION['username'];} else { echo "Invalid Username or password"; }  ?></h3>
 					</div>
 					<div class = "padding">
 						<?php 
@@ -114,27 +136,35 @@
 									<div class="container-fluid">
 										<div class="row backgroundColor">
 											<div class="col-md-6 col-sm-6 col-xs-12">
-												<form method="post">
+												<form action="meeting.php" method="post" name="meeting">
 													<div class="form-group ">
-														<label class="control-label" for="venue">
-														Date
+														<label class="control-label" for="date">
+														Meeting DateTime
 														</label>
-														<?php 
-															include ('forms/meeting.html');
-															?>
+														<div class="">
+															<div class="input-group">
+																<div class="input-group-addon">
+																	<i class="fa fa-calendar">
+																	</i>
+																</div>
+																<input class="form-control" id="date" name="date" placeholder="YYYY/MM/DD" type="text" readonly />
+																<select class="form-control" id="time" name="time" readonly>
+																	<option>9:30PM</option>
+																</select>
+															</div>
+														</div>
 													</div>
 													<div class="form-group ">
 														<label class="control-label " for="venue">
-														Venue
+														Meeting Venue
 														</label>
 														<input class="form-control" id="venue" name="venue" type="text"/>
 													</div>
 													<div class="form-group">
-														<div>
-															<button class="btn btn-primary " name="submit" type="submit">
-															Submit
-															</button>
-														</div>
+														<input name="button" style="display:none" type="text"/>
+														<button class="btn btn-primary " name="submit" type="submit">
+														Submit
+														</button>
 													</div>
 												</form>
 											</div>

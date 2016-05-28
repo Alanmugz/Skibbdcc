@@ -1,10 +1,22 @@
 <?php
-	require 'php/config.php'; 
+	session_start();
+	
+	//Logger
+	include_once 'log4php_logger/class.php';
+	$loggerInstance = new LoggerInstance();
+	$logger = $loggerInstance->getLogger();
+
+	require 'php/config.php';
+	include_once('php/meetingrepository.php');
+	
+	$date = $_POST['date'];
+	$time = $_POST['time'];
+	$venue = $_POST['venue'];
 ?>
 
 <!DOCTYPE html>
 <head>
-	<title>Login</title>
+	<title>Skibbdcc</title>
 	
 	<meta name="generator" content="PSPad editor, www.pspad.com" />
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
@@ -41,14 +53,18 @@
 	<link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
 	
 	<!-- Contact Form https://formden.com/form-builder/ -->
+	<script type="text/javascript" src="https://formden.com/static/cdn/formden.js"></script>
+	<link rel="stylesheet" href="https://formden.com/static/cdn/bootstrap-iso.css" />
+	<link rel="stylesheet" href="https://formden.com/static/cdn/font-awesome/4.4.0/css/font-awesome.min.css" />
 	<link rel="stylesheet" href="https://formden.com/static/cdn/bootstrap-iso.css" />
 	<style>.bootstrap-iso .formden_header h2, .bootstrap-iso .formden_header p, .bootstrap-iso form{font-family: Arial, Helvetica, sans-serif; color: black}.bootstrap-iso form button, .bootstrap-iso form button:hover{color: #E4F3F6 !important;} .asteriskField{color: red;}</style>
-	
-    <script type="text/javascript">
+
+	<script type="text/javascript">
 		$(function () {
 			$("a.youtube").YouTubePopup({ autoplay: 0 });
 		});
-    </script>
+	</script>
+
 </head>
 <html>
 	<div class="container border10">	
@@ -84,63 +100,29 @@
 			<div class="col-md-8">
 				<div class = "panel panel-default backgroundColor font">
 					<div class = "panel-heading">
-						<h3 class = "panel-title">Contact Us</h3>
+						<h3 class = "panel-title"><?php if($_SESSION['username']){echo "Welcome ".$_SESSION['username'];} else { echo "Invalid Username or password"; }  ?></h3>
 					</div>
 					<div class = "padding">
-						<?php
-						if (isset($_GET["isAuthenticated"]) && $_GET["isAuthenticated"] == 0) {
-							?>
-							<div class="alert alert-danger" role="alert">
-								Invalid Username or Password
-							</div>
-							<?php
-						}
+						<?php 
+							if($date && $time && $venue) 
+							{								
+									$repository = new MeetingRepository;
+									$repository->connect("skibbdcc_meeting");
+									
+									if ($repository->saveMeetingDetails($date, $time, $venue, $logger))
+									{
+										echo "New meeting created successfully";
+									}
+									else
+									{
+										echo "An error occurred while creating your meeting";
+									}
+							}
+							else 
+							{
+								echo "Cannot supply blank parameters!!!";
+							}
 						?>
-					    <div class="bootstrap-iso">
-							<div class="container-fluid">
-								<div class="row backgroundColor">
-									<div class="col-md-6 col-sm-6 col-xs-12">
-										<form action="logged_in.php" method="post">
-											<div class="form-group ">
-												<label class="control-label " for="select">
-												Select a Choice
-												</label>
-												<select onchange="redirect(value)" class="select form-control" id="select" name="select">
-													<option value="meeting">
-														Update Club Meeting Dates
-													</option>
-													<option value="news">
-														Update Home Page News
-													</option>
-													<option value="email">
-														Club Email
-													</option>
-												</select>
-											</div>
-											<div class="form-group ">
-												<label class="control-label " for="username">
-												Username
-												</label>
-												<input class="form-control" id="username" name="username" text="Alan Mulligan" type="text"/>
-											</div>
-											<div class="form-group ">
-												<label class="control-label " for="password">
-												Password
-												</label>
-												<input class="form-control" id="password" name="password" text="05c18815" type="password"/>
-											</div>
-											<div class="form-group">
-												<div>
-													<button class="btn btn-primary " name="submit" type="submit">
-													Login
-													</button>
-												</div>
-											</div>
-										</form>
-									</div>
-								</div>
-							</div>
-						</div>	
 					</div>
 				</div>
 				<div class = "panel panel-default visible-lg backgroundColor">

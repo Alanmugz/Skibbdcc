@@ -1,12 +1,12 @@
 	
 	<?php
 		//Logger
-		include 'log4php_logger/class.php';
+		include_once 'log4php_logger/class.php';
 		$loggerInstance = new LoggerInstance();
 		$logger = $loggerInstance->getLogger();
 	
 		require 'php/config.php';
-		include('php/meetingrepository.php');
+		include_once('php/meetingrepository.php');
 		
 		$repository = new MeetingRepository;
 		$repository->connect("skibbdcc_meeting");
