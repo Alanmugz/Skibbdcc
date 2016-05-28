@@ -1,5 +1,7 @@
 <?php
-	require 'php/config.php'; 
+	require 'php/config.php';
+	include 'php/newsrepository.php';
+	include 'php/eventenumertion.php';
 ?> 
 
 <!DOCTYPE html>
@@ -83,7 +85,25 @@
 						<h3 class = "panel-title">Carbery Plastics Club Championship 2016</h3>
 					</div>
 					<div class = "padding">
-					<!--Club Championship news here-->
+					<?php
+					$repository = new NewsRepository;
+					$repository->connect("skibbdcc_news");
+
+					$newsItems = $repository->getLatestNewsForCategory(EventEnumertion::ClubChampionship);
+
+					foreach ($newsItems as $news) {
+						?>
+						<div id='pageheader'>
+							<span class="newstitle"><?php echo $news->getTitle(); ?></span><span class="newsdate"><?php echo $news->getPublishDate(); ?></span>
+						</div>
+
+						<p class="setmargin"> 
+							<?php echo $news->getContent(); ?>
+						</p>
+						<?php
+					}
+					$repository->close();
+					?>
 					</div>
 				</div>
 				
@@ -93,7 +113,6 @@
 					</div>
 					<?php 
 						include('includebootstrap/video.html');
-	
 					?>    
 				</div>
 			</div>
