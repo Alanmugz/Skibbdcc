@@ -4,7 +4,7 @@
 	
 	<appender name="myFileAppender" class="LoggerAppenderFile">
 		<layout class="LoggerLayoutPattern">
-			<param name="conversionPattern" value="%date [%logger] %message%newline" />
+			<param name="conversionPattern" value="%date{l jS \of F Y h:i:s A} [%logger] %-80file %-40method %-5level %message%newline" />
 		</layout>
 		<param name="file" value="myLog.log" />
 	</appender>
