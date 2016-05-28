@@ -100,7 +100,7 @@
 			<div class="col-md-8">
 				<div class = "panel panel-default backgroundColor font">
 					<div class = "panel-heading">
-						<h3 class = "panel-title"><?php if($_SESSION['username']){echo "Welcome ".$_SESSION['username'];} else { echo "Invalid Username or password"; }  ?></h3>
+						<h3 class = "panel-title"><?php if($_SESSION['username']){echo "Welcome ".$_SESSION['username'];} else { echo "Invalid Username or password"; }  ?><span style="float:right" ><a href="logout.php">Logout</a></h3>
 					</div>
 					<div class = "padding">
 						<?php 
@@ -117,6 +117,8 @@
 									{
 										echo "An error occurred while creating your meeting";
 									}
+									
+									$repository->close();
 							}
 							else 
 							{
