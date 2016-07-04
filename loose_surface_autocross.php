@@ -47,10 +47,10 @@
 	<div id="submenu">
 				<ul id="nav">
 					<li><a href="loose_surface_autocross.php" class="selected">Latest</a></li>
-					<li><a href="files/ls_autocross/2016/regs.doc">Regs</a></li>
-					<li><a href="files/ls_autocross/2016/regs.doc">Entry Form</a></li>
+					<li><a href="#">Regs</a></li>
+					<li><a href="#">Entry Form</a></li>
 					<li><a href="map_lsautocross.php">Map</a></li>  
-					<li><a href="files/ls_autocross/2016/results.pdf">Results</a></li>  
+					<li><a href="#">Results</a></li>  
 				</ul> 
 			</div>	 	 
 	</div>
@@ -67,42 +67,16 @@
 		 
 		<div id="newsscroll"> 
 			<div id='pageheader'>
-				Loose Surface Autocross 28th February 2016
+				Loose Surface Autocross 10th July 2016
 			</div >
-			<span class="newstitle">Loose Surface Autocross Images</span><span class="newsdate">3rd March 2016</span>
-			<p class="setmargin">
-			<p class="setmargin">Images by Pablo Photography & Ted O'Connell</p>
-			<?php
-			$dir = 'files/ls_autocross/2016/images';
-			$folders = array('..', '.', 'folder');
-			$images = array_diff(scandir($dir), $folders);
-			//$images = array("IMG_0513-2.jpg","IMG_0145.jpg","IMG_0317.jpg", "IMG_9923.jpg", "IMG_0147.jpg", "IMG_0410-2.jpg", "IMG_0755.jpg", "IMG_1168.jpg", "IMG_9923.jpg", "IMG_1106.jpg", "IMG_9621.jpg", "IMG_0877.jpg");
-			$count = 0;
-			foreach ($images as &$image) {
-				?>
-				<div id="displayvideo"><img src="<?php echo 'files/ls_autocross/2016/images/'.$image;?>" width="200px" height="156px" style="border:solid 2px white;margin-left:15px;"></div>
-				<?php
-				$count++;
-				if($count % 3 === 0)
-				{
-					echo "<br /><br /><br />";  
-				}
-			}
-			?>
-			</p> 
 			
-			<span class="newstitle">Loose Surface Autocross Results</span><span class="newsdate">1st March 2016</span>
+			<span class="newstitle">Loose Surface Autocross</span><span class="newsdate">4th July 2016</span>
 			<p class="setmargin"> 
-			Autocross results can now be downloaded by clicking the tab marked results above.<br />
-			A detailed list of all award winner is also available to download by clicking <a href="files/ls_autocross/2016/awards.pdf" style="color:red; text-decoration:underline;">here</a>
-			</p> 
-			<span class="newstitle">Loose Surface Autocross</span><span class="newsdate">17th February 2016</span>
-			<p class="setmargin"> 
-			The February Autocross, a counting round of the Munster AutoCross Championship will take place on Sunday 28th February 2016 in Kilnadur, Dunmanway, Co Cork.
-			The event will be Arrowed from Kilmichael, Coppeen & Dunmanway.  Venue GPS: N51.7813958  W9.0926125.<br />
-			C.O.C of the Event is Eoghan Mc Carthy<br />
-			<br />			
-			Regs and entry form are available to download from the tab's above marks "regs" and "entry form" respectively.
+			Skibbereen And District Car Club's Loose Surface Autocross will take place this Sunday the 10th July 2016. 
+			The venue will again be Keohanes Gravel Pit, Grancore, Clonakilty, Co. Cork. Scrutiny will commence at 9am 
+			with driver's briefing at 10am. Practise run's will begin at 10.30am & first timed run at 11am.
+			<br /><br />
+			For more information contact Fergus Harrington on 087 2507852 
 			</p> 			 
 		</div> 
 		 
