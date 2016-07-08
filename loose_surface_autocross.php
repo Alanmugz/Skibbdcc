@@ -47,8 +47,8 @@
 	<div id="submenu">
 				<ul id="nav">
 					<li><a href="loose_surface_autocross.php" class="selected">Latest</a></li>
-					<li><a href="#">Regs</a></li>
-					<li><a href="#">Entry Form</a></li>
+					<li><a href="files/ls_autocross/2016/regs.doc">Regs</a></li>
+					<li><a href="files/ls_autocross/2016/regs.doc">Entry Form</a></li>
 					<li><a href="map_lsautocross.php">Map</a></li>  
 					<li><a href="#">Results</a></li>  
 				</ul> 
@@ -69,6 +69,12 @@
 			<div id='pageheader'>
 				Loose Surface Autocross 10th July 2016
 			</div >
+			<span class="newstitle">Loose Surface Autocross</span><span class="newsdate">8th July 2016</span>
+			<p class="setmargin"> 
+			Skibbereen & District Car Club's Loose Surface AutoCross will take place this weekend the 10th of July. 
+			This years event will take place in Campbell's Pit, Grancore, Clonakilty. Fergus Harrington will be Clerk of 
+			The Course for 2016. Regulations/Entry Form are now available to download <a href="files/ls_autocross/2016/regs.doc" style="color: red; text-decoration: underline;">here</a>here.  
+			</p> 		
 			
 			<span class="newstitle">Loose Surface Autocross</span><span class="newsdate">4th July 2016</span>
 			<p class="setmargin"> 
