@@ -83,7 +83,7 @@ include 'php/eventenumertion.php';
                     <h3 class = "panel-title">Westlodge Fastnet Rally <?php echo $rallyEventYear; ?> - Entry List</h3>
                 </div>
 				<div class="container" style="padding-right:35px">
-				  <h2>Main Field</h2>            
+				  <h2>Main Field</h2>  
 				  <table class="table table-striped">
 					<thead>
 					  <tr>
@@ -96,30 +96,25 @@ include 'php/eventenumertion.php';
 					  </tr>
 					</thead>
 					<tbody>
-					  <tr>
-						<th>1</th>
-						<th>Driver</th>
-						<th>Co-Driver</th>
-						<th>Address</th>
-						<th>Car</th>
-						<th>Class</th>
-					  </tr>
-					  <tr>
-						<th>2</th>
-						<th>Driver</th>
-						<th>Co-Driver</th>
-						<th>Address</th>
-						<th>Car</th>
-						<th>Class</th>
-					  </tr>
-					  <tr>
-						<th>3</th>
-						<th>Driver</th>
-						<th>Co-Driver</th>
-						<th>Address</th>
-						<th>Car</th>
-						<th>Class</th>
-					  </tr>
+						<?php 
+						$file = fopen('entry_list.csv',"r");
+
+						while(!feof($file))
+						{
+							$s = fgetcsv($file);
+							?>
+							<tr>
+								<th><?php echo $s[0]; ?></th>
+								<th><?php echo $s[1]; ?></th>
+								<th><?php echo $s[2]; ?></th>
+								<th><?php echo $s[3]; ?></th>
+								<th><?php echo $s[4]; ?></th>
+								<th><?php echo $s[5]; ?></th>
+							</tr>
+							<?php
+						}
+						fclose($file);
+						?>		
 					</tbody>
 				  </table>
 				</div>
