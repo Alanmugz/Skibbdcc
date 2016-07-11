@@ -151,7 +151,7 @@ include 'php/eventenumertion.php';
             </div>
         </div>
     </div>
-	    <div class="row visible-lg">
+	<div class="row">
         <div class="col-md-12">
             <div>
 			<!-- Bottom menu -->
