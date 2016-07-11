@@ -154,10 +154,134 @@ include 'php/eventenumertion.php';
 	<div class="row">
         <div class="col-md-12">
             <div>
-			<!-- Bottom menu -->
-			 <?php
-				include ('includebootstrap\event\fastnetrallybottommenu.html');
-			 ?>
+			<nav role="navigation" class="navbar navbar-default navbar-fixed-bottom">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="fastnet_rally.php" class="navbar-brand">Westlodge Fastnet Rally</a>
+        </div>
+        <!-- Collection of nav links and other content for toggling -->
+        <div id="navbarCollapse" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="fastnet_rally.php">Latest</a></li>
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Competitor<b class="caret"></b></a>
+					<ul class="dropdown-menu">
+					  <li><a href="#">Regulations</a></li>
+					  <li><a href="#">Entry Form</a></li>
+					  <li><a href="#">Final Instruction 1</a></li>
+					  <li><a href="#">Time & Distance</a></li>
+					</ul>
+					</li>
+                <li><a href="fastnet_entry_list.php">Entry List</a></li>
+                <li><a href="fastnet_results.php">Results</a></li>
+                <li><a href="fastnet_maps.php">Map</a></li>
+                <li><a href="fastnet_accomodation.php">Accommodation</a></li>
+                <li><a href="fastnet_prog_outlets.php">Program Outlets</a></li>
+                <li><a href="fastnet_marshals.php">Marshals</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<style type="text/css">
+.navbar-default {
+  background-color: #E4F3F6;
+  border-color: #0B6122;
+}
+.navbar-default .navbar-brand {
+  color: #000000;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #000000;
+}
+.navbar-default .navbar-text {
+  color: #000000;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #000000;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #000000;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu {
+  background-color: #FAFAFA;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a {
+  color: #000000;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a:hover,
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a:focus {
+  color: #000000;
+  background-color: #FAFAFA;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu > li > .divider {
+  background-color: #0B6122;
+}
+.navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+.navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+.navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+  color: #000000;
+  background-color: #0B6122;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #000000;
+  background-color: #0B6122;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  color: #000000;
+  background-color: #0B6122;
+}
+.navbar-default .navbar-toggle {
+  border-color: #0B6122;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #0B6122;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #000000;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: #000000;
+}
+.navbar-default .navbar-link {
+  color: #000000;
+}
+.navbar-default .navbar-link:hover {
+  color: #000000;
+}
+
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #000000;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #000000;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #000000;
+    background-color: #0B6122;
+  }
+}
+</style>
             </div>
         </div>
     </div>
