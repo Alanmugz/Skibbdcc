@@ -146,7 +146,7 @@ include 'php/eventenumertion.php';
     </div>
     <div class="row visible-lg">
         <div class="col-md-12">
-            <div id="copyright" style="margin-bottom: 55px;">
+            <div id="copyright" style="margin-bottom: 255px;">
                 <?php
                 include('includebootstrap/copyright.html');
                 ?>
