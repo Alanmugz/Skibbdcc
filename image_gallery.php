@@ -1,142 +1,191 @@
 <?php
-	include 'dataconnection.php'; 
-?>
-
-
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
- <head><!--  ščřžýŠČŘŽÝ -->
-  <meta name="generator" content="PSPad editor, www.pspad.com" />
-  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-  <meta name="description" content="Skibbereen &amp; District Car Club. Home of the Westlogde Fastent Rally">
-  <meta name="keywords" content="Skibbereen and District Car Club, Skibbdcc, Westlodge Hotel, Skibbereen Motor Club, Fastnet Rally">
-  <meta name="author" content="Alan Mulligan Web Design">
-  <meta name="robots" content="index, follow"> 
-  
-  <title>Image Gallery</title>
-  <script type="text/javascript" src="jquery/jquery.js"></script>
-  <script type="text/javascript" src="javascript/global.js"></script>
-  <link rel="stylesheet" type="text/css" href="css/global.css"/>
-  <link rel="icon" type="image/png" href="images/favicon.png"/>
-  <link href="/maps/documentation/javascript/examples/default.css" rel="stylesheet"> 
-  <link type="text/css" href="jquery/jquery.jscrollpane.css" rel="stylesheet" media="all" />
-  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-  <script type="text/javascript" src="jquery/jquery.jscrollpane.min.js"></script>  
-  
-  <link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
-  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
-  <script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
-  <link rel="stylesheet" href="/resources/demos/css/style.css">
-  <link rel="stylesheet" type="text/css" href="css/tooltip.css"/>
-
-<script>
-	$(function() {
-		$( document ).tooltip({
-		position: {
-		my: "center bottom-20",
-		at: "center top",
-		using: function( position, feedback ) {
-		$( this ).css( position );
-		$( "<div>" )
-		.addClass( "arrow" )
-		.addClass( feedback.vertical )
-		.addClass( feedback.horizontal )
-		.appendTo( this );
-		}
-		}
-		});
-	});
-</script>
-  
-  </head>  
-  <body onload="checkForMeeting(MyJSStringVar)">  
-   
-  <div id="container">
-	<!-- header -->
-	<div id="header"> 
-		<?php 
-			include ('include/header.html'); 
-		?>
-    </div>
-	<!-- Menu Bar -->
-	<div id="menu">
-	 
-	<div id='cssmenu' style="margin-bottom:-13px;"> 
-			<?php 
-				include ('include/menu.html'); 
-			?>
-	</div>
-	</div>
-  	
-	<!-- Main Content -->  
-	<div class="wrapper">
-		<?php
-			include 'getMeeting2.php'; 
-		?>
-		
-		<script type='text/javascript'>
-			var MyJSStringVar = "<?php Print($meetingDetails); ?>";  
-		</script>
-		 
-		<div id="newsscroll">
-			<div id='pageheader'> 
-				Image Gallery 
-			</div> 
-			
-			<?php
-			// Create connection
-			$con=mysqli_connect("$host","$dbusername","$password","skibbdcc_gallery");
-
-			// Check connection
-			if (mysqli_connect_errno($con))
-			  {
-				echo "Failed to connect to MySQL: " . mysqli_connect_error();
-			  }  		
-		 
-			$result = mysqli_query($con,"SELECT category, path FROM galleryinfo GROUP BY category ORDER BY id DESC");   
-						
-			while($row = mysqli_fetch_array($result)) 
-				{
-				?>  
-					<div id="displayvideo"><a href="http://www.skibbdcc.com/image_display_gallery.html?gallery=<?php echo $row['category'];?>" title="<?php echo $row['category'];?>"><img src="<?php echo $row['path'];?>" width="200px" height="156px" style="border:solid 2px white;margin-left:15px;"></a></div>	
-					
-					<?php
-						$i++;
-						if($i % 3 === 0)
-						{
-						echo "<br /><br /><br />";  
-						}
-					?>				
-				<?php
-				}  
-			 // Check connection
-			if (mysqli_connect_errno($con))   
-				{
-					echo "Failed to connect to MySQL: " . mysqli_connect_error(); 
-				}   
-			?> 
-		</div>    
-		 
-	<div id="newsrow">
-		<?php 
-			include ('include/sidebar.html'); 
-		?>
-	</div>
-		
-	</div>  
-	   
-	<!-- footer -->
-		<div id="footer">
-			<?php 
-				include ('include/footer.html'); 
-			?>
-		</div>	
-
+	require 'php/config.php'; 
 	
-	<!-- Copyright -->
-		<div id="copyright">&copy; Skibbereen &amp; District Car Club 2011 - <span id="getYear"></span><br />Designed by Alan Mulligan Web Design</div>
-		
+	if($environment == 'prod')
+	{	
+		if(!isset($configs_are_set)) {
+			include("scriptfolderbootstrap/configs.php");
+		}
+
+		//Facebook data from database
+		//$conn aquired from scriptfolderbootstrap/configs.php
+		$sql = "SELECT title, summary FROM ".$TABLE["News"]." WHERE status='Published' AND id='".mysql_real_escape_string($_REQUEST["id"])."'";
+		$sql_result = mysql_query ($sql, $conn ) or die ('MySQL query error: '.$sql.'. Error: '.mysql_error());
+		if(mysql_num_rows($sql_result) > 0) {	
+			$News = mysql_fetch_assoc($sql_result);
+		}
+		 
+		$titlefb = ReadDB($News["title"]);
+		$descfb = ReadDB($News["summary"]);
+	}
+?> 
+
+<!DOCTYPE html>
+<head>
+	<title>Skibbereen &amp; District Car Club</title>
+	
+	<meta name="generator" content="PSPad editor, www.pspad.com" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="description" content="Skibbereen &amp; District Car Club. Home of the Westlogde Fastent Rally"/>
+	<meta name="keywords" content="Skibbereen and District Car Club, Skibbdcc, Westlodge Hotel, Skibbereen Motor Club, Fastnet Rally"/>
+	<meta name="author" content="Alan Mulligan Web Design"/>
+	<meta name="robots" content="index, follow"/>
+	
+	<!-- For Facebook -->          
+	<meta property="og:title" content="<?php echo $titlefb; ?>" />
+	<meta property="og:type" content="article" />
+	<meta property="og:image" content="http://www.skibbdcc.com/images/facebook_skibbdcc_logo.png" />
+	<meta property="og:url" content="<?php echo "http://www.skibbdcc.com".$_SERVER['REQUEST_URI']; ?>" /> 
+	<meta property="og:description" content="<?php echo $descfb; ?>" />
+
+	<!-- For Twitter -->        
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:url" content="<?php echo "http://www.skibbdcc.com".$_SERVER['REQUEST_URI']; ?>">  
+	<meta name="twitter:title" content="<?php echo $titlefb; ?>">
+	<meta name="twitter:description" content="<?php echo $descfb; ?>">
+	<meta name="twitter:image" content="http://www.skibbdcc.com/images/facebook_skibbdcc_logo.png">
+	
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="cssbootstrap/style.css" type="text/css" media="screen" />
+    <script type="text/javascript">var _siteRoot='index.html',_root='index.html';</script>
+    <script type="text/javascript" src="jquery/jquery.js"></script>
+    <script type="text/javascript" src="javascript/scripts.js"></script>
+    <script type="text/javascript" src="javascript/global.js"></script>
+    <link rel="stylesheet" type="text/css" href="cssbootstrap/global.css"/>
+    <link rel="icon" type="image/png" href="images/favicon.png"/>  
+    
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <link type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/redmond/jquery-ui.css" rel="stylesheet" /> 
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="jquery/jquery.youtubepopup.min.js"></script>
+	
+	<!-- Timer -->
+	<link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+	
+    <script type="text/javascript">
+		$(function () {
+			$("a.youtube").YouTubePopup({ autoplay: 0 });
+		});
+    </script>
+</head>
+<html>
+	<div class="container border10">	
+		<div class="row row-margin height visible-lg">
+			<div class="col-md-12">
+				<div id="header">
+					<?php 
+						include ('includebootstrap/header.html');
+					?>
+				</div>
+			</div>
+		</div>
+		<div style="margin-top:-20px">
+			<?php 
+				include ('includebootstrap/carousel.html');
+			?>
+		</div>
+		<div class="row visible-lg" style="padding-bottom:20px">
+			<div class="col-md-12">
+				<div id='cssmenu'> 
+					<?php
+						include ('includebootstrap/menu.html');
+					?>
+				</div>
+			</div>
+		</div>
+		<div class="row hidden-lg">
+			<?php 
+				include ('includebootstrap/mobilemenu.html');
+			?>
+		</div>
+		<div class="row">
+			<div class="col-md-8">
+				<div class = "panel panel-default">
+					<div class = "panel-heading">
+						<h3 class = "panel-title">Image Gallery</h3>
+					</div> 
+				</div>
+			</div>
+			
+			<div class="col-md-4">
+				<div class = "panel panel-default backgroundColor">
+				    <div class = "panel-heading">
+						<h3 class = "panel-title">Next Event:</h3>
+				    </div>
+					<div id="countdown-nextmeeting">
+						<?php
+							include('includebootstrap/countdowntimer.html');
+						?>
+					</div>
+				</div>
+				<div class = "panel panel-default font">
+				   <div class = "panel-heading">
+					  <h3 class = "panel-title">Club Sponsors</h3>
+				   </div>
+				   <?php 
+						include('includebootstrap/sponsors.html');
+					?>
+				</div>
+				<div class = "panel panel-default">
+				    <div class = "panel-heading">
+						<h3 class = "panel-title">Social Media</h3>
+				    </div>
+				   <?php 
+						include('includebootstrap/socialmedia.html');
+					?>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4">
+				<div class = "panel panel-default font">
+				    <div class = "panel-heading">
+						<h3 class = "panel-title">Contact Us:</h3>
+				    </div>
+				    <?php 
+						include('includebootstrap/contactus.html');
+					?>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class = "panel panel-default font">
+				    <div class = "panel-heading">
+						<h3 class = "panel-title">Club Events:</h3>
+				    </div>
+				    <?php 
+						include('includebootstrap/clubevents.html');
+					?>
+				</div>			
+			</div>
+			<div class="col-md-4">
+				<div class = "panel panel-default font">
+				    <div class = "panel-heading">
+						<h3 class = "panel-title">In Association With:</h3>
+				    </div>
+					<?php 
+						include('includebootstrap/association.html');
+					?>
+				</div>			
+			</div>
+		</div>
+		<div class="row visible-lg">
+			<div class="col-md-12">
+				<div id="copyright">
+					<?php 
+						include('includebootstrap/copyright.html');
+					?>
+				</div>
+			</div>
+		</div>
 	</div>
-  </body>
-  </html>
+</html>

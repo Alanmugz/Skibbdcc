@@ -1,107 +1,159 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
- <head><!--  ščřžýŠČŘŽÝ -->
-  <meta name="generator" content="PSPad editor, www.pspad.com" />
-  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-  <meta name="description" content="The Westlodge Fastnet Rally will agian start over looking the beautiful bantry bay">
-  <meta name="keywords" content="Marshals,Westloge Fastnet Rally 2013, Entry form, regulations, maps, programmes, Skibbereen and District Car Club, Skibbdcc, Westlodge Hotel, Skibbereen Motor Club, Fastnet Rally">
-  <meta name="author" content="Alan Mulligan Web Design">
-  <meta name="robots" content="index, follow"> 
-  
-  <title>Westlodge Fastnet Rally 2015 - Marshals</title> 
-  
-  <script type="text/javascript" src="javascript/global.js"></script>
-  <link rel="stylesheet" type="text/css" href="css/global.css"/>
-  <link rel="icon" type="image/png" href="images/favicon.png"/> 
-	 
-  </head>  
-  <body>  
-   
-  <div id="container">
-	<!-- header -->
-	<div id="header">
-		<img src="images/header.jpg" alt="image header" /> 
-		<div id="header_font"><img src="images/fastnet_header.png" alt="image header"/></div>
-		
+<?php
+require 'php/config.php';
+include 'php/newsrepository.php';
+include 'php/eventenumertion.php';
+?>
+
+<!DOCTYPE html>
+<head>
+    <title>Westlodge Fastnet Rally <?php echo $rallyEventYear; ?></title>
+
+    <meta name="generator" content="PSPad editor, www.pspad.com" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="Skibbereen &amp; District Car Club. Home of the Westlogde Fastent Rally"/>
+    <meta name="keywords" content="Skibbereen and District Car Club, Skibbdcc, Westlodge Hotel, Skibbereen Motor Club, Fastnet Rally"/>
+    <meta name="author" content="Alan Mulligan Web Design"/>
+    <meta name="robots" content="index, follow"/>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="cssbootstrap/style.css" type="text/css" media="screen" />
+    <script type="text/javascript" src="jquery/jquery.js"></script>
+    <script type="text/javascript" src="javascript/scripts.js"></script>
+    <script type="text/javascript" src="javascript/global.js"></script>
+    <link rel="stylesheet" type="text/css" href="cssbootstrap/global.css"/>
+    <link rel="icon" type="image/png" href="images/favicon.png"/>  
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <link type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/redmond/jquery-ui.css" rel="stylesheet" /> 
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1/jquery-ui.min.js"></script>
+
+    <!-- Timer -->
+    <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+
+</head>
+<!-- Bottom menu -->
+ <?php
+    include ('includebootstrap\event\fastnetrallybottommenu.html');
+ ?>
+<div class="container border10">	
+    <div class="row row-margin height visible-lg">
+        <div class="col-md-12">
+            <div id="header">
+                <?php
+                include ('includebootstrap/header.html');
+                ?>
+            </div>
+        </div>
     </div>
-	<!-- Menu Bar -->
-	<div id="menu">
-	 
-	<div id='cssmenu' style="margin-bottom:-13px;">  
-		<?php 
-			include ('include/menu.html'); 
-		?>
-	</div>
-		<div id="submenu2" style="position:relative;top:14px;z-index:1;">
-			<ul>
-				<li><a href="fastnet_rally.php">Latest</a></li>  
-				<li><a href="fastnet_competitors.php">Competitors</a>
-					<ul>
-						<li><a href="files/fastnet2015/Regulations.doc" class="selected">Regs/Entry Form</a></li>
-						<li><a href="#" class="selected" target="_blank">Final Instruction</a></li>
-						<li><a href="#" class="selected" >Time & Distance</a></li>
-					</ul>
-				</li> 
-				<li><a href="fastnet_entry_list.php">Entry List</a></li>
-				<li><a href="fastnet_results.php">Results</a></li>
-				<li class="selected"><a href="fastnet_maps.php">Maps</a></li> 
-				<li><a href="fastnet_accomodation.php">Accommodation</a></li>
-				<li><a href="fastnet_prog_outlets.php">Prog Outlets</a></li>
-				<li><a href="fastnet_marshals.php">Marshals</a></li> 
-			</ul> 
-		</div>		 	 
-	</div>
-  	
-	<!-- Main Content --> 
-	<div class="wrapper">
-		<div id="news">
-			<div id='pageheader'>
-				Westlodge Fastnet Rally - Marshals
-			</div>
-			<span class="newstitle">Marshals Meeting Points</span><span class="newsdate">14th October 2015</span>
-			<p class="setmargin"> 
-			Marshal Meeting Points and Times for The Westlodge Hotel Fastnet Rally 2015 on Sunday the 25th of October are available below. 
-			Marshals urgently needed for the rally. Please contact Chief Marshal James Kingston on 0868598038. All help would be greatly 
-			appreciated. Hot food and Tea/Coffee available to purchase at meeting points.<br /><br />
+    <div style="margin-top:-20px">
+        <?php
+        include ('includebootstrap/carousel.html');
+        ?>
+    </div>
+    <div class="row visible-lg" style="padding-bottom:20px">
+        <div class="col-md-12">
+            <div id='cssmenu'> 
+                <?php
+                include ('includebootstrap/menu.html');
+                ?>
+            </div>
+        </div>
+    </div>
+    <div class="row hidden-lg">
+        <?php
+        include ('includebootstrap/mobilemenu.html');
+        ?>
+    </div>		
+    <div style="display:inline-block;margin:-25px 0px 15px 0px;">
+    </div>		
+    <div class="row">
+        <div class="col-md-8">
+            <div class = "panel panel-default backgroundColor font">
+                <div class = "panel-heading">
+                    <h3 class = "panel-title">Westlodge Fastnet Rally <?php echo $rallyEventYear; ?> - Marshals</h3>
+                </div>
+            </div>
+        </div>
 
-			Stage 1/4/7<br />
-			Stage Commander - Eoghan Mc Carthy<br />
-			Meeting Point - Centra Shop, Drimoleague<br />
-			Time - 6.30 a.m<br /><br />
-
-			Stage 2/5/8<br />
-			Stage Commander - Paula Mc Carthy<br />
-			Meeting Point - Camiers Shop & Filling Station, Ballydehob<br />
-			Time - 7.00 a.m<br /><br />
-
-			Stage 3/6/9<br />
-			Stage Commander - Kevin Flannery<br />
-			Meeting Point - Ryan's Shop, Durrus<br />
-			Time - 7.10 a.m<br /><br />
-
-			<u><i>Reminder</i></u>: Clocks go back by 1 hour on Saturday Night (24th October).
-
-			</p>  
-		</div> 
-		 
-	<div id="newsrow">
-		<?php 
-			include ('include/sidebar.html'); 
-		?>
-	</div> 
-	   
-	<!-- footer -->
-		<div id="footer">
-			<?php 
-				include ('include/footer.html'); 
-			?>
-		</div>	
-
-	
-	<!-- Copyright -->
-		<div id="copyright">&copy; Skibbereen &amp; District Car Club 2011 - <span id="getYear"></span><br />Designed by Alan Mulligan Web Design</div>
-		
-	</div>
-  </body>
-  </html>
+        <div class="col-md-4">
+            <div class = "panel panel-default backgroundColor">
+                <div class = "panel-heading">
+                    <h3 class = "panel-title">Next Event:</h3>
+                </div>
+                <div id="countdown-nextmeeting">
+                    <?php
+                    include('includebootstrap/countdowntimer.html');
+                    ?>
+                </div>
+            </div>
+            <div class = "panel panel-default font">
+                <div class = "panel-heading">
+                    <h3 class = "panel-title">Club Sponsors</h3>
+                </div>
+                <?php
+                include('includebootstrap/sponsors.html');
+                ?>
+            </div>
+            <div class = "panel panel-default">
+                <div class = "panel-heading">
+                    <h3 class = "panel-title">Social Media</h3>
+                </div>
+                <?php
+                include('includebootstrap/socialmedia.html');
+                ?>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <div class = "panel panel-default font">
+                <div class = "panel-heading">
+                    <h3 class = "panel-title">Contact Us:</h3>
+                </div>
+                <?php
+                include('includebootstrap/contactus.html');
+                ?>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class = "panel panel-default font">
+                <div class = "panel-heading">
+                    <h3 class = "panel-title">Club Events:</h3>
+                </div>
+                <?php
+                include('includebootstrap/clubevents.html');
+                ?>
+            </div>			
+        </div>
+        <div class="col-md-4">
+            <div class = "panel panel-default font">
+                <div class = "panel-heading">
+                    <h3 class = "panel-title">In Association With:</h3>
+                </div>
+                <?php
+                include('includebootstrap/association.html');
+                ?>
+            </div>			
+        </div>
+    </div>
+    <div class="row visible-lg">
+        <div class="col-md-12">
+            <div id="copyright" style="margin-bottom: 55px;">
+                <?php
+                include('includebootstrap/copyright.html');
+                ?>
+            </div>
+        </div>
+    </div>
+</div>
+</html>

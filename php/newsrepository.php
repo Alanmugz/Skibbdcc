@@ -31,14 +31,16 @@ class NewsRepository {
 	
 	
 	function getLatestNewsForCategory(
-		$category)
+		$category,
+		$month)
 	{
 		$currentYear = date("Y");
 
         $sql = "SELECT publish_date, content, title FROM pa_npro_news 
 		        WHERE status='Published'
 				AND cat_id=$category 
-				AND YEAR(publish_date) =$currentYear
+				AND YEAR(publish_date) = $currentYear
+				AND MONTH(publish_date) >= $month
 				ORDER BY publish_date DESC";
 				
 		$result = $this->conn->query($sql);

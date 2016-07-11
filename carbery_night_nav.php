@@ -1,136 +1,188 @@
 <?php
-	include ('dataconnection.php'); 
+require 'php/config.php';
+include 'php/newsrepository.php';
+include 'php/eventenumertion.php';
+include 'php/monthenumertion.php';
+include 'php/function.php';
 ?>
 
+<!DOCTYPE html>
+<head>
+    <title>Carbery Night Navigation Trial</title>
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
- <head><!--  ščřžýŠČŘŽÝ -->
-  <meta name="generator" content="PSPad editor, www.pspad.com" />
-  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-  <meta name="description" content="Skibbereen &amp; District Car Club. Home of the Westlogde Fastent Rally">
-  <meta name="keywords" content="Skibbereen and District Car Club, Skibbdcc, Westlodge Hotel, Skibbereen Motor Club, Fastnet Rally">
-  <meta name="author" content="Alan Mulligan Web Design">
-  <meta name="robots" content="index, follow"> 
-  
-  <title>Carbery Night Nav</title>
-  
-  <script type="text/javascript" src="jquery/jquery.js"></script>
-  <script type="text/javascript" src="javascript/global.js"></script>
-  <link rel="stylesheet" type="text/css" href="css/global.css"/>
-  <link rel="icon" type="image/png" href="images/favicon.png"/>
-  <link href="/maps/documentation/javascript/examples/default.css" rel="stylesheet"> 
-  <link type="text/css" href="jquery/jquery.jscrollpane.css" rel="stylesheet" media="all" />
-  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-  <script type="text/javascript" src="jquery/jquery.jscrollpane.min.js"></script> 
-	 
-  </head>  
-  <body onload="checkForMeeting(MyJSStringVar)">  
-   
-  <div id="container">
-	<!-- header -->
-	<div id="header">
-		<?php 
-			include 'include/header.html';
-		?>
+    <meta name="generator" content="PSPad editor, www.pspad.com" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="Skibbereen &amp; District Car Club. Home of the Westlogde Fastent Rally"/>
+    <meta name="keywords" content="Skibbereen and District Car Club, Skibbdcc, Westlodge Hotel, Skibbereen Motor Club, Fastnet Rally, Carbery Night Navigation Trial"/>
+    <meta name="author" content="Alan Mulligan Web Design"/>
+    <meta name="robots" content="index, follow"/>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="cssbootstrap/style.css" type="text/css" media="screen" />
+    <script type="text/javascript" src="jquery/jquery.js"></script>
+    <script type="text/javascript" src="javascript/scripts.js"></script>
+    <script type="text/javascript" src="javascript/global.js"></script>
+    <link rel="stylesheet" type="text/css" href="cssbootstrap/global.css"/>
+    <link rel="icon" type="image/png" href="images/favicon.png"/>  
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <link type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/redmond/jquery-ui.css" rel="stylesheet" /> 
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1/jquery-ui.min.js"></script>
+
+    <!-- Timer -->
+    <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+
+</head>
+<div class="container border10">	
+    <div class="row row-margin height visible-lg">
+        <div class="col-md-12">
+            <div id="header">
+                <?php
+                include ('includebootstrap/header.html');
+                ?>
+            </div>
+        </div>
     </div>
-	
-	<!-- Menu Bar -->
-	<div id="menu">
-	 
-	<div id='cssmenu' style="margin-bottom:-13px;">  
-		<?php
-			include ('include/menu.html');
-		?>
-	</div>
-	
-			<div id="submenu">
-				<ul id="nav">
-					<li><a href="carbery_night_nav.php" class="selected">Latest</a></li>
-					<li><a href="files/carbery_night_nav/Carbery_Night_Navigation_Trial_Regs_2015.docx">Regs</a></li>
-					<li><a href="files/carbery_night_nav/Carbery_Night_Navigation_Trial_Regs_2015.docx">Entry Form</a></li>
-					<li><a href="map_carbery_night_nav.php">Map</a></li>  
-					<li><a href="#">Results</a></li>  
-				</ul>
-			</div>		  
-	</div>
-  	
-	<!-- Main Content --> 
-	<div class="wrapper">
-		<?php 
-			include 'getMeeting2.php'; 
-		?>
-		
-		<script type='text/javascript'>
-			var MyJSStringVar = "<?php Print($meetingDetails); ?>";  
-		</script>
-		
-		<div id="newsscroll">
-			<div id='pageheader'>
-				Carbery Night Navigation Trial  
-			</div>
-			<span class="newstitle">HQ Location</span><span class="newsdate">26th November 2015</span>
-			<p class="setmargin"> 
-			Amendment to the plot for event HQ Kilmacabea GAA Club is 202.5/374.5 (and not 383/204 as on regs)<br />
-			Directions:<br /> 
-			At the bottom of Leap Village turn right in between the Harbour Bar and Ger's Diner<br />
-			Continue to the next junction and keep left (about half a mile from village)
-			</p>			
-			<span class="newstitle">Marshals Needed</span><span class="newsdate">18th November 2015</span>
-			<p class="setmargin"> 
-			Skibbereen & District Car Club are looking for marshals for upcoming Carbery Night Navigation 
-			Trail on Saturday 28th Sunday 29th of November 2015. Marshals will meeting at event HQ in 
-			Kilmacabea Gaa club Leap time 8:30pm contact Colm Feen for more information on 0868626001.
-			</p>
-			<span class="newstitle">Regulation & Entry Form now available to download </span><span class="newsdate">18th November 2015</span>
-			<p class="setmargin"> 
-			Regulations and entry form for the Carbery Night Navigation Trial are now availble to download by clicking the 
-			links above.
-			</p>
-			<span class="newstitle">Carbery Night Navgation Trial</span><span class="newsdate">9th November 2015</span>
-			<p class="setmargin"> 
-			Skibbereen & District Car Club will host the Carbery Night Navagition Trial on Saturday 28th & Sunday
-			29th of November 2015 which will be a counting round of the Munster Night Navagition Championship and
-			 the final round of the Carbery Plastics Skibbereen & District Car Club Championship.
-			</p>
-			<p class="setmargin">
-			Clerk of the course: Colm Feen 0868626001
-			Event secretary:  Amanda Giles 0863400190
-			Chief marshal: Colm Feen 0868626001
-			Venue is Killmacabea Gaa Club, Leap, Co.Cork
-			</p>
-			<p class="setmargin">
-			This years route is approximately 80 miles with no petrol halt, map is sheet 89 4th edition.
-			Timetable check in & scrutiny at 20:00
-			Inital route card at 2015 route card at 21:30
-			First car away at 23:00 	
-			</p>
-			 
-			<!--TODO Update Location on the Map  -->
-			
-			
-		</div> 
-		 
-		<div id="newsrow">
-			<?php 
-				include ('include/sidebar.html'); 
-			?>
-		</div>
-		
-	</div> 
-	   
-	<!-- footer -->
-		<div id="footer">
-			<?php
-				include ('include/footer.html');
-			?>
-		</div>	
+    <div style="margin-top:-20px">
+        <?php
+        include ('includebootstrap/carousel.html');
+        ?>
+    </div>
+    <div class="row visible-lg" style="padding-bottom:20px">
+        <div class="col-md-12">
+            <div id='cssmenu'> 
+                <?php
+                include ('includebootstrap/menu.html');
+                ?>
+            </div>
+        </div>
+    </div>
+    <div class="row hidden-lg">
+        <?php
+        include ('includebootstrap/mobilemenu.html');
+        ?>
+    </div>		
+    <div style="display:inline-block;margin:-25px 0px 15px 0px;">
+        <?php
+        include ('includebootstrap/event/carberymenu.html');
+        ?>
+    </div>		
+    <div class="row">
+        <div class="col-md-8">
+            <div class = "panel panel-default backgroundColor font">
+                <div class = "panel-heading">
+                    <h3 class = "panel-title">Carbery Night Navigation Trial 30th - 31st January 2016</h3>
+                </div>
+                <?php
+                $repository = new NewsRepository;
+                $repository->connect("skibbdcc_news");
 
-	
-	<!-- Copyright -->
-		<div id="copyright">&copy; Skibbereen &amp; District Car Club 2011 - <span id="getYear"></span><br />Designed by Alan Mulligan Web Design</div>
-		
-	</div>
-  </body>
-  </html>
+                $newsItems = $repository->getLatestNewsForCategory(EventEnumertion::CarberyNightNav, MonthEnumertion::January);
+
+                foreach ($newsItems as $news) {
+                    ?>
+                    <div id='pageheader'>
+                        <?php Common::NewsTemplate($news->getTitle(), $news->getPublishDate()) ?>
+					</div>
+
+                    <p class="setmargin"> 
+                        <?php echo $news->getContent(); ?>
+                    </p>
+                    <?php
+                }
+                $repository->close();
+                ?>
+            </div>
+
+            <div class = "panel panel-default visible-lg backgroundColor">
+                <div class = "panel-heading">
+                    <h3 class = "panel-title">Latest Videos</h3>
+                </div>
+                <?php
+                include('includebootstrap/video.html');
+                ?>    
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class = "panel panel-default backgroundColor">
+                <div class = "panel-heading">
+                    <h3 class = "panel-title">Next Event:</h3>
+                </div>
+                <div id="countdown-nextmeeting">
+                    <?php
+                    include('includebootstrap/countdowntimer.html');
+                    ?>
+                </div>
+            </div>
+            <div class = "panel panel-default font">
+                <div class = "panel-heading">
+                    <h3 class = "panel-title">Club Sponsors</h3>
+                </div>
+                <?php
+                include('includebootstrap/sponsors.html');
+                ?>
+            </div>
+            <div class = "panel panel-default">
+                <div class = "panel-heading">
+                    <h3 class = "panel-title">Social Media</h3>
+                </div>
+                <?php
+                include('includebootstrap/socialmedia.html');
+                ?>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <div class = "panel panel-default font">
+                <div class = "panel-heading">
+                    <h3 class = "panel-title">Contact Us:</h3>
+                </div>
+                <?php
+                include('includebootstrap/contactus.html');
+                ?>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class = "panel panel-default font">
+                <div class = "panel-heading">
+                    <h3 class = "panel-title">Club Events:</h3>
+                </div>
+                <?php
+                include('includebootstrap/clubevents.html');
+                ?>
+            </div>			
+        </div>
+        <div class="col-md-4">
+            <div class = "panel panel-default font">
+                <div class = "panel-heading">
+                    <h3 class = "panel-title">In Association With:</h3>
+                </div>
+                <?php
+                include('includebootstrap/association.html');
+                ?>
+            </div>			
+        </div>
+    </div>
+    <div class="row visible-lg">
+        <div class="col-md-12">
+            <div id="copyright">
+                <?php
+                include('includebootstrap/copyright.html');
+                ?>
+            </div>
+        </div>
+    </div>
+</div>
+</html>

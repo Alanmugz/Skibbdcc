@@ -5,6 +5,13 @@
 	include_once 'log4php_logger/class.php';
 	$loggerInstance = new LoggerInstance();
 	$logger = $loggerInstance->getLogger();
+
+	require 'php/config.php';
+	include_once('php/meetingrepository.php');
+	
+	$date = $_POST['date'];
+	$time = $_POST['time'];
+	$venue = $_POST['venue'];
 ?>
 
 <!DOCTYPE html>
@@ -44,6 +51,13 @@
 	
 	<!-- Timer -->
 	<link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+	
+	<!-- Contact Form https://formden.com/form-builder/ -->
+	<script type="text/javascript" src="https://formden.com/static/cdn/formden.js"></script>
+	<link rel="stylesheet" href="https://formden.com/static/cdn/bootstrap-iso.css" />
+	<link rel="stylesheet" href="https://formden.com/static/cdn/font-awesome/4.4.0/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="https://formden.com/static/cdn/bootstrap-iso.css" />
+	<style>.bootstrap-iso .formden_header h2, .bootstrap-iso .formden_header p, .bootstrap-iso form{font-family: Arial, Helvetica, sans-serif; color: black}.bootstrap-iso form button, .bootstrap-iso form button:hover{color: #E4F3F6 !important;} .asteriskField{color: red;}</style>
 
 	<script type="text/javascript">
 		$(function () {
@@ -86,13 +100,30 @@
 			<div class="col-md-8">
 				<div class = "panel panel-default backgroundColor font">
 					<div class = "panel-heading">
-						<h3 class = "panel-title">You have been logged out <span style="float:right" ><a href="index.php">Return Home</a></span></h3>
+						<h3 class = "panel-title"><?php if($_SESSION['username']){echo "Welcome ".$_SESSION['username'];} else { echo "Invalid Username or password"; }  ?><span style="float:right" ><a href="logout.php">Logout</a></h3>
 					</div>
 					<div class = "padding">
 						<?php 
-							session_unset();
-							session_destroy();
-							$logger->info("User logged out: ".$_SESSION['username']);
+							if($date && $time && $venue) 
+							{								
+									$repository = new MeetingRepository;
+									$repository->connect("skibbdcc_meeting");
+									
+									if ($repository->saveMeetingDetails($date, $time, $venue, $logger))
+									{
+										echo "New meeting created successfully";
+									}
+									else
+									{
+										echo "An error occurred while creating your meeting";
+									}
+									
+									$repository->close();
+							}
+							else 
+							{
+								echo "Cannot supply blank parameters!!!";
+							}
 						?>
 					</div>
 				</div>
