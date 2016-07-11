@@ -158,7 +158,7 @@ include 'php/eventenumertion.php';
             <div>
 			<!-- Bottom menu -->
 			 <?php
-				include ('includebootstrap\event\fastnetrallybottommenu.html');
+				include ('includebootstrap\fastnetrallybottommenu.html');
 			 ?>
             </div>
         </div>
