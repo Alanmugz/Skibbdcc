@@ -41,10 +41,6 @@ include 'php/eventenumertion.php';
     <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
 
 </head>
-<!-- Bottom menu -->
- <?php
-    include ('includebootstrap\event\fastnetrallybottommenu.html');
- ?>
 <div class="container border10">	
     <div class="row row-margin height visible-lg">
         <div class="col-md-12">
@@ -152,6 +148,16 @@ include 'php/eventenumertion.php';
                 <?php
                 include('includebootstrap/copyright.html');
                 ?>
+            </div>
+        </div>
+    </div>
+	    <div class="row visible-lg">
+        <div class="col-md-12">
+            <div>
+			<!-- Bottom menu -->
+			 <?php
+				include ('includebootstrap\event\fastnetrallybottommenu.html');
+			 ?>
             </div>
         </div>
     </div>
