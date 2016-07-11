@@ -32,8 +32,6 @@ include 'php/eventenumertion.php';
     <script type="text/javascript" src="javascript/global.js"></script>
     <link rel="stylesheet" type="text/css" href="cssbootstrap/global.css"/>
     <link rel="icon" type="image/png" href="images/favicon.png"/>  
-	
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
     <link type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/redmond/jquery-ui.css" rel="stylesheet" /> 
@@ -62,7 +60,7 @@ include 'php/eventenumertion.php';
         <div class="col-md-12">
             <div id='cssmenu'> 
                 <?php
-                include ('includebootstrap/menu.html');
+                include ('includebootstrap/fastnetrallybottommenu.html');
                 ?>
             </div>
         </div>
