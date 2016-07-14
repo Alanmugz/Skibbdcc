@@ -43,7 +43,7 @@ include 'php/eventenumertion.php';
 </head>
 <!-- Bottom menu -->
  <?php
-    include ('includebootstrap\event\fastnetrallybottommenu.html');
+    include ('includebootstrap/event/fastnetrallybottommenu.html');
  ?>
 <div class="container border10">	
     <div class="row row-margin height visible-lg">
@@ -83,7 +83,80 @@ include 'php/eventenumertion.php';
                     <h3 class = "panel-title">Westlodge Fastnet Rally <?php echo $rallyEventYear; ?> - Entry List</h3>
                 </div>
 				<div class="container" style="padding-right:35px">
+				  <!-- 1, Driver, Co Driver, Cork, Honda Civic, 11 -->
 				  <h2>Main Field</h2>  
+				  <table class="table table-striped">
+					<thead>
+					  <tr>
+						<th>#</th>
+						<th>Driver</th>
+						<th>Co-Driver</th>
+						<th>Address</th>
+						<th>Car</th>
+						<th>Class</th>
+					  </tr>
+					</thead>
+					<tbody>
+						<?php 
+						$file = fopen('entry_list.csv',"r");
+
+						while(!feof($file))
+						{
+							$s = fgetcsv($file);
+							?>
+							<tr>
+								<th><?php echo $s[0]; ?></th>
+								<th><?php echo $s[1]; ?></th>
+								<th><?php echo $s[2]; ?></th>
+								<th><?php echo $s[3]; ?></th>
+								<th><?php echo $s[4]; ?></th>
+								<th><?php echo $s[5]; ?></th>
+							</tr>
+							<?php
+						}
+						fclose($file);
+						?>		
+					</tbody>
+				  </table>
+				</div>
+				<div class="container" style="padding-right:35px">
+				  <h2>Historics</h2>  
+				  <table class="table table-striped">
+					<thead>
+					  <tr>
+						<th>#</th>
+						<th>Driver</th>
+						<th>Co-Driver</th>
+						<th>Address</th>
+						<th>Car</th>
+						<th>Class</th>
+					  </tr>
+					</thead>
+					<tbody>
+						<?php 
+						$file = fopen('entry_list.csv',"r");
+
+						while(!feof($file))
+						{
+							$s = fgetcsv($file);
+							?>
+							<tr>
+								<th><?php echo $s[0]; ?></th>
+								<th><?php echo $s[1]; ?></th>
+								<th><?php echo $s[2]; ?></th>
+								<th><?php echo $s[3]; ?></th>
+								<th><?php echo $s[4]; ?></th>
+								<th><?php echo $s[5]; ?></th>
+							</tr>
+							<?php
+						}
+						fclose($file);
+						?>		
+					</tbody>
+				  </table>
+				</div>
+				<div class="container" style="padding-right:35px">
+				  <h2>Juniors</h2>  
 				  <table class="table table-striped">
 					<thead>
 					  <tr>

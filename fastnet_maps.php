@@ -47,7 +47,7 @@ include 'php/eventenumertion.php';
 </head>
 <!-- Bottom menu -->
  <?php
-    include ('includebootstrap\event\fastnetrallybottommenu.html');
+    include ('includebootstrap/event/fastnetrallybottommenu.html');
  ?>
 <div class="container border10">	
     <div class="row row-margin height visible-lg">
