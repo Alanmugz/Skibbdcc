@@ -82,115 +82,81 @@ include 'php/eventenumertion.php';
                 <div class = "panel-heading">
                     <h3 class = "panel-title">Westlodge Fastnet Rally <?php echo $rallyEventYear; ?> - Entry List</h3>
                 </div>
-				<div class="container" style="padding-right:35px">
-				  <!-- 1, Driver, Co Driver, Cork, Honda Civic, 11 -->
-				  <h2>Main Field</h2>  
-				  <table class="table table-striped">
-					<thead>
-					  <tr>
-						<th>#</th>
-						<th>Driver</th>
-						<th>Co-Driver</th>
-						<th>Address</th>
-						<th>Car</th>
-						<th>Class</th>
-					  </tr>
-					</thead>
-					<tbody>
-						<?php 
-						$file = fopen('entry_list.csv',"r");
+				
+				<?php 					
+					$classDetails = array(
+						0 => array(
+							'name' => 'Main Filed',
+							'file' => 'files/fastnet_2016/entry_list_main_field.csv'
+						),
+						1 => array(
+							'name' => 'Historics',
+							'file' => 'files/fastnet_2016/entry_list_historics.csv'
+						),
+						2 => array(
+							'name' => 'Juniors',
+							'file' => 'files/fastnet_2016/entry_list_juniors.csv'
+						)
+					);
 
-						while(!feof($file))
-						{
-							$s = fgetcsv($file);
-							?>
-							<tr>
-								<th><?php echo $s[0]; ?></th>
-								<th><?php echo $s[1]; ?></th>
-								<th><?php echo $s[2]; ?></th>
-								<th><?php echo $s[3]; ?></th>
-								<th><?php echo $s[4]; ?></th>
-								<th><?php echo $s[5]; ?></th>
-							</tr>
-							<?php
-						}
-						fclose($file);
-						?>		
-					</tbody>
-				  </table>
-				</div>
-				<div class="container" style="padding-right:35px">
-				  <h2>Historics</h2>  
-				  <table class="table table-striped">
-					<thead>
-					  <tr>
-						<th>#</th>
-						<th>Driver</th>
-						<th>Co-Driver</th>
-						<th>Address</th>
-						<th>Car</th>
-						<th>Class</th>
-					  </tr>
-					</thead>
-					<tbody>
-						<?php 
-						$file = fopen('entry_list.csv',"r");
+					foreach ($classDetails as $row) {
+						?> 
+							<div class="container" style="padding-right:35px">
+							  <!-- 1, Driver, Co Driver, Cork, Honda Civic, 11 -->
+							  <h2><?php echo $row['name']; ?></h2>  
+							  <table class="table table-striped">
+								<thead>
+								  <tr>
+									<th>#</th>
+									<th>Driver</th>
+									<th>Co-Driver</th>
+									<th>Address</th>
+									<th>Car</th>
+									<th>Class</th>
+								  </tr>
+								</thead>
+								<tbody>
+									<?php 
+									try
+									{
+										$filePath = $row['file'];
+										
+										if ( !file_exists($filePath) ) {
+											throw new Exception('File not found.');
+										}
 
-						while(!feof($file))
-						{
-							$s = fgetcsv($file);
-							?>
-							<tr>
-								<th><?php echo $s[0]; ?></th>
-								<th><?php echo $s[1]; ?></th>
-								<th><?php echo $s[2]; ?></th>
-								<th><?php echo $s[3]; ?></th>
-								<th><?php echo $s[4]; ?></th>
-								<th><?php echo $s[5]; ?></th>
-							</tr>
-							<?php
-						}
-						fclose($file);
-						?>		
-					</tbody>
-				  </table>
-				</div>
-				<div class="container" style="padding-right:35px">
-				  <h2>Juniors</h2>  
-				  <table class="table table-striped">
-					<thead>
-					  <tr>
-						<th>#</th>
-						<th>Driver</th>
-						<th>Co-Driver</th>
-						<th>Address</th>
-						<th>Car</th>
-						<th>Class</th>
-					  </tr>
-					</thead>
-					<tbody>
-						<?php 
-						$file = fopen('entry_list.csv',"r");
-
-						while(!feof($file))
-						{
-							$s = fgetcsv($file);
-							?>
-							<tr>
-								<th><?php echo $s[0]; ?></th>
-								<th><?php echo $s[1]; ?></th>
-								<th><?php echo $s[2]; ?></th>
-								<th><?php echo $s[3]; ?></th>
-								<th><?php echo $s[4]; ?></th>
-								<th><?php echo $s[5]; ?></th>
-							</tr>
-							<?php
-						}
-						fclose($file);
-						?>		
-					</tbody>
-				  </table>
-				</div>
+										$openedFile =  fopen($filePath, "r");
+										if ( !$openedFile ) {
+											throw new Exception('File open failed.');
+										}
+										
+										while(!feof($openedFile))
+										{
+											$line = fgetcsv($openedFile);
+											?>
+											<tr>
+												<th><?php echo $line[0]; ?></th>
+												<th><?php echo $line[1]; ?></th>
+												<th><?php echo $line[2]; ?></th>
+												<th><?php echo $line[3]; ?></th>
+												<th><?php echo $line[4]; ?></th>
+												<th><?php echo $line[5]; ?></th>
+											</tr>
+											<?php
+										}
+										fclose($openedFile);
+									}
+									catch ( Exception $e ) 
+									{
+										echo  $e->getMessage();
+									} 
+									?>		
+								</tbody>
+							  </table>
+							</div>
+						<?php
+					}
+				?>
             </div>
         </div>
     </div>

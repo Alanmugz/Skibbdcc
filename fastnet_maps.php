@@ -87,70 +87,70 @@ include 'php/eventenumertion.php';
                     <h3 class = "panel-title">Westlodge Fastnet Rally <?php echo $rallyEventYear; ?> - Maps</h3>
                 </div>
 				  <script type="text/javascript">
-function initialize() {
-	var i;
-	var arrDestinations = [
-		{
-			lat: 51.672662, 
-			lon: -9.474592, 
-			title: "HQ & Parc Ferme", 
-			description: "HQ & Parc Ferme",   
-		},
-		{
-			lat: 51.660737,   
-			lon: -9.470724,
-			title: "Scrutiny", 
-			description: "Scrutiny, Barrys Of Bantry"
-		},
-		{
-			lat: 51.663439,  
-			lon: -9.476234, 
-			title: "Trailer Park", 
-			description: "Trailer Park,\nBantry Business Park"
-		},
-		{
-			lat: 51.681177,   
-			lon: -9.454851, 
-			title: "Service Area", 
-			description: "Service Area"
-		}
-	];
-	
-	var myOptions = {
-		zoom: 13,
-		center: new google.maps.LatLng(51.673270, -9.467500),
-		mapTypeId: google.maps.MapTypeId.ROADMAP
-	};
-	
-	var map = new google.maps.Map(document.getElementById("map-canvas"), myOptions);
-	
-	var infowindow =  new google.maps.InfoWindow({
-		content: ''
-	});
-	
-	// loop over our array 
-	for (i = 0; i < arrDestinations.length; i++) {
-		// create a marker
-		var marker = new google.maps.Marker({
-			title: arrDestinations[i].title,
-			position: new google.maps.LatLng(arrDestinations[i].lat, arrDestinations[i].lon),   
-			map: map
-		});
-		
-		// add an event listener for this marker 
-		bindInfoWindow(marker, map, infowindow, "<p class='tooltip'>" + arrDestinations[i].description + "</p>");  
-	}
-}
+					function initialize() {
+						var i;
+						var arrDestinations = [
+							{
+								lat: 51.672662, 
+								lon: -9.474592, 
+								title: "HQ & Parc Ferme", 
+								description: "HQ & Parc Ferme",   
+							},
+							{
+								lat: 51.660737,   
+								lon: -9.470724,
+								title: "Scrutiny", 
+								description: "Scrutiny, Barrys Of Bantry"
+							},
+							{
+								lat: 51.663439,  
+								lon: -9.476234, 
+								title: "Trailer Park", 
+								description: "Trailer Park,\nBantry Business Park"
+							},
+							{
+								lat: 51.681177,   
+								lon: -9.454851, 
+								title: "Service Area", 
+								description: "Service Area"
+							}
+						];
+						
+						var myOptions = {
+							zoom: 13,
+							center: new google.maps.LatLng(51.673270, -9.467500),
+							mapTypeId: google.maps.MapTypeId.ROADMAP
+						};
+						
+						var map = new google.maps.Map(document.getElementById("map-canvas"), myOptions);
+						
+						var infowindow =  new google.maps.InfoWindow({
+							content: ''
+						});
+						
+						// loop over our array 
+						for (i = 0; i < arrDestinations.length; i++) {
+							// create a marker
+							var marker = new google.maps.Marker({
+								title: arrDestinations[i].title,
+								position: new google.maps.LatLng(arrDestinations[i].lat, arrDestinations[i].lon),   
+								map: map
+							});
+							
+							// add an event listener for this marker 
+							bindInfoWindow(marker, map, infowindow, "<p class='tooltip'>" + arrDestinations[i].description + "</p>");  
+						}
+					}
 
-function bindInfoWindow(marker, map, infowindow, html) { 
-	google.maps.event.addListener(marker, 'mouseover', function() { 
-		infowindow.setContent(html); 
-		infowindow.open(map, marker); 
-	}); 
-} 
+					function bindInfoWindow(marker, map, infowindow, html) { 
+						google.maps.event.addListener(marker, 'mouseover', function() { 
+							infowindow.setContent(html); 
+							infowindow.open(map, marker); 
+						}); 
+					} 
 
-google.maps.event.addDomListener(window, 'load', initialize);
-</script>
+					google.maps.event.addDomListener(window, 'load', initialize);
+					</script>
 				<div id="map-canvas" style="width:97%;height:400px; margin: 10px auto 10px auto"></div>	
             </div>
         </div>
