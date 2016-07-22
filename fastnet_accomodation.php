@@ -6,7 +6,7 @@ include 'php/eventenumertion.php';
 
 <!DOCTYPE html>
 <head>
-    <title>Westlodge Fastnet Rally <?php echo $rallyEventYear; ?></title>
+    <title><?php echo $rallySponsor." "; ?> Fastnet Rally <?php echo $rallyEventYear; ?></title>
 
     <meta name="generator" content="PSPad editor, www.pspad.com" />
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
@@ -80,7 +80,7 @@ include 'php/eventenumertion.php';
         <div class="col-md-8">
             <div class = "panel panel-default backgroundColor font">
                 <div class = "panel-heading">
-                    <h3 class = "panel-title">Westlodge Fastnet Rally <?php echo $rallyEventYear; ?> - Accommodation</h3>
+                    <h3 class = "panel-title"><?php echo $rallySponsor." "; ?> Fastnet Rally <?php echo $rallyEventYear; ?> - Accommodation</h3>
                 </div>
             </div>
         </div>
