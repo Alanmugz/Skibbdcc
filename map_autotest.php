@@ -80,8 +80,9 @@
                     <h3 class = "panel-title">Map</h3>
                 </div>
                 <script>
+					<!-- http://www.latlong.net/ -->
 					function initialize() {
-					  var myLatlng = new google.maps.LatLng(51.757282, -8.730108); 
+					  var myLatlng = new google.maps.LatLng(51.619793, -8.895766); 
 					  var mapOptions = {
 						zoom: 14,
 						center: myLatlng,
@@ -93,7 +94,7 @@
 					  var contentString = 
 						  '<div style="background-color:black;padding:10px;">'+ 
 						  '<p style="color:white;">Autotest</p>'+
-						  '<p style="color:white;">Bandon Co-op Kilbrogan, Bandon</p>'+ 
+						  '<p style="color:white;">Carbery Plastics, Clonakilty</p>'+ 
 						  '</div>'; 
 
 					  var infowindow = new google.maps.InfoWindow({
@@ -103,7 +104,7 @@
 					  var marker = new google.maps.Marker({
 						  position: myLatlng,
 						  map: map,
-						  title: 'Bandon Co-op, Kilbeg North, Bandon'
+						  title: 'Carbery Plastics, Clonakilty'
 					  });
 					  google.maps.event.addListener(marker, 'click', function() {
 						infowindow.open(map,marker);

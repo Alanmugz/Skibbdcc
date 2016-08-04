@@ -81,13 +81,13 @@ include 'php/function.php';
         <div class="col-md-8">
             <div class = "panel panel-default backgroundColor font">
                 <div class = "panel-heading">
-                    <h3 class = "panel-title">Autotest 21st & 22nd May 2016</h3>
+                    <h3 class = "panel-title">Autotest 20th & 21st August 2016</h3>
                 </div>
                 <?php
                 $repository = new NewsRepository;
                 $repository->connect("skibbdcc_news");
 
-                $newsItems = $repository->getLatestNewsForCategory(EventEnumertion::AutoTest, MonthEnumertion::January);
+                $newsItems = $repository->getLatestNewsForCategory(EventEnumertion::AutoTest, MonthEnumertion::July);
 
                 foreach ($newsItems as $news) {
                     ?>
