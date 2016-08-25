@@ -17,4 +17,7 @@
 	//Rally
 	$rallyEventYear = '2016';
 	$rallySponsor = 'Westlodge Hotel';
+	
+	//Year to show the current set of files
+	$fileYear = '2016';
 ?>

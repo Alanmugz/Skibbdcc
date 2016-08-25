@@ -90,7 +90,8 @@ include 'php/function.php';
 					$repository = new NewsRepository;
 					$repository->connect("skibbdcc_news");
 
-					$newsItems = $repository->getLatestNewsForCategory(EventEnumertion::ClubChampionship, MonthEnumertion::January);
+					$newsItems = $repository->getLatestNewsForCategoryClubChampionship(
+						EventEnumertion::ClubChampionship, MonthEnumertion::January, MonthEnumertion::December);
 
 					foreach ($newsItems as $news) {
 						?>

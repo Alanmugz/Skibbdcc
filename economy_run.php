@@ -87,7 +87,7 @@ include 'php/function.php';
                 $repository = new NewsRepository;
                 $repository->connect("skibbdcc_news");
 
-                $newsItems = $repository->getLatestNewsForCategory(EventEnumertion::EconomyRun, MonthEnumertion::January);
+                $newsItems = $repository->getLatestNewsForCategory(EventEnumertion::EconomyRun, MonthEnumertion::January, MonthEnumertion::December);
 
                 foreach ($newsItems as $news) {
                     ?>
