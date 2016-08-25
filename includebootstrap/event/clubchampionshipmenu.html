@@ -1,0 +1,58 @@
+ <?php 
+	require 'php/config.php';
+	
+	function FileExists(
+		$path,
+		$fileYear)
+	{
+		if (file_exists($path)) 
+		{	
+			echo $path;
+		} 
+		else 
+		{
+			echo "#";
+		}
+	}
+	
+	
+	function LatestStandingsFile(
+		$fileYear) 
+	{
+		$files = array();  
+		$ignored = array('.', '..');
+		$directory = "files/club_championship/$fileYear/standings";
+
+		$files = array();    
+		foreach (scandir($directory) as $file) {
+			if (in_array($file, $ignored)) continue;
+			$files[$file] = filemtime("$directory/$file");
+		}
+		
+		if (!empty($files))
+		{
+			arsort($files);
+			$files = array_keys($files);
+			$file = $files[0];
+			
+			if (file_exists("$directory/$file")) 
+			{	
+				echo "$directory/$file";
+			} 
+			else 
+			{
+				echo "#";
+			}
+		}
+		else
+		{
+			echo "#";
+		}	
+	}
+ ?>
+ 
+<h3>
+    <a href="club_championship.php" style="text-decoration:none;"><span class="label label-pill label-danger">Latest</span></a>
+    <a href="<?php FileExists("files/club_championship/$fileYear/regs.pdf", $fileYear) ?>" style="text-decoration:none;"><span class="label label-pill label-danger">Regs</span></a>
+    <a href="<?php LatestStandingsFile($fileYear) ?>" style="text-decoration:none;"><span class="label label-pill label-danger">Latest Standings</span></a>
+</h3>

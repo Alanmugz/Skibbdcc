@@ -151,6 +151,14 @@
 				</div>
 				<div class = "panel panel-default">
 				    <div class = "panel-heading">
+						<h3 class = "panel-title">Join Our Club</h3>
+				    </div>
+				   <?php 
+						include('includebootstrap/joinourclub.html');
+					?>
+				</div>
+				<div class = "panel panel-default">
+				    <div class = "panel-heading">
 						<h3 class = "panel-title">Social Media</h3>
 				    </div>
 				   <?php 
