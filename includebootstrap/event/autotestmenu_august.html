@@ -14,10 +14,17 @@
 			echo "#";
 		}
 	}
+	
+	function ParseBasename(
+		$basename)
+	{
+		$basename = str_replace("menu", "", basename($basename));
+		echo str_replace("html", "php", basename($basename));
+	}
  ?>
 
 <h3>
-    <a href="autotest.php" style="text-decoration:none;"><span class="label label-pill label-danger">Latest</span></a>
+    <a href="<?php ParseBasename(__FILE__); ?>" style="text-decoration:none;"><span class="label label-pill label-danger">Latest</span></a>
     <a href="<?php FileExists("files/autotest_august/$fileYear/regs.pdf", $fileYear) ?>" style="text-decoration:none;"><span class="label label-pill label-danger">Regs</span></a>
     <a href="<?php FileExists("files/autotest_august/$fileYear/regs.pdf", $fileYear) ?>" style="text-decoration:none;"><span class="label label-pill label-danger">Entry Form</span></a>
     <a href="map_autotest_august.php" style="text-decoration:none;"><span class="label label-pill label-danger">Map</span></a>

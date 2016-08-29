@@ -74,7 +74,7 @@ include 'php/function.php';
     </div>		
     <div style="display:inline-block;margin:-25px 0px 15px 0px;">
         <?php
-        include ('includebootstrap/event/lsautocrossmenu_february.html');
+        include ('includebootstrap/event/loose_surface_autocrossmenu_february.html');
         ?>
     </div>		
     <div class="row">
