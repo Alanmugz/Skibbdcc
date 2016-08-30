@@ -81,6 +81,7 @@ include 'php/function.php';
             <div class = "panel panel-default backgroundColor font">
                 <div class = "panel-heading">
                     <h3 class = "panel-title">Marshaling</h3>
+				</div>
 					<?php
 					$repository = new NewsRepository;
 					$repository->connect("skibbdcc_news");
@@ -100,12 +101,12 @@ include 'php/function.php';
 					}
 					$repository->close();
 					?>
-					</div>
-						<div id='pageheader'>
-						<?php Common::NewsTemplate(
-							"Marshaling do's and don'ts",
-							"30-08-2016 21:03") 
-						?>
+					
+					<div id='pageheader'>
+					<?php Common::NewsTemplate(
+						"Marshaling do's and don'ts",
+						"30-08-2016 21:03") 
+					?>
 					</div>
 
                     <p class="setmargin">
