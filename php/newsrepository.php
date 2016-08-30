@@ -93,5 +93,31 @@ class NewsRepository {
 		}
 		return $newsItems;
 	}
+	
+	
+	function getLatestMarshalingEvent(
+		$category)
+	{
+        $sql = "SELECT publish_date, content, title FROM pa_npro_news 
+		        WHERE status='Published'
+				AND cat_id=$category 
+				ORDER BY publish_date DESC
+				LIMIT 1";
+				
+		$result = $this->conn->query($sql);
+
+		$newsItems = array();
+		
+		while($row = mysqli_fetch_array($result))
+		{
+			$news = new News();
+			$news->setPublishDate($row['publish_date']);
+			$news->setContent($row['content']);
+			$news->setTitle($row['title']);
+			
+			array_push($newsItems, $news);
+		}
+		return $newsItems;
+	}
 }
 ?> 

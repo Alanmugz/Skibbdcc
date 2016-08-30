@@ -508,7 +508,7 @@ color:red;
   font-family: Helvetica, Arial, Verdana, sans-serif;
   font-size: 12px;
   line-height: 49px;
-  padding: 0 30.7px;
+  padding: 0 18.2%;  /* Set menu element width */
   text-decoration: none;
 }
 #cssmenu ul {
@@ -623,7 +623,7 @@ color:red;
 #cssmenu .has-sub ul {
   display: none;
   position: absolute;
-  width: 200px;
+  width: 230px; /* Set sub menu element width */
   top: 100%;
   left: 0;
 }

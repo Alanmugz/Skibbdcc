@@ -8,6 +8,7 @@ abstract class EventEnumertion {
     const CarberyNightNav = 11;
     const TreasureHunt = 10;
     const ClubChampionship = 12;
+    const Marshaling = 19;
 }
 
 ?>
