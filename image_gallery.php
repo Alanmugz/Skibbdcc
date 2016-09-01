@@ -117,8 +117,7 @@
 				<div class = "panel panel-default">
 					<div class = "panel-heading">
 						<h3 class = "panel-title">Image Gallery</h3>
-					</div>
-					Hello					
+					</div>					
 				</div>
 			</div>
 			
