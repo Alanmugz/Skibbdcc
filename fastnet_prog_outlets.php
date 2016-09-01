@@ -39,6 +39,9 @@ include 'php/eventenumertion.php';
 
     <!-- Timer -->
     <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+	
+	<!-- http://fontawesome.io/cdn/success/ -->
+	<script src="https://use.fontawesome.com/0ef5cb71bd.js"></script>		
 
 </head>
 <!-- Bottom menu -->
@@ -47,7 +50,7 @@ include 'php/eventenumertion.php';
 ?>
 <div class="container border10">	
     <div class="row row-margin height visible-lg">
-        <div class="col-md-12">
+        <div class="col-md-12 backgroundColor">
             <div id="header">
                 <?php
                 include ('includebootstrap/header.html');
@@ -62,7 +65,7 @@ include 'php/eventenumertion.php';
     </div>
     <div class="row visible-lg" style="padding-bottom:20px">
         <div class="col-md-12">
-            <div id='cssmenu'> 
+            <div> 
                 <?php
                 include ('includebootstrap/menu.html');
                 ?>

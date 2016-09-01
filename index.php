@@ -77,11 +77,15 @@
 			$("a.youtube").YouTubePopup({ autoplay: 0 });
 		});
     </script>
+
+	<!-- http://fontawesome.io/cdn/success/ -->
+	<script src="https://use.fontawesome.com/0ef5cb71bd.js"></script>		
+
 </head>
 <html>
 	<div class="container border10">	
 		<div class="row row-margin height visible-lg">
-			<div class="col-md-12">
+			<div class="col-md-12 backgroundColor">
 				<div id="header">
 					<?php 
 						include ('includebootstrap/header.html');
@@ -96,7 +100,7 @@
 		</div>
 		<div class="row visible-lg" style="padding-bottom:20px">
 			<div class="col-md-12">
-				<div id='cssmenu'> 
+				<div> 
 					<?php
 						include ('includebootstrap/menu.html');
 					?>
@@ -118,7 +122,6 @@
 						include("/home/skibbdcc/public_html/scriptfolderbootstrap/news.php");
 					?>    
 				</div>
-				
 				<div class = "panel panel-default visible-lg backgroundColor">
 					<div class = "panel-heading">
 						<h3 class = "panel-title">Latest Videos</h3>
@@ -129,7 +132,6 @@
 					?>    
 				</div>
 			</div>
-			
 			<div class="col-md-4">
 				<div class = "panel panel-default backgroundColor">
 				    <div class = "panel-heading">
