@@ -79,7 +79,7 @@
     </script>
 		
 	<!-- http://fontawesome.io/cdn/success/ -->
-	<script src="https://use.fontawesome.com/0ef5cb71bd.js"></script>		
+	<script src="https://use.fontawesome.com/0ef5cb71bd.js"></script>
 
 </head>
 <html>
@@ -117,10 +117,12 @@
 				<div class = "panel panel-default">
 					<div class = "panel-heading">
 						<h3 class = "panel-title">Image Gallery</h3>
-					</div>					
+					</div>
+					<?php 
+						include ('imagegallery/index.html');
+					?>					
 				</div>
 			</div>
-			
 			<div class="col-md-4">
 				<div class = "panel panel-default backgroundColor">
 				    <div class = "panel-heading">
