@@ -88,21 +88,43 @@ include 'php/function.php';
                 </div>
 				<div id='pageheader'>
 					<?php Common::NewsTemplate(
+						"Westlodge Hotel Fastnet Rally launch - Sunday 11th Of September @16:00",
+						"06-09-2016 22:03") 
+					?>
+				</div>
+				<p class="setmargin">
+				Skibbereen & District Car Club will launch the 2016 Westlodge Hotel Fastnet Rally at the Westlodge Hotel, Bantry on Sunday 11th Of 
+				September @16:00. All are welcome to attend. The club will provide a BBQ and finger food to attendees on the evening. The club has 
+				also organised a few guest speakers to speak at the launch. 
+				</p>
+				
+				<div id='pageheader'>
+					<?php Common::NewsTemplate(
 						"The Westlodge Hotel Fastnet Rally coming fast.",
 						"29-08-2016 22:03") 
 					?>
 				</div>
-					<p class="setmargin">
-					It's nearly that time of year once again. The Westlodge Hotel Fastnet Rally is now just under two months away. This years Westlodge Fastnet Rally organized by the Skibbereen & District Car Club is a counting round of the Plasticbags.ie Southern 4 Rally Championship and the Carbery Plastic Skibbereen & District Car Club Championship. Many classes are yet to be decided making for an exciting bank holiday weekend in Bantry.<br /><br />
+				<p class="setmargin">
+				It's nearly that time of year once again. The Westlodge Hotel Fastnet Rally is now just under two months away. This years Westlodge 
+				Fastnet Rally organized by the Skibbereen & District Car Club is a counting round of the Plasticbags.ie Southern 4 Rally Championship 
+				and the Carbery Plastic Skibbereen & District Car Club Championship. Many classes are yet to be decided making for an exciting bank 
+				holiday weekend in Bantry.<br /><br />
 
-					The Rally will be held on Sunday 30th October, the club have planned a two stage loop run three times based in close vicinity of Bantry town. These classic stages will contain maximium allowed kilometres and are very technical. I have decided to set the entry fee at €385 plus Motorsport Ireland insurance increase of €180 this bring total entry fee of €565 this is simply to facilitate rally drivers who want an enjoyable cost effective weekend.<br /><br />
+				The Rally will be held on Sunday 30th October, the club have planned a two stage loop run three times based in close vicinity of Bantry 
+				town. These classic stages will contain maximium allowed kilometres and are very technical. I have decided to set the entry fee at €385 
+				plus Motorsport Ireland insurance increase of €180 this bring total entry fee of €565 this is simply to facilitate rally drivers who 
+				want an enjoyable cost effective weekend.<br /><br />
 
-					In the past competitors have being a faithful to our event and without this support we would find it next to impossible to continue with our rally. With further ado I am inviting you to Bantry on the October bank holiday weekend and I hope you consider entering our event. I am willing to help any competitor who wants to pay in advance or by instalments between here and our rally. Your entry is of most importance to us and once again I thank you for your support in the past and look forward to hearing from you in the next two months.<br /><br />
+				In the past competitors have being a faithful to our event and without this support we would find it next to impossible to continue 
+				with our rally. With further ado I am inviting you to Bantry on the October bank holiday weekend and I hope you consider entering 
+				our event. I am willing to help any competitor who wants to pay in advance or by instalments between here and our rally. Your 
+				entry is of most importance to us and once again I thank you for your support in the past and look forward to hearing from you in 
+				the next two months.<br /><br />
 
-					Yours in motorsport<br /><br />
+				Yours in motorsport<br /><br />
 
-					Ger Hayes C.O.C
-					</p>
+				Ger Hayes C.O.C
+				</p>
             </div>
         </div>
 
