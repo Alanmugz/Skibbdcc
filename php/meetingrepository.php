@@ -68,7 +68,7 @@ class MeetingRepository {
 
 		while($row = mysqli_fetch_array($result))
 	    {
-			return $row['day'] . " " . $row['date'] . " " . $row['month'] . " " .$row['year'] . "<br />" . $row['venue'] . "<br />at " . $row['time']." Sharp";
+			return $row['day'] . " " . $row['date'] . " " . $row['month'] . "<br />" . $row['venue'] . "<br />at " . $row['time']." Sharp";
 		}
 	}
 	

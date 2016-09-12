@@ -95,7 +95,7 @@
 						<?php 
 							session_unset();
 							session_destroy();
-							$logger->info("User logged out: ".$_SESSION['username']);
+							$logger->info("User logged out!");
 						?>
 					</div>
 				</div>

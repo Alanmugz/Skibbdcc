@@ -171,7 +171,11 @@
 														<label class="control-label " for="venue">
 														Meeting Venue
 														</label>
-														<input class="form-control" id="venue" name="venue" type="text"/>
+														<!-- <input class="form-control" id="venue" name="venue" type="text"/> -->
+														<select class="form-control"id="venue" name="venue">
+															<option value="Quailty Hotel, Clonakilty">Quality Hotel, Clonakilty</option>
+															<option value="Westlodge Hotel, Bantry">Westlodge Hotel, Bantry</option>
+														</select>
 													</div>
 													<div class="form-group">
 														<input name="button" style="display:none" type="text"/>
