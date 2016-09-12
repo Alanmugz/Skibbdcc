@@ -1,23 +1,5 @@
 <?php
 	require 'php/config.php'; 
-	
-	if($environment == 'prod')
-	{	
-		if(!isset($configs_are_set)) {
-			include("scriptfolderbootstrap/configs.php");
-		}
-
-		//Facebook data from database
-		//$conn aquired from scriptfolderbootstrap/configs.php
-		$sql = "SELECT title, summary FROM ".$TABLE["News"]." WHERE status='Published' AND id='".mysql_real_escape_string($_REQUEST["id"])."'";
-		$sql_result = mysql_query ($sql, $conn ) or die ('MySQL query error: '.$sql.'. Error: '.mysql_error());
-		if(mysql_num_rows($sql_result) > 0) {	
-			$News = mysql_fetch_assoc($sql_result);
-		}
-		 
-		$titlefb = ReadDB($News["title"]);
-		$descfb = ReadDB($News["summary"]);
-	}
 ?> 
 
 <!DOCTYPE html>
@@ -79,7 +61,14 @@
     </script>
 		
 	<!-- http://fontawesome.io/cdn/success/ -->
-	<script src="https://use.fontawesome.com/0ef5cb71bd.js"></script>		
+	<script src="https://use.fontawesome.com/0ef5cb71bd.js"></script>
+	
+	<!-- https://github.com/blueimp/Bootstrap-Image-Gallery -->
+	<link rel="stylesheet" href="//blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
+	<link rel="stylesheet" href="imagegallery/css/bootstrap-image-gallery.css">
+	<link rel="stylesheet" href="imagegallery/css/demo.css">
+	<script src="//blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
+	<script src="imagegallery/js/bootstrap-image-gallery.js"></script>	
 
 </head>
 <html>
@@ -117,10 +106,12 @@
 				<div class = "panel panel-default">
 					<div class = "panel-heading">
 						<h3 class = "panel-title">Image Gallery</h3>
-					</div> 
+					</div>
+					<?php 
+						include ('imagegallery/index.html');
+					?>					
 				</div>
 			</div>
-			
 			<div class="col-md-4">
 				<div class = "panel panel-default backgroundColor">
 				    <div class = "panel-heading">
