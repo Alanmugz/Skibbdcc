@@ -3,29 +3,35 @@
 	these images can be placed in the large folder
 	Small images will be resized to 120 X 90
 	these will be place in the small image folder -->
-
-<!-- https://github.com/blueimp/Bootstrap-Image-Gallery -->
-
-<link rel="stylesheet" href="//blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
-<link rel="stylesheet" href="imagegallery/css/bootstrap-image-gallery.css">
-<link rel="stylesheet" href="imagegallery/css/demo.css">
-
-<script src="//netdna.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-<script src="//blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
-<script src="imagegallery/js/bootstrap-image-gallery.js"></script>
 	
 <div class="container" style="width:100%; background-color:#E4F3F6">
+	<div style="padding-top: 10px; font-size: 1.2em;" >
+		<form method="post" action="image_gallery.php">
+		  <select name="taskOption">
+			<option value="2016,autotest_august">2016 AutoTest (August)</option>
+		  </select>
+		  <input type="submit" value="View Gallery"/>
+		</form>
+	</div>
     <div id="links" style="padding:15px 0px;">
 		<?php
-			$year = '2016';
-			$directory = "imagesbootstrap/gallery/$year/large";
+		    if (isset($_POST['taskOption'])) {
+			    $eventInformation = $_POST['taskOption'];
+		    }
+			else 
+			{
+			    $eventInformation = "2016,autotest_august";
+		    }
+
+			list($year, $event) = explode(',',$eventInformation);
+
+			$directory = "imagesbootstrap/gallery/$year/large/$event";
 			$files = scandir($directory);
-			
 			foreach ($files as $file) {
 				if(substr( $file, 0, 1 ) === ".") { continue; }
 				?> 
-				<a href="<?php echo "imagesbootstrap/gallery/$year/large/$file"; ?>" title="" data-gallery>
-					<img src="<?php echo "imagesbootstrap/gallery/$year/small/$file"; ?>" alt="Apple">
+				<a href="<?php echo "imagesbootstrap/gallery/$year/large/$event/$file"; ?>" title="" data-gallery>
+					<img src="<?php echo "imagesbootstrap/gallery/$year/small/$event/$file"; ?>" alt="image" style="padding: 2px 1px;" >
 				</a> 
 				<?php
 			}
