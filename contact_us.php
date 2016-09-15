@@ -165,14 +165,14 @@
 					{						
 						if($_POST['recipient'] == 1)
 						{
-							$recipient = "alanmugz@gmail.com, alanmulligan@yahoo.com";   
+							$arrEmail = array('alanmugz@gmail.com, alanmulligan@yahoo.com');   
 						}else
 						{
-							$recipient = "alanmugz@gmail.com, alanmulligan@yahoo.com";
+							$arrEmail = array('alanmugz@gmail.com, alanmulligan@yahoo.com'); 
 						}
 							
 						// EDIT THE 2 LINES BELOW AS REQUIRED
-						$email_to = $recipient;
+						$email_to = $arrEmail;
 						$email_subject = $_POST['subject'];  
 						 
 						 
@@ -233,7 +233,8 @@
 						$headers = 'From: '.$email_from."\r\n".
 						'Reply-To: '.$email_from."\r\n" .
 						'X-Mailer: PHP/' . phpversion();
-						@mail($email_to, $email_subject, $email_message, $headers);
+						foreach($arrEmail as $key => $email_to)
+							@mail($email_to, $email_subject, $email_message, $headers);
 						?>
 						<div class = "padding <?php if(!isset($_POST['email'])){echo ".hidden";} ?>">
 							Thank you for contacting us. We will be in touch with you very soon.
