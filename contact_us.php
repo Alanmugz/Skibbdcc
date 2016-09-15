@@ -234,7 +234,9 @@
 						'Reply-To: '.$email_from."\r\n" .
 						'X-Mailer: PHP/' . phpversion();
 						foreach($arrEmail as $key => $email_to)
+						{
 							@mail($email_to, $email_subject, $email_message, $headers);
+						}
 						?>
 						<div class = "padding <?php if(!isset($_POST['email'])){echo ".hidden";} ?>">
 							Thank you for contacting us. We will be in touch with you very soon.
