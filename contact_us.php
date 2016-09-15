@@ -165,10 +165,10 @@
 					{						
 						if($_POST['recipient'] == 1)
 						{
-							$arrEmail = array('alanmugz@gmail.com, alanmulligan@yahoo.com');   
+							$arrEmail = $emailRecipients;   
 						}else
 						{
-							$arrEmail = array('alanmugz@gmail.com, alanmulligan@yahoo.com'); 
+							$arrEmail = $emailRecipients;  
 						}
 							
 						// EDIT THE 2 LINES BELOW AS REQUIRED
