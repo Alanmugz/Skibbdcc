@@ -4,11 +4,11 @@
 
 <!DOCTYPE html>
 <head>
-	<title>Skibbereen &amp; District Car Club</title>
+	<title>Skibbereen &amp; District Car Club Image Gallery</title>
 	
 	<meta name="generator" content="PSPad editor, www.pspad.com" />
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-	<meta name="description" content="Skibbereen &amp; District Car Club. Home of the Westlogde Fastent Rally"/>
+	<meta name="description" content="Skibbereen &amp; District Car Club. View the latest image from club events and members in action."/>
 	<meta name="keywords" content="Skibbereen and District Car Club, Skibbdcc, Westlodge Hotel, Skibbereen Motor Club, Fastnet Rally"/>
 	<meta name="author" content="Alan Mulligan Web Design"/>
 	<meta name="robots" content="index, follow"/>
