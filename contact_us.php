@@ -165,10 +165,10 @@
 					{						
 						if($_POST['recipient'] == 1)
 						{
-							$recipient = "webmaster@skibbdcc.com";   
+							$recipient = "alanmugz@gmail.com, alanmulligan@yahoo.com";   
 						}else
 						{
-							$recipient = "webmaster@skibbdcc.com";//if value = 0 send to pro
+							$recipient = "alanmugz@gmail.com, alanmulligan@yahoo.com";
 						}
 							
 						// EDIT THE 2 LINES BELOW AS REQUIRED
