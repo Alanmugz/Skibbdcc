@@ -86,6 +86,17 @@ include 'php/function.php';
                 <div class = "panel-heading">
                     <h3 class = "panel-title"><?php echo $rallySponsor." "; ?> Fastnet Rally <?php echo $rallyEventYear; ?></h3>
                 </div>
+                <div id='pageheader'>
+                    <?php Common::NewsTemplate(
+                        "Regulations and entry form are now available to download.",
+                        "17-09-2016 14:30") 
+                    ?>
+                </div>
+                <p class="setmargin">
+                    Regulations and entry form for the 2016 Westlodge Hotel Fastnet Rally are now available to download 
+                    from the competitor's section on the menu below or by clicking <a href="files/fastnet_2016/regs.doc">here</a>.
+                </p>
+
 				<div id='pageheader'>
 					<?php Common::NewsTemplate(
 						"Westlodge Hotel Fastnet Rally launch - Sunday 11th Of September @16:00",
