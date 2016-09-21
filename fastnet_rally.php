@@ -94,7 +94,10 @@ include 'php/function.php';
                 </div>
                 <p class="setmargin">
                     Regulations and entry form for the 2016 Westlodge Hotel Fastnet Rally are now available to download 
-                    from the competitor's section on the menu below or by clicking <a href="files/fastnet_2016/regs.doc">here</a>.
+                    from the competitor's section on the menu below or by clicking <a href="files/fastnet_2016/regs.doc">here</a>.<br />
+					<br />
+					if any competitors would like for a set of regulations to be post out to them we at Skibbereen & District Car Club 
+					will do so by contacting club P.R.O Colm Feen on 0868626001. 
                 </p>
 
 				<div id='pageheader'>
