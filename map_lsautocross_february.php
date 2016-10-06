@@ -47,33 +47,33 @@
         <div class="col-md-12 backgroundColor">
             <div id="header">
                 <?php
-                include ('includebootstrap/header.html');
+                include ('include/header.html');
                 ?>
             </div>
         </div>
     </div>
     <div style="margin-top:-20px">
         <?php
-        include ('includebootstrap/carousel.html');
+        include ('include/carousel.html');
         ?>
     </div>
     <div class="row visible-lg" style="padding-bottom:20px">
         <div class="col-md-12">
             <div> 
                 <?php
-                include ('includebootstrap/menu.html');
+                include ('include/menu.html');
                 ?>
             </div>
         </div>
     </div>
     <div class="row hidden-lg">
         <?php
-        include ('includebootstrap/mobilemenu.html');
+        include ('include/mobilemenu.html');
         ?>
     </div>		
     <div style="display:inline-block;margin:-25px 0px 15px 0px;">
         <?php
-        include ('includebootstrap/event/lsautocrossmenu_february.html');
+        include ('include/event/lsautocrossmenu_february.html');
         ?>
     </div>		
     <div class="row">
@@ -123,7 +123,7 @@
                     <h3 class = "panel-title">Latest Videos</h3>
                 </div>
                 <?php
-                include('includebootstrap/video.html');
+                include('include/video.html');
                 ?>    
             </div>
         </div>
@@ -135,7 +135,7 @@
                 </div>
                 <div id="countdown-nextmeeting">
                     <?php
-                    include('includebootstrap/countdowntimer.html');
+                    include('include/countdowntimer.html');
                     ?>
                 </div>
             </div>
@@ -144,7 +144,7 @@
                     <h3 class = "panel-title">Club Sponsors</h3>
                 </div>
                 <?php
-                include('includebootstrap/sponsors.html');
+                include('include/sponsors.html');
                 ?>
             </div>
             <div class = "panel panel-default">
@@ -152,7 +152,7 @@
                     <h3 class = "panel-title">Social Media</h3>
                 </div>
                 <?php
-                include('includebootstrap/socialmedia.html');
+                include('include/socialmedia.html');
                 ?>
             </div>
         </div>
@@ -164,7 +164,7 @@
                     <h3 class = "panel-title">Contact Us:</h3>
                 </div>
                 <?php
-                include('includebootstrap/contactus.html');
+                include('include/contactus.html');
                 ?>
             </div>
         </div>
@@ -174,7 +174,7 @@
                     <h3 class = "panel-title">Club Events:</h3>
                 </div>
                 <?php
-                include('includebootstrap/clubevents.html');
+                include('include/clubevents.html');
                 ?>
             </div>			
         </div>
@@ -184,7 +184,7 @@
                     <h3 class = "panel-title">In Association With:</h3>
                 </div>
                 <?php
-                include('includebootstrap/association.html');
+                include('include/association.html');
                 ?>
             </div>			
         </div>
@@ -193,7 +193,7 @@
         <div class="col-md-12">
             <div id="copyright">
                 <?php
-                include('includebootstrap/copyright.html');
+                include('include/copyright.html');
                 ?>
             </div>
         </div>

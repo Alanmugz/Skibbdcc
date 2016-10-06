@@ -26,13 +26,13 @@
 
 			list($year, $event) = explode(',',$eventInformation);
 
-			$directory = "imagesbootstrap/gallery/$year/large/$event";
+			$directory = "images/gallery/$year/large/$event";
 			$files = scandir($directory);
 			foreach ($files as $file) {
 				if(substr( $file, 0, 1 ) === ".") { continue; }
 				?> 
-				<a href="<?php echo "imagesbootstrap/gallery/$year/large/$event/$file"; ?>" title="" data-gallery>
-					<img src="<?php echo "imagesbootstrap/gallery/$year/small/$event/$file"; ?>" alt="image" style="padding: 2px 1px;" >
+				<a href="<?php echo "images/gallery/$year/large/$event/$file"; ?>" title="" data-gallery>
+					<img src="<?php echo "images/gallery/$year/small/$event/$file"; ?>" alt="image" style="padding: 2px 1px;" >
 				</a> 
 				<?php
 			}

@@ -18,7 +18,7 @@
 </head>
 <body>
 
-<img class="center fit" src="imagesbootstrap/404.png" >    
+<img class="center fit" src="images/404.png" >    
 
 <script src="http://code.jquery.com/jquery-latest.js"></script>
 <script type="text/javascript" language="JavaScript">

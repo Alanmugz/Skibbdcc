@@ -65,10 +65,10 @@
 	
 	<!-- https://github.com/blueimp/Bootstrap-Image-Gallery -->
 	<link rel="stylesheet" href="//blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
-	<link rel="stylesheet" href="imagegallery/css/bootstrap-image-gallery.css">
-	<link rel="stylesheet" href="imagegallery/css/demo.css">
+	<link rel="stylesheet" href="gallery/css/bootstrap-image-gallery.css">
+	<link rel="stylesheet" href="gallery/css/demo.css">
 	<script src="//blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
-	<script src="imagegallery/js/bootstrap-image-gallery.js"></script>	
+	<script src="gallery/js/bootstrap-image-gallery.js"></script>	
 
 </head>
 <html>
@@ -77,28 +77,28 @@
 			<div class="col-md-12 backgroundColor">
 				<div id="header">
 					<?php 
-						include ('includebootstrap/header.html');
+						include ('include/header.html');
 					?>
 				</div>
 			</div>
 		</div>
 		<div style="margin-top:-20px">
 			<?php 
-				include ('includebootstrap/carousel.html');
+				include ('include/carousel.html');
 			?>
 		</div>
 		<div class="row visible-lg" style="padding-bottom:20px">
 			<div class="col-md-12">
 				<div> 
 					<?php
-						include ('includebootstrap/menu.html');
+						include ('include/menu.html');
 					?>
 				</div>
 			</div>
 		</div>
 		<div class="row hidden-lg">
 			<?php 
-				include ('includebootstrap/mobilemenu.html');
+				include ('include/mobilemenu.html');
 			?>
 		</div>
 		<div class="row">
@@ -108,7 +108,7 @@
 						<h3 class = "panel-title">Image Gallery</h3>
 					</div>
 					<?php 
-						include ('imagegallery/index.html');
+						include ('gallery/index.html');
 					?>					
 				</div>
 			</div>
@@ -119,7 +119,7 @@
 				    </div>
 					<div id="countdown-nextmeeting">
 						<?php
-							include('includebootstrap/countdowntimer.html');
+							include('include/countdowntimer.html');
 						?>
 					</div>
 				</div>
@@ -128,7 +128,7 @@
 					  <h3 class = "panel-title">Club Sponsors</h3>
 				   </div>
 				   <?php 
-						include('includebootstrap/sponsors.html');
+						include('include/sponsors.html');
 					?>
 				</div>
 				<div class = "panel panel-default">
@@ -136,7 +136,7 @@
 						<h3 class = "panel-title">Social Media</h3>
 				    </div>
 				   <?php 
-						include('includebootstrap/socialmedia.html');
+						include('include/socialmedia.html');
 					?>
 				</div>
 			</div>
@@ -148,7 +148,7 @@
 						<h3 class = "panel-title">Contact Us:</h3>
 				    </div>
 				    <?php 
-						include('includebootstrap/contactus.html');
+						include('include/contactus.html');
 					?>
 				</div>
 			</div>
@@ -158,7 +158,7 @@
 						<h3 class = "panel-title">Club Events:</h3>
 				    </div>
 				    <?php 
-						include('includebootstrap/clubevents.html');
+						include('include/clubevents.html');
 					?>
 				</div>			
 			</div>
@@ -168,7 +168,7 @@
 						<h3 class = "panel-title">In Association With:</h3>
 				    </div>
 					<?php 
-						include('includebootstrap/association.html');
+						include('include/association.html');
 					?>
 				</div>			
 			</div>
@@ -177,7 +177,7 @@
 			<div class="col-md-12">
 				<div id="copyright">
 					<?php 
-						include('includebootstrap/copyright.html');
+						include('include/copyright.html');
 					?>
 				</div>
 			</div>
