@@ -3,20 +3,20 @@
 	
 	if($environment == 'prod')
 	{	
-		if(!isset($configs_are_set)) {
-			include("scriptfolderbootstrap/configs.php");
-		}
-
-		//Facebook data from database
-		//$conn aquired from scriptfolderbootstrap/configs.php
-		$sql = "SELECT title, summary FROM ".$TABLE["News"]." WHERE status='Published' AND id='".mysql_real_escape_string($_REQUEST["id"])."'";
-		$sql_result = mysql_query ($sql, $conn ) or die ('MySQL query error: '.$sql.'. Error: '.mysql_error());
-		if(mysql_num_rows($sql_result) > 0) {	
-			$News = mysql_fetch_assoc($sql_result);
-		}
-		 
-		$titlefb = ReadDB($News["title"]);
-		$descfb = ReadDB($News["summary"]);
+//		if(!isset($configs_are_set)) {
+//			include("scriptfolderbootstrap/configs.php");
+//		}
+//
+//		//Facebook data from database
+//		//$conn aquired from scriptfolderbootstrap/configs.php
+//		$sql = "SELECT title, summary FROM ".$TABLE["News"]." WHERE status='Published' AND id='".mysql_real_escape_string($_REQUEST["id"])."'";
+//		$sql_result = mysql_query ($sql, $conn ) or die ('MySQL query error: '.$sql.'. Error: '.mysql_error());
+//		if(mysql_num_rows($sql_result) > 0) {	
+//			$News = mysql_fetch_assoc($sql_result);
+//		}
+//		 
+//		$titlefb = ReadDB($News["title"]);
+//		$descfb = ReadDB($News["summary"]);
 	}
 ?> 
 
@@ -119,7 +119,7 @@
 						<h3 class = "panel-title">Club News</h3>
 					</div>
 					<?php 
-						include("/home/skibbdcc/public_html/scriptfolderbootstrap/news.php");
+						include("/home/skibbdcc/public_html/scriptfolder/news.php");
 					?>    
 				</div>
 				<div class = "panel panel-default visible-lg backgroundColor">
