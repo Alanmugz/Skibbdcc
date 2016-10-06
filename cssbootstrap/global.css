@@ -148,9 +148,10 @@ ul.countdown li p {
 .height {
     background-color: white;
 }
-.padding {
-    margin: 0% 1%
-}
+
+/*.padding {
+    margin: 1% 1%
+}*/
 
 .panel-body {
     background: #e4f3f6
@@ -165,7 +166,7 @@ ul.countdown li p {
 }
 
 .padding {
-    padding: 10px 15px 0px 15px;
+    padding: 10px 15px 15px 15px;
 }
 
 .fill {
