@@ -1,2 +1,4 @@
 *.log
 nbproject/
+.vs/
+Skibbdcc.phpproj
