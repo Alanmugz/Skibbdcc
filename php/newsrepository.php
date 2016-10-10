@@ -9,13 +9,13 @@ class NewsRepository {
 	 *
 	 * @param string $dbname Database name.
 	 */
-    function connect(
+	function connect(
 		$dbname)
 	{
 		require 'config.php';
 		require 'news.php';
 
-        $servername = $configs['db_servername'];
+		$servername = $configs['db_servername'];
 		$username = $configs['db_username'];
 		$password = $configs['db_password'];
 
@@ -26,7 +26,7 @@ class NewsRepository {
 		if ($this->connection->connect_error) {
 			die("Connection failed: " . $this->connection->connect_error);
 		}
-    }
+	}
 
 
 	/**
@@ -54,9 +54,9 @@ class NewsRepository {
 	{
 		$currentYear = date("Y");
 
-        $sql = "SELECT publish_date, content, title
+		$sql = "SELECT publish_date, content, title
 				FROM pa_npro_news
-		        WHERE status ='Published'
+				WHERE status ='Published'
 				AND cat_id = $category
 				AND YEAR(publish_date) = $currentYear
 				AND MONTH(publish_date) >= $startMonth
@@ -97,8 +97,8 @@ class NewsRepository {
 		$currentYear = date("Y");
 		$previousYear = date('Y', strtotime('-1 years'));
 
-        $sql = "SELECT publish_date, content, title FROM pa_npro_news
-		        WHERE status ='Published'
+		$sql = "SELECT publish_date, content, title FROM pa_npro_news
+				WHERE status ='Published'
 				AND cat_id = $category
 				AND YEAR(publish_date) BETWEEN $previousYear AND $currentYear
 				AND MONTH(publish_date) >= $startMonth
@@ -132,8 +132,8 @@ class NewsRepository {
 	function getLatestMarshalingEvent(
 		$category)
 	{
-        $sql = "SELECT publish_date, content, title FROM pa_npro_news
-		        WHERE status ='Published'
+		$sql = "SELECT publish_date, content, title FROM pa_npro_news
+				WHERE status ='Published'
 				AND cat_id = $category
 				ORDER BY publish_date DESC
 				LIMIT 1";

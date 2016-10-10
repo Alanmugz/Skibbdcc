@@ -10,12 +10,12 @@ class MeetingRepository {
 	 *
 	 * @param string $dbname Database name.
 	 */
-    function connect(
+	function connect(
 		$dbname)
 	{
 		require 'config.php';
 
-        $servername = $configs['db_servername'];
+		$servername = $configs['db_servername'];
 		$username = $configs['db_username'];
 		$password = $configs['db_password'];
 
@@ -26,7 +26,7 @@ class MeetingRepository {
 		if ($this->connection->connect_error) {
 			die("Connection failed: " . $this->connection->connect_error);
 		}
-    }
+	}
 
 
 	/**
@@ -54,7 +54,7 @@ class MeetingRepository {
 		$now = date("Y-m-d");
 
 		while($row = mysqli_fetch_array($result))
-	    {
+		{
 			$meetingDate = date("Y-m-d G:i:s", strtotime($row['meetingDate']));
 		}
 		$logger->info('Meeting date from database: '.$meetingDate);
@@ -89,7 +89,7 @@ class MeetingRepository {
 		$result = $this->connection->query($sql);
 
 		while($row = mysqli_fetch_array($result))
-	    {
+		{
 			return $row['day'] . " " . $row['date'] . " " . $row['month'] . "<br />" . $row['venue'] . "<br />at " . $row['time']." Sharp";
 		}
 		return "";
@@ -111,7 +111,7 @@ class MeetingRepository {
 		$time,
 		$venue,
 		$logger)
-    {
+	{
 		$dateWithTime = $date." 21:30:00";
 		$logger->info('Date With Time: '.$dateWithTime);
 		$date = new DateTime($dateWithTime);
@@ -149,4 +149,4 @@ class MeetingRepository {
 		}
 	}
 }
-?> 
+?>

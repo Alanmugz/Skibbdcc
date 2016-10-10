@@ -10,12 +10,12 @@ class VideoRepository {
 	 *
 	 * @param string $dbname Database name.
 	 */
-    function connect(
+	function connect(
 		$dbname)
 	{
 		require 'config.php';
 
-        $servername = $configs['db_servername'];
+		$servername = $configs['db_servername'];
 		$username = $configs['db_username'];
 		$password = $configs['db_password'];
 
@@ -26,7 +26,7 @@ class VideoRepository {
 		if ($this->connection->connect_error) {
 			die("Connection failed: " . $this->connection->connect_error);
 		}
-    }
+	}
 
 
 	/**
@@ -53,4 +53,4 @@ class VideoRepository {
 		}
 	}
 }
-?> 
+?>
