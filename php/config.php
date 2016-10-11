@@ -22,5 +22,5 @@ $rallySponsor = 'Westlodge Hotel';
 $fileYear = '2016';
 
 //Email
-$emailRecipients = array('alanmugz@gmail.com, webmaster@skibbdcc.com, cozyger@gmail.com, colmfeen@gmail.com');
+$emailRecipients = array('alanmugz@gmail.com, webmaster@skibbdcc.com, cozyger@gmail.com, colmfeen@gmail.com'); 
 ?>
