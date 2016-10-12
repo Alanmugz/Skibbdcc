@@ -50,7 +50,7 @@ include 'php/eventenumertion.php';
 <body>
 	<!-- Bottom menu -->
 	<?php
-	include ('include\event\fastnetrallybottommenu.html');
+	include ('include/event/fastnetrallybottommenu.html');
 	?>
 	<div class="container border10">
 		<div class="row row-margin height visible-lg">
