@@ -1,0 +1,194 @@
+<?php
+		//Logger
+		include_once 'log4php_logger/class.php';
+		$loggerInstance = new LoggerInstance();
+		$logger = $loggerInstance->getLogger();
+		require 'php/config.php';
+		include_once('php/meetingrepository.php');
+		$repository = new MeetingRepository;
+		$repository->connect("skibbdcc_meeting");
+		if($repository->isMeetingWithinTheLast10Days(
+			$logger))
+		{
+?>
+<img src="images/sticky_note.png" class="img-responsive" alt="" style="margin: 10px 22px">
+<div id="setText">Next Club Meeting:<br /><?php echo $repository->meetingDetails(); ?></div>
+<?php
+		}
+		else
+		{
+?>
+<a href="<?php echo $countdownEventLink; ?>" style="text-decoration:none">
+	<div>
+		<div class="countdown">
+			<div id="circle1"></div>
+			<div id="circle2"></div>
+			<div id="circle3"></div>
+			<div id="circle4"></div>
+			<div id="circle5"></div>
+			<div id="circle6"></div>
+		</div>
+		<h4 align="center"><?php echo $countdownEventName; ?></h4>
+		<ul class="countdown">
+			<li>
+				<span class="days">00</span>
+				<p class="days_ref">days</p>
+			</li>
+			<li class="seperator"></li>
+			<li>
+				<span class="hours">00</span>
+				<p class="hours_ref">hours</p>
+			</li>
+			<li class="seperator">:</li>
+			<li>
+				<span class="minutes">00</span>
+				<p class="minutes_ref">minutes</p>
+			</li>
+			<li class="seperator">:</li>
+			<li>
+				<span class="seconds">00</span>
+				<p class="seconds_ref">seconds</p>
+			</li>
+		</ul>
+		<script type="text/javascript" src="jquery/jquery.downCount.js"></script>
+		<script type="text/javascript">
+			$('.countdown').downCount({
+				//Month/Day/Year
+				date: '10/30/2016 08:00:00',
+				offset: +0
+			});
+			window.setInterval(function () {
+				var d = new Date();
+				var n = d.getSeconds();
+				myFunction1(n);
+			}, 1000);
+			function myFunction1(result) {
+				switch (result) {
+					case (result > 28 && result < 54):
+						document.getElementById("circle1").style.background = 'orange';
+						break;
+					case (result = 30):
+						document.getElementById("circle1").style.background = 'orange';
+						break;
+					case (result = 31):
+						document.getElementById("circle1").style.background = 'orange';
+						break;
+					case (result = 32):
+						document.getElementById("circle1").style.background = 'orange';
+						break;
+					case (result = 33):
+						document.getElementById("circle1").style.background = 'orange';
+						break;
+					case (result = 34):
+						document.getElementById("circle1").style.background = 'orange';
+						break;
+					case (result = 35):
+						document.getElementById("circle1").style.background = 'orange';
+						break;
+					case (result = 36):
+						document.getElementById("circle1").style.background = 'orange';
+						break;
+					case (result = 37):
+						document.getElementById("circle1").style.background = 'orange';
+						break;
+					case (result = 38):
+						document.getElementById("circle1").style.background = 'orange';
+						break;
+					case (result = 39):
+						document.getElementById("circle1").style.background = 'orange';
+						break;
+					case (result = 39):
+						document.getElementById("circle1").style.background = 'orange';
+						break;
+					case (result = 40):
+						document.getElementById("circle1").style.background = 'orange';
+						break;
+					case (result = 41):
+						document.getElementById("circle1").style.background = 'orange';
+						break;
+					case (result = 42):
+						document.getElementById("circle1").style.background = 'orange';
+						break;
+					case (result = 43):
+						document.getElementById("circle1").style.background = 'orange';
+						break;
+					case (result = 44):
+						document.getElementById("circle1").style.background = 'orange';
+						break;
+					case (result = 45):
+						document.getElementById("circle1").style.background = 'orange';
+						break;
+					case (result = 46):
+						document.getElementById("circle1").style.background = 'orange';
+						break;
+					case (result = 47):
+						document.getElementById("circle1").style.background = 'orange';
+						break;
+					case (result = 48):
+						document.getElementById("circle1").style.background = 'orange';
+						break;
+					case (result = 49):
+						document.getElementById("circle1").style.background = 'orange';
+						break;
+					case (result = 50):
+						document.getElementById("circle1").style.background = 'orange';
+						break;
+					case (result = 51):
+						document.getElementById("circle1").style.background = 'orange';
+						break;
+					case (result = 52):
+						document.getElementById("circle1").style.background = 'orange';
+						break;
+					case (result = 53):
+						document.getElementById("circle1").style.background = 'orange';
+						break;
+					case (result = 54):
+						document.getElementById("circle1").style.background = 'orange';
+						document.getElementById("circle2").style.background = 'red';
+						break;
+					case (result = 55):
+
+						document.getElementById("circle1").style.background = 'orange';
+						document.getElementById("circle2").style.background = 'red';
+						document.getElementById("circle3").style.background = 'red';
+						break;
+					case (result = 56):
+
+						document.getElementById("circle1").style.background = 'orange';
+						document.getElementById("circle2").style.background = 'red';
+						document.getElementById("circle3").style.background = 'red';
+						document.getElementById("circle4").style.background = 'red';
+						break;
+					case (result = 57):
+
+						document.getElementById("circle1").style.background = 'orange';
+						document.getElementById("circle2").style.background = 'red';
+						document.getElementById("circle3").style.background = 'red';
+						document.getElementById("circle4").style.background = 'red';
+						document.getElementById("circle5").style.background = 'red';
+						break;
+					case (result = 58):
+
+						document.getElementById("circle1").style.background = 'orange';
+						document.getElementById("circle2").style.background = 'red';
+						document.getElementById("circle3").style.background = 'red';
+						document.getElementById("circle4").style.background = 'red';
+						document.getElementById("circle5").style.background = 'red';
+						document.getElementById("circle6").style.background = 'red';
+						break;
+					default:
+						document.getElementById("circle1").style.background = 'black';
+						document.getElementById("circle2").style.background = 'black';
+						document.getElementById("circle3").style.background = 'black';
+						document.getElementById("circle4").style.background = 'black';
+						document.getElementById("circle5").style.background = 'black';
+						document.getElementById("circle6").style.background = 'black';
+				}
+			}
+		</script>
+	</div>
+</a>
+<?php
+		}
+		$repository->close();
+?>

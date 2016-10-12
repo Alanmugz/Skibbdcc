@@ -96,7 +96,7 @@ p.setmargin {
 
 @media(min-width:1200px) {
     .container {
-        width: 1025px
+        width: 1025px;
     }
 }
 
@@ -106,9 +106,11 @@ p.setmargin {
     }
 }
 
-@media(max-width:767px) {}
+@media(max-width:767px) {
+}
 
-@media(max-width:480px) {}
+@media(max-width:480px) {
+}
 
 .border10 {
     padding: 10px;
@@ -124,26 +126,26 @@ ul.countdown {
     text-align: center;
 }
 
-ul.countdown li {
-    display: inline-block;
-}
+    ul.countdown li {
+        display: inline-block;
+    }
 
-ul.countdown li span {
-    font-size: 20px;
-    font-weight: 15;
-    line-height: 40px;
-}
+        ul.countdown li span {
+            font-size: 20px;
+            font-weight: 15;
+            line-height: 40px;
+        }
 
-ul.countdown li.seperator {
-    font-size: 20px;
-    line-height: 40px;
-    vertical-align: top;
-}
+        ul.countdown li.seperator {
+            font-size: 20px;
+            line-height: 40px;
+            vertical-align: top;
+        }
 
-ul.countdown li p {
-    color: #a7abb1;
-    font-size: 14px;
-}
+        ul.countdown li p {
+            color: #a7abb1;
+            font-size: 14px;
+        }
 
 .height {
     background-color: white;
@@ -154,15 +156,15 @@ ul.countdown li p {
 }*/
 
 .panel-body {
-    background: #e4f3f6
+    background: #e4f3f6;
 }
 
 .backgroundColor {
-    background: #e4f3f6
+    background: #e4f3f6;
 }
 
 .font {
-    font-size: 1.3em
+    font-size: 1.3em;
 }
 
 .padding {
@@ -170,5 +172,71 @@ ul.countdown li p {
 }
 
 .fill {
-    height: 175px
+    height: 175px;
+}
+
+#circle1 {
+    width: 40px;
+    height: 40px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    background: #18253a;
+    float: left;
+    margin: 0px 0px 10px 10px;
+}
+
+#circle2 {
+    width: 40px;
+    height: 40px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    background: #18253a;
+    float: left;
+    margin: 0px 0px 10px 10px;
+}
+
+#circle3 {
+    width: 40px;
+    height: 40px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    background: #18253a;
+    float: left;
+    margin: 0px 0px 10px 10px;
+}
+
+#circle4 {
+    width: 40px;
+    height: 40px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    background: #18253a;
+    float: left;
+    margin: 0px 0px 10px 10px;
+}
+
+#circle5 {
+    width: 40px;
+    height: 40px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    background: #18253a;
+    float: left;
+    margin: 0px 0px 10px 10px;
+}
+
+#circle6 {
+    width: 40px;
+    height: 40px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    background: #18253a;
+    float: left;
+    margin: 0px 0px 10px 10px;
 }

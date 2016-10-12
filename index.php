@@ -134,7 +134,17 @@ if($environment == 'prod')
 				</div>
 			</div>
 			<div class="col-md-4">
-				<div class="panel panel-default backgroundColor">
+				<div class="panel panel-default backgroundColor visible-lg">
+					<div class="panel-heading">
+						<h3 class="panel-title">Next Event:</h3>
+					</div>
+					<div id="countdown-nextmeeting">
+						<?php
+						include('include/countdowntimerlights.html');
+						?>
+					</div>
+				</div>
+				<div class="panel panel-default backgroundColor hidden-lg">
 					<div class="panel-heading">
 						<h3 class="panel-title">Next Event:</h3>
 					</div>
