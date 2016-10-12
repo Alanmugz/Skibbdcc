@@ -90,6 +90,85 @@ include 'php/eventenumertion.php';
 							<?php echo $rallySponsor." "; ?> Fastnet Rally <?php echo $rallyEventYear; ?> - Accommodation
 						</h3>
 					</div>
+					<div>
+						<h3 class="setmargin">Hotel Accommodation</h3>
+						<p class="setmargin">
+							Westlodge Hotel & Pondlodge Cottages 027 50360
+							<br />
+							Bantry Bay Hotel Wolfe Tone Square, Bantry 027-50062
+							<br />
+							The Maritime Hotel The Quay, Bantry 027-54700 027-54701
+							<br />
+						</p>
+						<h3 class="setmargin">B&B Accommodation</h3>
+						<p class="setmargin">
+							Bru na Pairce Slip Park, Bantry 027-51603
+							<br />
+							Atlantic Shore Newtown, Bantry 027-51310
+							<br />
+							Ard na Greine Newtown, Bantry 027-51169
+							<br />
+							Leyton 23 Slip Lawn, Bantry 027-50665
+							<br />
+							Carbery Cottage Guest Lodge, Brahalish, Durrus 027 61368 or 087 7577743
+							<br />
+							Elmwood House 6 Slip Lawn, Bantry 027-50087
+							<br />
+							The Mill Newtown, Bantry 027-50278
+							<br />
+							Doire Liath Newtown, Bantry 027-50223
+							<br />
+							La Mirage Droumdaniel, Ballylickey, Bantry 027-50688
+							<br />
+							Dunauley (self-catering) Seskin, Bantry 027-50290
+							<br />
+							Donemark Rise Droumacoppil, Bantry 027-51099
+							<br />
+							Ardaravan House 028-32740
+							<br />
+							The Bridge House, Pearson Bridge, Bantry 027-66281
+							<br />
+							Sunville Newtown, Bantry 027-50175
+							<br />
+							Cnoc A Dúin 26 Slip Lawn, Bantry 027-50744
+							<br />
+							Highfield Newtown, Bantry 027-50791
+							<br />
+							Eden Crest (also Self-catering) Newtown, Bantry 027-51110
+							<br />
+							Graceland Kealkil, Bantry 027-66055
+							<br />
+							Reendonegan House Reendonegan, Ballylickey, Bantry 027-51455
+							<br />
+							Aran Lodge Ballylickey, Bantry 027-50378
+							<br />
+							Pipit Cove (self-catering) Ballylickey, Bantry 027-51594
+							<br />
+							Bridge View House Kilcrohane, Durrus, Bantry 027-67108 027-67086
+							<br />
+							Coulin Gurteenroe, Bantry 027-50020
+							<br />
+							Bantry House (B&B + self-catering) Bantry 027-50047 027-50795
+							<br />
+							Ahakista Escape -Self catering Ahakista Bantry 027 61117
+							<br />
+							Sheep's Head Holiday Homes Sheeps Head ,Bantry 086-3598875
+							<br />
+						</p>
+						<h3 class="setmargin">Farm House Accommodation</h3>
+						<p class="setmargin">
+							Dromcloc House Bantry 027-50030
+							<br />
+							Hillcrest Farm Ahakista, Durrus, Bantry 027-67045
+							<br />
+							Sea Mount Farmhouse Goats Path Rd, Glenlough West, Bantry 027-61226 027-61226
+							<br />
+							Bay View Farm (self-catering) Gories, Bantry 027-50515
+							<br />
+							Reenmore Farmhouse Ahakista, Durrus, Bantry 027-67051
+							<br />
+						</p>
+					</div>
 				</div>
 			</div>
 
