@@ -93,6 +93,16 @@ include 'php/function.php';
 					</div>
 					<div id='pageheader'>
 						<?php Common::NewsTemplate(
+							"Westlodge Hotel Fastnet Rally Entry List.",
+							"21-10-2016 17:05")
+						?>
+					</div>
+					<p class="setmargin">
+						The Westlodge Hotel Fastnet Rally 2016 entry list is now available to view by clicking the link below marked entry list or by clicking 
+						<a href="fastnet_entry_list.php">here</a>.
+					</p>
+					<div id='pageheader'>
+						<?php Common::NewsTemplate(
 							"Regulations and entry form are now available to download.",
 							"17-09-2016 14:30")
 						?>
