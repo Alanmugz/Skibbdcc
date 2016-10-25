@@ -2,6 +2,7 @@
 require 'php/config.php';
 include 'php/newsrepository.php';
 include 'php/eventenumertion.php';
+include 'php/function.php';
 ?>
 
 <!DOCTYPE html>
@@ -90,6 +91,23 @@ include 'php/eventenumertion.php';
 							<?php echo $rallySponsor." "; ?> Fastnet Rally <?php echo $rallyEventYear; ?> - Marshals
 						</h3>
 					</div>
+					<div id='pageheader'>
+						<?php Common::NewsTemplate(
+							"Westlodge Hotel Fastnet Rally Marshals meeting points.",
+							"21-10-2016 17:05")
+						?>
+					</div>
+					<p class="setmargin">
+					Marshalling meeting points:<br />
+						Stage 1 - Meeting in Centra Drimoleague at 08:00<br />
+						Stage Commander will be Kevin Flannery 087 6451400<br /><br />
+
+						Stage 2 - Meeting in Galvins Centra Dunmanway at 08:00<br />
+						Stage Commander will be Eoghan McCarthy 087 6445079<br /><br />
+
+						Service Area - Meeting at the Fire Station the Square Bantry at 07:00<br />
+						Contact Colm feen 0868626001
+					</p>
 				</div>
 			</div>
 
