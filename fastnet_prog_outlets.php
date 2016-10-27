@@ -90,6 +90,39 @@ include 'php/eventenumertion.php';
 							<?php echo $rallySponsor." "; ?> Fastnet Rally <?php echo $rallyEventYear; ?> - Programme Outlets
 						</h3>
 					</div>
+					<ul class="list-group">
+						<li class="list-group-item backgroundColor disabled">
+							<b>Cork</b>
+						</li>
+						<li class="list-group-item backgroundColor">Billy Cahalanes – Bandon</li>
+						<li class="list-group-item backgroundColor">Hennessey’s - Ballineen</li>
+						<li class="list-group-item backgroundColor">Bantry Service Station – Bantry</li>
+						<li class="list-group-item backgroundColor">Westlodge Hotel – Bantry</li>
+						<li class="list-group-item backgroundColor">The Giftshop – Bantry</li>
+						<li class="list-group-item backgroundColor">Hegarty’s – Bantry</li>
+						<li class="list-group-item backgroundColor">QuickPick – Bantry</li>
+						<li class="list-group-item backgroundColor">Casey’s – Bantry</li>
+						<li class="list-group-item backgroundColor">Cronin’s – Ballylickey</li>
+						<li class="list-group-item backgroundColor">Burkes – Kealkil</li>
+						<li class="list-group-item backgroundColor">O’Donovan’s Shop - Balinascarthy</li>
+						<li class="list-group-item backgroundColor">Noel White Texaco - Clonakilty</li>
+						<li class="list-group-item backgroundColor">John Crowley - Clonakilty</li>
+						<li class="list-group-item backgroundColor">Maxol Clonakilty - Clonakilty</li>
+						<li class="list-group-item backgroundColor">Ryan’s Service Station – Rosscarbery</li>
+						<li class="list-group-item backgroundColor">Ryan’s Service Station – Leap</li>
+						<li class="list-group-item backgroundColor">Peter Walsh’s Londis – Dunmanway</li>
+						<li class="list-group-item backgroundColor">Galvin’s Centra - Dunmanway</li>
+						<li class="list-group-item backgroundColor">Centra – Drimoleague</li>
+						<li class="list-group-item backgroundColor">Connolly’s Great Gas – Skibbereen</li>
+						<li class="list-group-item backgroundColor">John O’Driscoll Motor Factors – Skibbereen</li>
+						<li class="list-group-item backgroundColor">Hegarty’s Service Station – Skibbereen</li>
+						<li class="list-group-item backgroundColor">Camier’s – Ballydehob</li>
+						<li class="list-group-item backgroundColor">Ryan’s – Durras</li>
+						<li class="list-group-item backgroundColor disabled">
+							<b>Kerry</b>
+						</li>
+						<li class="list-group-item backgroundColor">Moriarty’s Centra - Farranfore</li>
+					</ul>
 				</div>
 			</div>
 
