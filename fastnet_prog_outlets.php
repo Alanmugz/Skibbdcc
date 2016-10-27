@@ -91,7 +91,7 @@ include 'php/eventenumertion.php';
 						</h3>
 					</div>
 					<ul class="list-group">
-						<li class="list-group-item backgroundColor disabled">
+						<li class="list-group-item backgroundColor active">
 							<b>Cork</b>
 						</li>
 						<li class="list-group-item backgroundColor">Billy Cahalanes – Bandon</li>
@@ -118,7 +118,7 @@ include 'php/eventenumertion.php';
 						<li class="list-group-item backgroundColor">Hegarty’s Service Station – Skibbereen</li>
 						<li class="list-group-item backgroundColor">Camier’s – Ballydehob</li>
 						<li class="list-group-item backgroundColor">Ryan’s – Durras</li>
-						<li class="list-group-item backgroundColor disabled">
+						<li class="list-group-item backgroundColor active">
 							<b>Kerry</b>
 						</li>
 						<li class="list-group-item backgroundColor">Moriarty’s Centra - Farranfore</li>
