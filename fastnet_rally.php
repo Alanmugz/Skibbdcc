@@ -82,6 +82,9 @@ include 'php/function.php';
 			include ('include/mobilemenu.html');
 			?>
 		</div>
+		<div class="alert alert-danger font">
+			<strong>Alert !! </strong>Sunday, 30 October 2016 — Daylight Saving Time Ends. Clocks move backward 1 hour.
+		</div>
 		<div style="display:inline-block;margin:-25px 0px 15px 0px;"></div>
 		<div class="row">
 			<div class="col-md-8">
