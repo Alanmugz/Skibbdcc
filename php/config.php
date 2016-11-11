@@ -10,8 +10,8 @@ $configs = array(
 $environment = ($_SERVER['HTTP_HOST'] == 'www.skibbdcc.com') ? 'prod' : 'dev';
 
 //Timer
-$countdownEventName = 'Westlodge Hotel Fastnet Rally 2016 Live Results';
-$countdownEventLink = 'fastnet_results.php';
+$countdownEventName = 'Carbery Night Navigation Trial 2016';
+$countdownEventLink = 'carbery_night_nav.php';
 //Timer date set in countdowntimer.html
 
 //Rally

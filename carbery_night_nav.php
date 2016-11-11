@@ -86,7 +86,7 @@ include 'php/function.php';
 			<div class="col-md-8">
 				<div class="panel panel-default backgroundColor font">
 					<div class="panel-heading">
-						<h3 class="panel-title">Carbery Night Navigation Trial TBA November 2016</h3>
+						<h3 class="panel-title">Carbery Night Navigation Trial 26th & 27th November 2016</h3>
 					</div>
 					<?php
 					$repository = new NewsRepository;
