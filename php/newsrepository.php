@@ -136,7 +136,7 @@ class NewsRepository {
 				WHERE status ='Published'
 				AND cat_id = $category
 				ORDER BY publish_date DESC
-				LIMIT 1";
+				LIMIT 2";
 
 		$result = $this->connection->query($sql);
 
