@@ -26,7 +26,7 @@ function addNewYearFolderToDirectory($year) {
 		"loose_surface_autocross_july")
 		
 	$directories | foreach {
-		New-Item -ItemType directory -Path "C:\xamppnew\htdocs\dev.skibbdcc.com\files\$_\$year"
+		New-Item -ItemType directory -Path "..\files\$_\$year"
 	}
 }
 
