@@ -13,9 +13,13 @@ function toLowerCaseAllFilesInDirectory($directory) {
 
 
 function addNewYearFolderToDirectory($year) {
-	If ($year -eq $Null) { Write-error "Pass in the year of the directory you wish to add to the events file folders" }
-    
-	$directories = @(
+	If ($year -eq $Null) 
+	{ 
+		Write-error "Pass in the year of the directory you wish to add to the events file folders"
+	}
+	else 
+	{
+		$directories = @(
 		"100_isles_night_nav",
 		"autocross",
 		"autotest_august",
@@ -25,8 +29,9 @@ function addNewYearFolderToDirectory($year) {
 		"loose_surface_autocross_february",
 		"loose_surface_autocross_july")
 		
-	$directories | foreach {
-		New-Item -ItemType directory -Path "..\files\$_\$year"
+		$directories | foreach {
+			New-Item -ItemType directory -Path "..\files\$_\$year"
+		}
 	}
 }
 
