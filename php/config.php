@@ -10,8 +10,8 @@ $configs = array(
 $environment = ($_SERVER['HTTP_HOST'] == 'www.skibbdcc.com') ? 'prod' : 'dev';
 
 //Timer
-$countdownEventName = 'Carbery Night Navigation Trial 2016';
-$countdownEventLink = 'carbery_night_nav.php';
+$countdownEventName = '100 Isles Night Navigation Trial 2017';
+$countdownEventLink = '100_isles_night_nav.php';
 //Timer date set in countdowntimer.html
 
 //Rally
@@ -19,7 +19,7 @@ $rallyEventYear = '2016';
 $rallySponsor = 'Westlodge Hotel';
 
 //Year to show the current set of files
-$fileYear = '2016';
+$fileYear = '2017';
 
 //Email
 $emailRecipients = array('alanmugz@gmail.com, webmaster@skibbdcc.com, cozyger@gmail.com, colmfeen@gmail.com');
