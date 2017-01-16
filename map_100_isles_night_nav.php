@@ -86,7 +86,7 @@
 					</div>
 					<script>
 						function initialize() {
-							var myLatlng = new google.maps.LatLng(51.765327, -8.662052);
+							var myLatlng = new google.maps.LatLng(51.540910, -9.218752);
 							var mapOptions = {
 								zoom: 12,
 								center: myLatlng,
@@ -98,7 +98,7 @@
 							var contentString =
 								'<div style="background-color:black;padding:10px;">' +
 								'<p style="color:white;">100 Isles Night Nav</p>' +
-								'<p style="color:white;">Innishannon Parish Hall, Innishannon,Co.Cork</p>' +
+								'<p style="color:white;">Castlehaven Gaa Ground, Castlehaven,Co.Cork</p>' +
 								'</div>';
 
 							var infowindow = new google.maps.InfoWindow({
