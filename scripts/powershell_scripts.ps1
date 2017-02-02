@@ -20,14 +20,14 @@ function addNewYearFolderToDirectory($year) {
 	else 
 	{
 		$directories = @(
-		"100_isles_night_nav",
-		"autocross",
-		"autotest_august",
-		"autotest_may",
-		"carbery_night_nav",
-		"club_championship",
-		"loose_surface_autocross_february",
-		"loose_surface_autocross_july")
+			"100_isles_night_nav",
+			"autocross",
+			"autotest_august",
+			"autotest_may",
+			"carbery_night_nav",
+			"club_championship",
+			"loose_surface_autocross_february",
+			"loose_surface_autocross_july")
 		
 		$directories | foreach {
 			New-Item -ItemType directory -Path "..\files\$_\$year"
