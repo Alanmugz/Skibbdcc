@@ -86,7 +86,7 @@ include 'php/function.php';
 			<div class="col-md-8">
 				<div class="panel panel-default backgroundColor font">
 					<div class="panel-heading">
-						<h3 class="panel-title">Loose Surface Autocross 19th February 2017</h3>
+						<h3 class="panel-title"><?php echo $LooseSurfaceAutocrossFebruaryDetails ?></h3>
 					</div>
 					<?php
 					$repository = new NewsRepository;
