@@ -10,8 +10,8 @@ $configs = array(
 $environment = ($_SERVER['HTTP_HOST'] == 'www.skibbdcc.com') ? 'prod' : 'dev';
 
 //Timer
-$countdownEventName = '100 Isles Night Navigation Trial 2017';
-$countdownEventLink = '100_isles_night_nav.php';
+$countdownEventName = 'Loose Surface Autocross 2017';
+$countdownEventLink = 'loose_surface_autocross_february.php';
 //Timer date set in countdowntimer.html
 
 //Rally
