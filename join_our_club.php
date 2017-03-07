@@ -88,11 +88,15 @@ include 'php/function.php';
 					<div id='pageheader'>
 						<?php Common::NewsTemplate(
 							"How to join Skibbereen & District Car Club",
-							"30-08-2016 22:03")
+							"07-03-2017 22:03")
 						?>
 					</div>
 
-					<p class="setmargin"></p>
+					<p class="setmargin">
+						Any persons wishing to become a new member or renew their membership to Skibbereen & District Car Club can do so by attending one of the club's monthly meeting.
+						<br /><br />
+						Club regristar Brian O'Mahony 0864031079
+					</p>
 				</div>
 
 				<div class="panel panel-default visible-lg backgroundColor">
