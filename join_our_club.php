@@ -88,12 +88,16 @@ include 'php/function.php';
 					<div id='pageheader'>
 						<?php Common::NewsTemplate(
 							"How to join Skibbereen & District Car Club",
-							"07-03-2017 22:03")
+							"16-04-2017 21:31")
 						?>
 					</div>
 
 					<p class="setmargin">
-						Any persons wishing to become a new member or renew their membership to Skibbereen & District Car Club can do so by attending one of the club's monthly meeting.
+						Any persons wishing to become a new member or renew their membership to Skibbereen & District Car Club can do so by attending one of the club's monthly meeting.<br /><br />
+						Please bring the relevant form(s) which may need to be stamped by the club, these can be downloaded below.<br /><br />
+						2017 RENEWAL COMPETITION LICENCE APPLICATION FORM - <a style="color:red" href="forms/2017/renewal_competition_licence_application_form.pdf"><b>DOWNLOAD</b></a><br />
+						2017 FIRST TIME COMPETITION LICENCE APPLICATION FORM - <a style="color:red" href="forms/2017/first_time_competition_licence_application_form.pdf"><b>DOWNLOAD</b></a><br />
+						MOTORSPORT IRELAND LICENCE HOLDERS ONLY IRDS RALLY & MULTI-VENUE AUTOTEST INSURANCE FIRST & RENEWAL APPLICATION - <a style="color:red" href="forms/2017/motorsport_ireland_licence_holders_only_irds_rally_&_multii_venue_autotest_insurance_first_&_renewal_application.pdf"><b>DOWNLOAD</b></a><br />
 						<br /><br />
 						Club regristar Brian O'Mahony 0864031079
 					</p>

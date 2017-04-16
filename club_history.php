@@ -133,14 +133,14 @@ require 'php/config.php';
 						week after week around the country helping out at all types of motorsport events.<br /><br />
 
 						The Present officers of the Club are:<br />
-						President: Alan Clarke<br />
+						President: Robert Beamish<br />
 						Chairman: Colm Feen<br />
-						Secretary: Ger Hayes<br />
-						Treasurer: John Coleman<br />
-						Registrar: James Kingston<br />
-						P.R.O Padraig McCarthy<br /><br />
+						Secretary: John McCarthy<br />
+						Treasurer: Maurice Whelton<br />
+						Registrar: Brian O'Mahony<br />
+						P.R.O Jason O'Mahony<br /><br />
 
-						Club telephone number is 087 0560316</p>
+						Club telephone number is 0868626001</p>
 					</div>
 				</div>
 				

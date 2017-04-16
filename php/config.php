@@ -11,8 +11,8 @@ $environment = ($_SERVER['HTTP_HOST'] == 'www.skibbdcc.com') ? 'prod' : 'dev';
 
 //Timer
 //Timer date set in countdowntimerlights.html and countdowntimer.html
-$countdownEventName = 'Loose Surface Autocross 2017';
-$countdownEventLink = 'loose_surface_autocross_february.php';
+$countdownEventName = 'May Autotest 2017';
+$countdownEventLink = 'autotest_may.php';
 
 //Rally
 $rallyEventYear = '2016';
@@ -25,7 +25,8 @@ $fileYear = '2017';
 $fileYear = '2017';
 $IslesNightNavigationTrialDetails = "100 Isle Night Navigation Trial 28th - 29th January 2017";
 $LooseSurfaceAutocrossFebruaryDetails = "Surface Autocross 19th February 2017";
+$AutotestMayDetails = "Autotest 20th & 21st May 2017";
 
 //Email
-$emailRecipients = array('alanmugz@gmail.com, webmaster@skibbdcc.com, cozyger@gmail.com, colmfeen@gmail.com');
+$emailRecipients = array('alanmugz@gmail.com, webmaster@skibbdcc.com, pro@skibbdcc.com, colmfeen@gmail.com');
 ?>
