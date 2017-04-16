@@ -24,8 +24,11 @@ $fileYear = '2017';
 //Event date details
 $fileYear = '2017';
 $IslesNightNavigationTrialDetails = "100 Isle Night Navigation Trial 28th - 29th January 2017";
-$LooseSurfaceAutocrossFebruaryDetails = "Surface Autocross 19th February 2017";
+$LooseSurfaceAutocrossFebruaryDetails = "Loose Surface Autocross 19th February 2017";
 $AutotestMayDetails = "Autotest 20th & 21st May 2017";
+$LooseSurfaceAutocrossJulyDetails = "Loose Surface Autocross 9th July 2017";
+$AutotestAugustDetails = "Autotest 19th & 20st August 2017";
+$CarberyNightNavigationTrialDetails = "Carbery Night Navigation Trial 25th - 26th November 2017";
 
 //Email
 $emailRecipients = array('alanmugz@gmail.com, webmaster@skibbdcc.com, pro@skibbdcc.com, colmfeen@gmail.com');
