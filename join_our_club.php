@@ -98,7 +98,7 @@ include 'php/function.php';
 						2017 RENEWAL COMPETITION LICENCE APPLICATION FORM - <a style="color:red" href="forms/2017/renewal_competition_licence_application_form.pdf"><b>DOWNLOAD</b></a><br />
 						2017 FIRST TIME COMPETITION LICENCE APPLICATION FORM - <a style="color:red" href="forms/2017/first_time_competition_licence_application_form.pdf"><b>DOWNLOAD</b></a><br />
 						MOTORSPORT IRELAND LICENCE HOLDERS ONLY IRDS RALLY & MULTI-VENUE AUTOTEST INSURANCE FIRST & RENEWAL APPLICATION - <a style="color:red" href="forms/2017/motorsport_ireland_licence_holders_only_irds_rally_&_multii_venue_autotest_insurance_first_&_renewal_application.pdf"><b>DOWNLOAD</b></a><br />
-						<br /><br />
+						<br />
 						Club regristar Brian O'Mahony 0864031079
 					</p>
 				</div>
