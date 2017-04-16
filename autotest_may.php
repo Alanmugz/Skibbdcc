@@ -86,7 +86,10 @@ include 'php/function.php';
 			<div class="col-md-8">
 				<div class="panel panel-default backgroundColor font">
 					<div class="panel-heading">
-						<h3 class="panel-title"><?php echo $AutotestMayDetails ?><h6><?php echo $AutotestMayCOC ?></h6></h3>
+						<h3 class="panel-title">
+							<?php echo $AutotestMayDetails ?>
+							<h6><?php echo $AutotestMayCOC ?></h6>
+						</h3>
 					</div>
 					<?php
 					$repository = new NewsRepository;
