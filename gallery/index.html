@@ -2,27 +2,29 @@
 	Large image can remain the there original size
 	these images can be placed in the large folder
 	Small images will be resized to 120 X 90
-	these will be place in the small image folder -->
+	these will be place in the small image folder 
+	Image padding color rgb(228, 243, 246)	-->
 	
 <div class="container" style="width:100%; background-color:#E4F3F6">
 	<div style="padding-top: 10px; font-size: 1.2em;" >
 		<form method="get" action="image_gallery.php">
 		  <select name="gallery">
+			<option value="2017,awards_night">2017 Awards Night</option>
 			<option value="2016,fastnet_rally_launch">2016 Fastnet Rally Launch</option>
 			<option value="2016,autotest_august">2016 AutoTest (August)</option>
 		  </select>
 		  <input type="submit" value="View Gallery"/>
 		</form>
 	</div>
-    <div id="links" style="padding:15px 0px;">
+	<div id="links" style="padding:15px 0px;">
 		<?php
-		    if (isset($_GET['gallery'])) {
-			    $eventInformation = $_GET['gallery'];
-		    }
+			if (isset($_GET['gallery'])) {
+				$eventInformation = $_GET['gallery'];
+			}
 			else 
 			{
-			    $eventInformation = "2016,fastnet_rally_launch";
-		    }
+				$eventInformation = "2017,awards_night";
+			}
 
 			list($year, $event) = explode(',',$eventInformation);
 
