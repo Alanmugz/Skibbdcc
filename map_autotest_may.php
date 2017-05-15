@@ -109,7 +109,7 @@
 					  var marker = new google.maps.Marker({
 						  position: myLatlng,
 						  map: map,
-						  title: 'Carbery Plastics, Clonakilty'
+						  title: 'Bandon Co-Op, Kilbrogan, Bandon'
 					  });
 					  google.maps.event.addListener(marker, 'click', function() {
 						infowindow.open(map,marker);
