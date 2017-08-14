@@ -86,7 +86,7 @@
 					</div>
 					<script>
 						function initialize() {
-							var myLatlng = new google.maps.LatLng(51.757282, -8.730108);
+							var myLatlng = new google.maps.LatLng(51.619860, -8.895777);
 							var mapOptions = {
 								zoom: 14,
 								center: myLatlng,
@@ -98,7 +98,7 @@
 							var contentString =
 								'<div style="background-color:black;padding:10px;">' +
 								'<p style="color:white;">Autotest</p>' +
-								'<p style="color:white;">Bandon Co-op Kilbrogan, Bandon</p>' +
+								'<p style="color:white;">Carbery Plastics & West Cork building Supplies, Clogheen, Clonakilty</p>' +
 								'</div>';
 
 							var infowindow = new google.maps.InfoWindow({
