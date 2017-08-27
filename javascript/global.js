@@ -4,7 +4,7 @@ function init()
 	document.getElementById("getSponsor" ).innerHTML = "Carbery Plastics";
 	//document.getElementById("getPRO" ).innerHTML = "Contact ";
 
-	var ClubChampionshipYear = '2015';
+	var ClubChampionshipYear = '2017';
 
 	document.getElementById("getClubChampionshipYear" ).innerHTML = ClubChampionshipYear;
 	document.getElementById("getClubChampionship" ).innerHTML = ClubChampionshipYear + " Carbery Plastics Club Championship:";	
