@@ -90,7 +90,7 @@ include 'php/eventenumertion.php';
 							<?php echo $rallySponsor." "; ?> Fastnet Rally <?php echo $rallyEventYear; ?> - Results
 						</h3>
 					</div>
-					<iframe src="http://results.shannonsportsit.ie/results.php?rally=FT16" style="width:100%; height:2000px"></iframe>
+					<iframe src="http://results.shannonsportsit.ie/results.php?rally=FT17" style="width:100%; height:2000px"></iframe>
 				</div>
 			</div>
 		</div>

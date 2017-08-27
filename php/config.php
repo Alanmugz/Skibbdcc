@@ -17,6 +17,7 @@ $countdownEventLink = 'fastnet_rally.php';
 //Rally
 $rallyEventYear = '2017';
 $rallySponsor = 'Westlodge Hotel';
+$FastnetRallyCOC = 'John Buttimer';
 
 //Year to show the current set of files
 $fileYear = '2017';

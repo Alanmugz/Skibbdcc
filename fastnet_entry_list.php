@@ -94,8 +94,8 @@ include 'php/eventenumertion.php';
 					<?php
 					$classDetails = array(
 						0 => array(
-							'name' => 'Main Filed',
-							'file' => 'files/fastnet_2016/entry_list_main_field.csv'
+							'name' => 'Main Field',
+							'file' => 'files/fastnet_2017/entry_list_main_field.csv'
 						)
 						//0 => array(
 						//    'name' => 'Main Filed',

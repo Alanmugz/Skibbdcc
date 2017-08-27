@@ -90,6 +90,7 @@ include 'php/eventenumertion.php';
 							<?php echo $rallySponsor." "; ?> Fastnet Rally <?php echo $rallyEventYear; ?> - Programme Outlets
 						</h3>
 					</div>
+					<!--
 					<ul class="list-group">
 						<li class="list-group-item backgroundColor active">
 							<b>Cork</b>
@@ -123,6 +124,7 @@ include 'php/eventenumertion.php';
 						</li>
 						<li class="list-group-item backgroundColor">Moriarty’s Centra - Farranfore</li>
 					</ul>
+					-->
 				</div>
 			</div>
 
