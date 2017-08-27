@@ -19,6 +19,10 @@ $rallyEventYear = '2017';
 $rallySponsor = 'Westlodge Hotel';
 $FastnetRallyCOC = 'John Buttimer';
 
+//Club Championship
+$ClubChampionshipYear = '2017';
+$ClubChampionshipSponsor = 'Carbery Plastics';
+
 //Year to show the current set of files
 $fileYear = '2017';
 
