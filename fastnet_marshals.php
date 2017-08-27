@@ -94,9 +94,10 @@ include 'php/function.php';
 					<div id='pageheader'>
 						<?php Common::NewsTemplate(
 							"Westlodge Hotel Fastnet Rally Marshals meeting points.",
-							"21-10-2016 17:05")
+							"27-08-2017 17:05")
 						?>
 					</div>
+					<!--
 					<p class="setmargin">
 					Marshalling meeting points:<br />
 						Stage 1 - Meeting in Centra Drimoleague at 08:00<br />
@@ -108,6 +109,7 @@ include 'php/function.php';
 						Service Area - Meeting at the Fire Station the Square Bantry at 07:00<br />
 						Contact Colm feen 0868626001
 					</p>
+					-->
 				</div>
 			</div>
 
