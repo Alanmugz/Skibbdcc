@@ -17,7 +17,7 @@ $countdownEventLink = 'fastnet_rally.php';
 //Rally
 $rallyEventYear = '2017';
 $rallySponsor = 'Westlodge Hotel';
-$FastnetRallyCOC = 'John Buttimer';
+$FastnetRallyCOC = 'C.O.C: John Buttimer';
 
 //Club Championship
 $ClubChampionshipYear = '2017';
