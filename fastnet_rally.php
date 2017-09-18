@@ -105,7 +105,7 @@ include 'php/function.php';
 					</div>
 					<p class="setmargin">
 						Regulations and entry form are now available to download from the Skibbereen & District Car Club website on the Fastnet Rally page under the competitor's section or 
-						by clicking <a href="files/fastnet_2017/regs.doc">regs</a> or <a href="files/fastnet_2017/entry_form.doc">entryform</a>
+						by clicking <a href="files/fastnet_2017/regs.doc">regs</a> or <a href="files/fastnet_2017/entry_form.docx">entryform</a>
 					</p>
 					<div id='pageheader'>
 						<?php Common::NewsTemplate(
