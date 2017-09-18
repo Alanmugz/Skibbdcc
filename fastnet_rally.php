@@ -99,6 +99,16 @@ include 'php/function.php';
 					</div>
 					<div id='pageheader'>
 						<?php Common::NewsTemplate(
+							"Regulations & Entry Form",
+							"18-09-2017 21:12")
+						?>
+					</div>
+					<p class="setmargin">
+						Regulations and entry form are now available to download from the Skibbereen & District Car Club website on the Fastnet Rally page under the competitor's section or 
+						by clicking <a href="files/fastnet_2017/regs.doc">regs</a> or <a href="files/fastnet_2017/entry_form.doc">entryform</a>
+					</p>
+					<div id='pageheader'>
+						<?php Common::NewsTemplate(
 							"Westlodge Hotel Fastnet Rally Launch",
 							"23-08-2017 03:22")
 						?>
