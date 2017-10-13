@@ -99,6 +99,29 @@ include 'php/function.php';
 					</div>
 					<div id='pageheader'>
 						<?php Common::NewsTemplate(
+							"Excitement is at fever pitch in and around the coastal town of Bantry.",
+							"13-10-2017 12:13")
+						?>
+					</div>
+					<p class="setmargin">
+						Excitement is at fever pitch in and around the coastal town of Bantry Co. Cork on the Wild Atlantic Way as the town gears up for the final counting 
+						Round of the Motorsport Ireland Triton Showers National Rally Championship which takes place as usual on the October Bank Holiday weekend. 
+						Under the guidance of new Clerk of the Course John Buttimer and his team in the Skibbereen &amp; District Car Club, they are expecting a bumper entry. 
+						With the overall Championship driver having been won by county Monaghan&rsquo;s Sam Moffett there is still the matter of the overall co-drivers&rsquo; 
+						award for whom west corks own Karl Atkinson is on target to take on the Fastnet Rally, as well as many of the classes. Speaking today John added we are 
+						delighted with the entries received to date and we thank those who have submitted an entry and also what has been promised to come in ,however, if there 
+						are any crews that are taking part in the&nbsp; event that have not sent in their&nbsp; entry I would urge you to do so immediately. The Rally has three 
+						different stage locations making reconnaissance very straightforward for all crews, with a total of eight stages deciding this year&rsquo;s 
+						ultra-competitive Triton series. He added we have centralised service which is located within the town of Bantry. Our Headline sponsors the Westlodge 
+						Hotel have laid on fantastic entertainment and a very detailed menu for rally crews and fans alike over the course of the weekend. We will have a 
+						ceremonial start in Bantry on Saturday evening and would urge all families to come out and get up close to these star drivers. Action gets underway 
+						shortly after 9.00 a.m. on Sunday 29th October (the Bank Holiday Weekend)
+						<br />
+						<br />
+						So Come to Bantry this October Bank Holiday Weekend to the final counting round of the Triton National Rally Championship 2017 promoted and ran by the Skibbereen &amp; District Motor Club in Conjunction with the Westlodge Hotel and the Bantry Development and Tourism Association.
+					</p>
+					<div id='pageheader'>
+						<?php Common::NewsTemplate(
 							"Regulations & Entry Form",
 							"18-09-2017 21:12")
 						?>
