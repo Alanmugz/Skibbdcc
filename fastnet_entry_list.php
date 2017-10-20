@@ -96,7 +96,7 @@ include 'php/eventenumertion.php';
 						0 => array(
 							'name' => 'Main Field',
 							'file' => 'files/fastnet_2017/entry_list_main_field.csv'
-						)
+						),
 						//0 => array(
 						//    'name' => 'Main Filed',
 						//    'file' => 'files/fastnet_2016/entry_list_main_field.csv'
@@ -105,10 +105,10 @@ include 'php/eventenumertion.php';
 						//    'name' => 'Historics',
 						//    'file' => 'files/fastnet_2016/entry_list_historics.csv'
 						//),
-						//2 => array(
-						//    'name' => 'Juniors',
-						//    'file' => 'files/fastnet_2016/entry_list_juniors.csv'
-						//)
+						2 => array(
+							'name' => 'Juniors',
+							'file' => 'files/fastnet_2017/entry_list_juniors.csv'
+						)
 					);
 
 					foreach ($classDetails as $row) {
