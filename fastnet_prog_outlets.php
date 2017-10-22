@@ -90,7 +90,6 @@ include 'php/eventenumertion.php';
 							<?php echo $rallySponsor." "; ?> Fastnet Rally <?php echo $rallyEventYear; ?> - Programme Outlets
 						</h3>
 					</div>
-					<!--
 					<ul class="list-group">
 						<li class="list-group-item backgroundColor active">
 							<b>Cork</b>
@@ -101,7 +100,6 @@ include 'php/eventenumertion.php';
 						<li class="list-group-item backgroundColor">Westlodge Hotel – Bantry</li>
 						<li class="list-group-item backgroundColor">The Giftshop – Bantry</li>
 						<li class="list-group-item backgroundColor">Hegarty’s – Bantry</li>
-						<li class="list-group-item backgroundColor">QuickPick – Bantry</li>
 						<li class="list-group-item backgroundColor">Casey’s – Bantry</li>
 						<li class="list-group-item backgroundColor">Cronin’s – Ballylickey</li>
 						<li class="list-group-item backgroundColor">Burkes – Kealkil</li>
@@ -124,7 +122,6 @@ include 'php/eventenumertion.php';
 						</li>
 						<li class="list-group-item backgroundColor">Moriarty’s Centra - Farranfore</li>
 					</ul>
-					-->
 				</div>
 			</div>
 
