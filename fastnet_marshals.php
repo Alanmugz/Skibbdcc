@@ -97,19 +97,30 @@ include 'php/function.php';
 							"27-08-2017 17:05")
 						?>
 					</div>
-					<!--
 					<p class="setmargin">
 					Marshalling meeting points:<br />
-						Stage 1 - Meeting in Centra Drimoleague at 08:00<br />
-						Stage Commander will be Kevin Flannery 087 6451400<br /><br />
-
-						Stage 2 - Meeting in Galvins Centra Dunmanway at 08:00<br />
-						Stage Commander will be Eoghan McCarthy 087 6445079<br /><br />
-
-						Service Area - Meeting at the Fire Station the Square Bantry at 07:00<br />
-						Contact Colm feen 0868626001
+						Chief marshal: Ger Hayes 0870560316<br />
+						Assistant cheif marshal: Richard Beadfield 0868503837<br />
+						<br />
+						Stage 1/4/7 Lough Bofinna<br />
+						Stage commander: Ted Murphy<br />
+						Deputy stage commander: Cathal Mansell<br />
+						Meeting point Collins Bar Kealkil @ 07:30<br />
+						<br />
+						Stage 2/5/8 Mount Kid<br />
+						Stage commander: Declan O'Leary<br />
+						Deputy stage commander: Martin Purcell<br />
+						Meeting point Collins Centra Drimoleague @ 07:30<br />
+						<br />
+						Stage 3/6 the Goats Path<br />
+						Stage commander: Martin Farrell<br />
+						Deputy stage commander: Kevin Flannery<br />
+						Meeting point The Village Shop Durrus @ 08:00<br />
+						<br />
+						Service area The Square Bantry<br />
+						Service manager: Raymond Warrner 0860867318<br />
+						Meeting point The Fire Station Bantry @ 08:00
 					</p>
-					-->
 				</div>
 			</div>
 
