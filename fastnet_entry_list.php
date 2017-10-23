@@ -98,8 +98,8 @@ include 'php/eventenumertion.php';
 							'file' => 'files/fastnet_2017/entry_list_main_field.csv'
 						),
 						//0 => array(
-						//    'name' => 'Main Filed',
-						//    'file' => 'files/fastnet_2016/entry_list_main_field.csv'
+						//    'name' => 'Main Field - Late Entries',
+						//    'file' => 'files/fastnet_2017/entry_list_main_field.csv'
 						//),
 						//1 => array(
 						//    'name' => 'Historics',
