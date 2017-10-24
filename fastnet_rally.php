@@ -99,6 +99,16 @@ include 'php/function.php';
 					</div>
 					<div id='pageheader'>
 						<?php Common::NewsTemplate(
+							"Final Instruction 1",
+							"24-10-2017 19:12")
+						?>
+					</div>
+					<p class="setmargin">
+						Final instruction 1 is now available to download from the Skibbereen & District Car Club website on the Fastnet Rally page under the competitor's section or 
+						by clicking <?php Common::Href("files/fastnet_2017/final_instruction_1.doc", "here") ?>
+					</p>
+					<div id='pageheader'>
+						<?php Common::NewsTemplate(
 							"Excitement is at fever pitch in and around the coastal town of Bantry.",
 							"13-10-2017 12:13")
 						?>
