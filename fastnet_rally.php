@@ -99,6 +99,26 @@ include 'php/function.php';
 					</div>
 					<div id='pageheader'>
 						<?php Common::NewsTemplate(
+							"Time & Distance",
+							"25-10-2017 17:12")
+						?>
+					</div>
+					<p class="setmargin">
+						Time and Distance is now available to download from the Skibbereen & District Car Club website on the Fastnet Rally page under the competitor's section or 
+						by clicking <?php Common::Href("files/fastnet_2017/time_and_distance.doc", "here") ?>
+					</p>
+					<div id='pageheader'>
+						<?php Common::NewsTemplate(
+							"Final Instruction 1",
+							"25-10-2017 17:12")
+						?>
+					</div>
+					<p class="setmargin">
+						Final instruction 2 is now available to download from the Skibbereen & District Car Club website on the Fastnet Rally page under the competitor's section or 
+						by clicking <?php Common::Href("files/fastnet_2017/final_instruction_2.doc", "here") ?>
+					</p>
+					<div id='pageheader'>
+						<?php Common::NewsTemplate(
 							"Final Instruction 1",
 							"24-10-2017 19:12")
 						?>
