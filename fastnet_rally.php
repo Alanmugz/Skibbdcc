@@ -109,7 +109,7 @@ include 'php/function.php';
 					</p>
 					<div id='pageheader'>
 						<?php Common::NewsTemplate(
-							"Final Instruction 1",
+							"Final Instruction 2",
 							"25-10-2017 17:12")
 						?>
 					</div>
