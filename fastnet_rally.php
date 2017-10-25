@@ -105,7 +105,7 @@ include 'php/function.php';
 					</div>
 					<p class="setmargin">
 						Time and Distance is now available to download from the Skibbereen & District Car Club website on the Fastnet Rally page under the competitor's section or 
-						by clicking <?php Common::Href("files/fastnet_2017/time_and_distance.doc", "here") ?>
+						by clicking <?php Common::Href("files/fastnet_2017/time_and_distance.docx", "here") ?>
 					</p>
 					<div id='pageheader'>
 						<?php Common::NewsTemplate(
