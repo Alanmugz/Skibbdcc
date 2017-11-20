@@ -108,7 +108,7 @@
 							var marker = new google.maps.Marker({
 								position: myLatlng,
 								map: map,
-								title: 'Quailty Hotel, Clonakilty, Co.Cork'
+								title: 'Kilmacabea Gaa Club, Leap, Co.Cork'
 							});
 							google.maps.event.addListener(marker, 'click', function () {
 								infowindow.open(map, marker);
