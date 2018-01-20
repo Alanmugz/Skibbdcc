@@ -76,7 +76,7 @@
 		<div style="display:inline-block;margin:-25px 0px 15px 0px;">
 			<?php
 			include ('include/event/100islesmenu.html');
-			?>
+            ?>
 		</div>
 		<div class="row">
 			<div class="col-md-8">
@@ -86,7 +86,7 @@
 					</div>
 					<script>
 						function initialize() {
-							var myLatlng = new google.maps.LatLng(51.540910, -9.218752);
+							var myLatlng = new google.maps.LatLng(51.707741, -9.028026);
 							var mapOptions = {
 								zoom: 12,
 								center: myLatlng,
@@ -98,7 +98,7 @@
 							var contentString =
 								'<div style="background-color:black;padding:10px;">' +
 								'<p style="color:white;">100 Isles Night Nav</p>' +
-								'<p style="color:white;">Castlehaven Gaa Ground, Castlehaven,Co.Cork</p>' +
+								'<p style="color:white;">Ballinacarriga GAA Club, Ballinacarriga, Co. Cork</p>' +
 								'</div>';
 
 							var infowindow = new google.maps.InfoWindow({
@@ -108,7 +108,7 @@
 							var marker = new google.maps.Marker({
 								position: myLatlng,
 								map: map,
-								title: 'Innishannon Parish Hall'
+								title: 'Ballinacarriga GAA Club'
 							});
 							google.maps.event.addListener(marker, 'click', function () {
 								infowindow.open(map, marker);
