@@ -88,9 +88,7 @@ include 'php/function.php';
 					<div class="panel-heading">
 						<h3 class="panel-title">
 							<?php echo $IslesNightNavigationTrialDetails ?>
-							<h6>
-								<?php echo $IslesNightNavigationCOC ?>
-							</h6>
+							<h6><?php echo $IslesNightNavigationCOC ?></h6>
 						</h3>
 					</div>
 					<?php

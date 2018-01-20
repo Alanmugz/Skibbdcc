@@ -29,7 +29,7 @@ $fileYear = '2018';
 //Event date details
 $fileYear = '2018';
 $IslesNightNavigationTrialDetails = "100 Isle Night Navigation Trial 27th - 28th January 2018";
-$IslesNightNavigationCOC = "";
+$IslesNightNavigationCOC = "C.O.C: Denis O Donovan 086 8773817";
 $LooseSurfaceAutocrossFebruaryDetails = "Loose Surface Autocross 19th February 2017";
 $LooseSurfaceAutocrossFebruaryCOC = "C.O.C: James Kingston 0868598038";
 $AutotestMayDetails = "Autotest 20th & 21st May 2017";
