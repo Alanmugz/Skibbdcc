@@ -11,8 +11,8 @@ $environment = ($_SERVER['HTTP_HOST'] == 'www.skibbdcc.com') ? 'prod' : 'dev';
 
 //Timer
 //Timer date set in countdowntimerlights.html and countdowntimer.html
-$countdownEventName = 'Carbery Night Navigation Trial 2017';
-$countdownEventLink = 'carbery_night_nav.php';
+$countdownEventName = '100 Isle Night Navigation Trial 2018';
+$countdownEventLink = '100_isles_night_nav.php';
 
 //Rally
 $rallyEventYear = '2017';
@@ -24,11 +24,11 @@ $ClubChampionshipYear = '2017';
 $ClubChampionshipSponsor = 'Carbery Plastics';
 
 //Year to show the current set of files
-$fileYear = '2017';
+$fileYear = '2018';
 
 //Event date details
-$fileYear = '2017';
-$IslesNightNavigationTrialDetails = "100 Isle Night Navigation Trial 28th - 29th January 2017";
+$fileYear = '2018';
+$IslesNightNavigationTrialDetails = "100 Isle Night Navigation Trial 27th - 28th January 2018";
 $IslesNightNavigationCOC = "";
 $LooseSurfaceAutocrossFebruaryDetails = "Loose Surface Autocross 19th February 2017";
 $LooseSurfaceAutocrossFebruaryCOC = "C.O.C: James Kingston 0868598038";
