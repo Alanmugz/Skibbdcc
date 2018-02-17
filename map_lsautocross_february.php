@@ -76,7 +76,7 @@
 		<div style="display:inline-block;margin:-25px 0px 15px 0px;">
 			<?php
 			include ('include/event/lsautocrossmenu_february.html');
-			?>
+            ?>
 		</div>
 		<div class="row">
 			<div class="col-md-8">
@@ -86,7 +86,7 @@
 					</div>
 					<script>
 						function initialize() {
-							var myLatlng = new google.maps.LatLng(51.7813958, -9.0926125);
+							var myLatlng = new google.maps.LatLng(51.5492222, -9.21111111111111);
 							var mapOptions = {
 								zoom: 12,
 								center: myLatlng,
@@ -96,7 +96,7 @@
 							var contentString =
 								'<div style="background-color:black;padding:10px;">' +
 								'<p style="color:white;">Loose Surface AutoCross</p>' +
-								'<p style="color:white;">Campbells Pit, Grancore, Clonakilty, Co Cork</p>' +
+								'<p style="color:white;">McCarthy’s Quarry, Derryleigh, Skibbereen, Co, Cork</p>' +
 								'</div>';
 
 							var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
