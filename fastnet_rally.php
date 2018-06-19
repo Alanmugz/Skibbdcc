@@ -82,7 +82,8 @@ include 'php/function.php';
 			include ('include/mobilemenu.html');
 			?>
 		</div>
-		<!--<div class="alert alert-danger font">
+		<!--
+		<div class="alert alert-danger font">
 			<strong>Alert !! </strong>Sunday, 29 October 2017 — Daylight Saving Time Ends. Clocks move backward 1 hour.
 		</div>
 		-->
@@ -98,6 +99,7 @@ include 'php/function.php';
 							</h6>
 						</h3>
 					</div>
+					<!--
 					<div id='pageheader'>
 						<?php Common::NewsTemplate(
 							"Time & Distance",
@@ -107,59 +109,6 @@ include 'php/function.php';
 					<p class="setmargin">
 						Time and Distance is now available to download from the Skibbereen & District Car Club website on the Fastnet Rally page under the competitor's section or 
 						by clicking <?php Common::Href("files/fastnet_2017/time_and_distance.docx", "here") ?>
-					</p>
-					<div id='pageheader'>
-						<?php Common::NewsTemplate(
-							"Final Instruction 2",
-							"25-10-2017 17:12")
-						?>
-					</div>
-					<p class="setmargin">
-						Final instruction 2 is now available to download from the Skibbereen & District Car Club website on the Fastnet Rally page under the competitor's section or 
-						by clicking <?php Common::Href("files/fastnet_2017/final_instruction_2.doc", "here") ?>
-					</p>
-					<div id='pageheader'>
-						<?php Common::NewsTemplate(
-							"Final Instruction 1",
-							"24-10-2017 19:12")
-						?>
-					</div>
-					<p class="setmargin">
-						Final instruction 1 is now available to download from the Skibbereen & District Car Club website on the Fastnet Rally page under the competitor's section or 
-						by clicking <?php Common::Href("files/fastnet_2017/final_instruction_1.doc", "here") ?>
-					</p>
-					<div id='pageheader'>
-						<?php Common::NewsTemplate(
-							"Excitement is at fever pitch in and around the coastal town of Bantry.",
-							"13-10-2017 12:13")
-						?>
-					</div>
-					<p class="setmargin">
-						Excitement is at fever pitch in and around the coastal town of Bantry Co. Cork on the Wild Atlantic Way as the town gears up for the final counting 
-						Round of the Motorsport Ireland Triton Showers National Rally Championship which takes place as usual on the October Bank Holiday weekend. 
-						Under the guidance of new Clerk of the Course John Buttimer and his team in the Skibbereen &amp; District Car Club, they are expecting a bumper entry. 
-						With the overall Championship driver having been won by county Monaghan&rsquo;s Sam Moffett there is still the matter of the overall co-drivers&rsquo; 
-						award for whom west corks own Karl Atkinson is on target to take on the Fastnet Rally, as well as many of the classes. Speaking today John added we are 
-						delighted with the entries received to date and we thank those who have submitted an entry and also what has been promised to come in ,however, if there 
-						are any crews that are taking part in the&nbsp; event that have not sent in their&nbsp; entry I would urge you to do so immediately. The Rally has three 
-						different stage locations making reconnaissance very straightforward for all crews, with a total of eight stages deciding this year&rsquo;s 
-						ultra-competitive Triton series. He added we have centralised service which is located within the town of Bantry. Our Headline sponsors the Westlodge 
-						Hotel have laid on fantastic entertainment and a very detailed menu for rally crews and fans alike over the course of the weekend. We will have a 
-						ceremonial start in Bantry on Saturday evening and would urge all families to come out and get up close to these star drivers. Action gets underway 
-						shortly after 9.00 a.m. on Sunday 29th October (the Bank Holiday Weekend)
-						<br />
-						<br />
-						So Come to Bantry this October Bank Holiday Weekend to the final counting round of the Triton National Rally Championship 2017 promoted and ran by the Skibbereen &amp; District Motor Club in Conjunction with the Westlodge Hotel and the Bantry Development and Tourism Association.
-					</p>
-					<div id='pageheader'>
-						<?php Common::NewsTemplate(
-							"Regulations & Entry Form",
-							"18-09-2017 21:12")
-						?>
-					</div>
-					<p class="setmargin">
-						Regulations and entry form are now available to download from the Skibbereen & District Car Club website on the Fastnet Rally page under the competitor's section or 
-						by clicking <a href="files/fastnet_2017/regs.doc">regs</a> or <a href="files/fastnet_2017/entry_form.docx">entryform</a>
 					</p>
 					<div id='pageheader'>
 						<?php Common::NewsTemplate(
@@ -174,6 +123,7 @@ include 'php/function.php';
 						<br />
 						<img src="files/fastnet_2017/launch_invite.png" alt="Launch Invite" style="width:630px;height:398px;">
 					</p>
+					-->
 				</div>
 			</div>
 

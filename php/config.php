@@ -15,12 +15,12 @@ $countdownEventName = 'Loose Surface AutoCross 2018';
 $countdownEventLink = 'map_lsautocross_february.php';
 
 //Rally
-$rallyEventYear = '2017';
+$rallyEventYear = '2018';
 $rallySponsor = 'Westlodge Hotel';
-$FastnetRallyCOC = 'C.O.C: John Buttimer';
+$FastnetRallyCOC = 'T.B.A';
 
 //Club Championship
-$ClubChampionshipYear = '2017';
+$ClubChampionshipYear = '2018';
 $ClubChampionshipSponsor = 'Carbery Plastics';
 
 //Year to show the current set of files
