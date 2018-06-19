@@ -17,7 +17,7 @@ $countdownEventLink = 'map_lsautocross_february.php';
 //Rally
 $rallyEventYear = '2018';
 $rallySponsor = 'Westlodge Hotel';
-$FastnetRallyCOC = 'T.B.A';
+$FastnetRallyCOC = 'C.O.C: T.B.C';
 
 //Club Championship
 $ClubChampionshipYear = '2018';
