@@ -86,7 +86,7 @@
 					</div>
 					<script>
 						function initialize() {
-							var myLatlng = new google.maps.LatLng(51.7813958, -9.0926125);
+							var myLatlng = new google.maps.LatLng(51.564488, -9.206972);
 							var mapOptions = {
 								zoom: 12,
 								center: myLatlng,
@@ -96,7 +96,7 @@
 							var contentString =
 								'<div style="background-color:black;padding:10px;">' +
 								'<p style="color:white;">Loose Surface AutoCross</p>' +
-								'<p style="color:white;">Campbells Pit, Grancore, Clonakilty, Co Cork</p>' +
+								'<p style="color:white;">N71, Leap, Co Cork</p>' +
 								'</div>';
 
 							var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
