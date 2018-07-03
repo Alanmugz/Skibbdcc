@@ -12,7 +12,7 @@ $environment = ($_SERVER['HTTP_HOST'] == 'www.skibbdcc.com') ? 'prod' : 'dev';
 //Timer
 //Timer date set in countdowntimerlights.html and countdowntimer.html
 $countdownEventName = 'Loose Surface AutoCross 2018';
-$countdownEventLink = 'loose_surface_autocross_july.phps';
+$countdownEventLink = 'loose_surface_autocross_july.php';
 
 //Rally
 $rallyEventYear = '2018';
