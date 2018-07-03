@@ -108,7 +108,7 @@
 							var marker = new google.maps.Marker({
 								position: myLatlng,
 								map: map,
-								title: 'Grancore, Clonakilty, Co.Cork'
+								title: 'N71, Leap, Co Cork'
 							});
 							google.maps.event.addListener(marker, 'click', function () {
 								infowindow.open(map, marker);
