@@ -12,7 +12,7 @@ $environment = ($_SERVER['HTTP_HOST'] == 'www.skibbdcc.com') ? 'prod' : 'dev';
 //Timer
 //Timer date set in countdowntimerlights.html and countdowntimer.html
 $countdownEventName = 'Loose Surface AutoCross 2018';
-$countdownEventLink = 'map_lsautocross_february.php';
+$countdownEventLink = 'loose_surface_autocross_july.phps';
 
 //Rally
 $rallyEventYear = '2018';
@@ -34,7 +34,7 @@ $LooseSurfaceAutocrossFebruaryDetails = "Loose Surface Autocross 25th February 2
 $LooseSurfaceAutocrossFebruaryCOC = "C.O.C: James Kingston 0868598038";
 $AutotestMayDetails = "Autotest 20th & 21st May 2017";
 $AutotestMayCOC = "C.O.C: Alan Clarke/DonGiles 0851744918/0868060604";
-$LooseSurfaceAutocrossJulyDetails = "Loose Surface Autocross 9th July 2017";
+$LooseSurfaceAutocrossJulyDetails = "Loose Surface Autocross 8th July 2018";
 $LooseSurfaceAutocrossJulyCOC = "C.O.C: Leslie Wolfe 0860666688";
 $AutotestAugustDetails = "Autotest 19th & 20th August 2017";
 $AutotestAugustCOC = "C.O.C: Michael Walsh/Michael Lynch 0862363901/0868909183";
