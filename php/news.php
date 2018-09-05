@@ -52,6 +52,6 @@ class News {
 	}
 
 	public function setImgheight($imgheight) {
-		$this->tiimgheighttle = $imgheight;
+		$this->imgheight = $imgheight;
 	}
 }

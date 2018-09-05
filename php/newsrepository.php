@@ -73,6 +73,9 @@ class NewsRepository {
 			$news->setPublishDate($row['publish_date']);
 			$news->setContent($row['content']);
 			$news->setTitle($row['title']);
+			$news->setImage($row['image']);
+			$news->setImgwidth($row['imgwidth']);
+			$news->setImgheight($row['imgheight']);
 
 			array_push($newsItems, $news);
 		}
