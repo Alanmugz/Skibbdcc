@@ -2,6 +2,7 @@
 require 'php/config.php';
 include 'php/newsrepository.php';
 include 'php/eventenumertion.php';
+include 'php/monthenumertion.php';
 include 'php/function.php';
 ?>
 
