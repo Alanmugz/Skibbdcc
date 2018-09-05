@@ -99,7 +99,7 @@ include 'php/function.php';
 							</h6>
 						</h3>
 					</div>
-					<<?php
+					<?php
 					$repository = new NewsRepository;
 					$repository->connect("skibbdcc_news");
 
