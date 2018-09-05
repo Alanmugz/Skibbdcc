@@ -11,13 +11,13 @@ $environment = ($_SERVER['HTTP_HOST'] == 'www.skibbdcc.com') ? 'prod' : 'dev';
 
 //Timer
 //Timer date set in countdowntimerlights.html and countdowntimer.html
-$countdownEventName = 'Loose Surface AutoCross 2018';
-$countdownEventLink = 'loose_surface_autocross_july.php';
+$countdownEventName = 'Westlodge Hotel Fastnet Rally 2018';
+$countdownEventLink = 'fastnet_rally.php';
 
 //Rally
 $rallyEventYear = '2018';
 $rallySponsor = 'Westlodge Hotel';
-$FastnetRallyCOC = 'C.O.C: T.B.C';
+$FastnetRallyCOC = 'C.O.C: John Buttimer 0872371501';
 
 //Club Championship
 $ClubChampionshipYear = '2018';

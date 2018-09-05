@@ -9,6 +9,7 @@ abstract class EventEnumertion {
 	const TreasureHunt = 10;
 	const ClubChampionship = 12;
 	const Marshaling = 19;
+	const FastnetRally = 22;
 }
 
 ?>

@@ -99,31 +99,25 @@ include 'php/function.php';
 							</h6>
 						</h3>
 					</div>
-					<!--
+					<<?php
+					$repository = new NewsRepository;
+					$repository->connect("skibbdcc_news");
+
+					$newsItems = $repository->getLatestNewsForCategory(EventEnumertion::FastnetRally, MonthEnumertion::January, MonthEnumertion::December);
+
+					foreach ($newsItems as $news) {
+					?>
 					<div id='pageheader'>
-						<?php Common::NewsTemplate(
-							"Time & Distance",
-							"25-10-2017 17:12")
-						?>
+						<?php Common::NewsTemplate($news->getTitle(), $news->getPublishDate()) ?>
 					</div>
+
 					<p class="setmargin">
-						Time and Distance is now available to download from the Skibbereen & District Car Club website on the Fastnet Rally page under the competitor's section or 
-						by clicking <?php Common::Href("files/fastnet_2017/time_and_distance.docx", "here") ?>
+						<?php echo $news->getContent(); ?>
 					</p>
-					<div id='pageheader'>
-						<?php Common::NewsTemplate(
-							"Westlodge Hotel Fastnet Rally Launch",
-							"23-08-2017 03:22")
-						?>
-					</div>
-					<p class="setmargin">
-						Skibbereen & District Car Club Clerk of the Course - John Buttimer would like to cordially invite you to the launch of The Westlodge 
-						Hotel Rally 2017 0n Friday 1st September at 8 PM. We would be delighted if you could join us, at the Westlodge Hotel for light refreshments.
-						<br />
-						<br />
-						<img src="files/fastnet_2017/launch_invite.png" alt="Launch Invite" style="width:630px;height:398px;">
-					</p>
-					-->
+					<?php
+					}
+					$repository->close();
+					?>
 				</div>
 			</div>
 
