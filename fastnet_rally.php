@@ -113,6 +113,7 @@ include 'php/function.php';
 					</div>
 
 					<p class="setmargin">
+						<img style="float: left; border: 1px dotted black;  margin: 0px 10px 15px 0px;" src="<?php echo $news->getImage(); ?>" width="<?php echo $news->getImgwidth(); ?>" height="<?php echo $news->getImgheight(); ?>">
 						<?php echo $news->getContent(); ?>
 					</p>
 					<?php

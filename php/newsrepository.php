@@ -54,7 +54,7 @@ class NewsRepository {
 	{
 		$currentYear = date("Y");
 
-		$sql = "SELECT publish_date, content, title
+		$sql = "SELECT publish_date, content, title, image, imgwidth, imgheight
 				FROM pa_npro_news
 				WHERE status ='Published'
 				AND cat_id = $category
