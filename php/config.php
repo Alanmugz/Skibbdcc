@@ -40,6 +40,8 @@ $AutotestAugustDetails = //"Autotest 19th & 20th August 2017";
 $AutotestAugustCOC = //"C.O.C: Michael Walsh/Michael Lynch 0862363901/0868909183";
 $CarberyNightNavigationTrialDetails = "Carbery Night Navigation Trial 24th - 25th November 2018";
 $CarberyNightNavigationTrialCOC = "C.O.C: Brian O'Mahony 086 4031079";
+$AwardsNightDetails = "Awards Night December 2018";
+$AwardsNightTickets = "Tickets: TBA";
 
 //Email
 $emailRecipients = array('alanmugz@gmail.com, webmaster@skibbdcc.com, pro@skibbdcc.com, colmfeen@gmail.com');

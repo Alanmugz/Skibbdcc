@@ -10,6 +10,7 @@ abstract class EventEnumertion {
 	const ClubChampionship = 12;
 	const Marshaling = 19;
 	const FastnetRally = 22;
+	const AwardsNight = 23;
 }
 
 ?>
