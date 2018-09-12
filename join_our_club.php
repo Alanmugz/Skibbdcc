@@ -152,14 +152,14 @@ include 'php/function.php';
 								   </span>
 								  </label>
 								  <br />
-								  	<input type="checkbox" name="Interested_in" id="autocross" value="Autocross">Autocross<br />
-								  	<input type="checkbox" name="Interested_in" id="autotest5" value="Autotest">Autotest<br />
-								  	<input type="checkbox" name="Interested_in" id="marshalling" value="Marshalling">Marshalling<br />
-								  	<input type="checkbox" name="Interested_in" id="night_navigation" value="Night navigation">Night navigation<br />
-								  	<input type="checkbox" name="Interested_in" id="endurance_trials" value="Endurance trials">Endurance trials<br />
-								  	<input type="checkbox" name="Interested_in" id="officiating" value="Officiating">Officiating<br />
-								  	<input type="checkbox" name="Interested_in" id="stage rallying" value="Stage rallying">Stage rallying<br />
-									<input type="checkbox" name="Interested_in" id="tarmac rallying" value="Tarmac rallying">Tarmac rallying<br />
+								  	<input type="checkbox" name="interested_in" id="autocross" value="Autocross">Autocross<br />
+								  	<input type="checkbox" name="interested_in" id="autotest" value="Autotest">Autotest<br />
+								  	<input type="checkbox" name="interested_in" id="marshalling" value="Marshalling">Marshalling<br />
+								  	<input type="checkbox" name="interested_in" id="night_navigation" value="Night navigation">Night navigation<br />
+								  	<input type="checkbox" name="interested_in" id="endurance_trials" value="Endurance trials">Endurance trials<br />
+								  	<input type="checkbox" name="interested_in" id="officiating" value="Officiating">Officiating<br />
+								  	<input type="checkbox" name="interested_in" id="stage rallying" value="Stage rallying">Stage rallying<br />
+									<input type="checkbox" name="interested_in" id="tarmac rallying" value="Tarmac rallying">Tarmac rallying<br />
 								 <br />	  
 								 </div>
 								 <div class="form-group">
@@ -205,6 +205,7 @@ include 'php/function.php';
 							  $address = $_POST['address']; // required
 							  $mobile_number = $_POST['mobile_number']; // required
 							  $email_from = $_POST['email']; // required
+							  $interested_in = $_POST['interested_in'];
 							  
 							  $error_message = "";
 							  $email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
@@ -238,6 +239,7 @@ include 'php/function.php';
 							  $email_message .= "Address: ".clean_string($address)."\n";    
 							  $email_message .= "Mobile Number: ".clean_string($mobile_number)."\n";
 							  $email_message .= "Email: ".clean_string($email_from)."\n";
+							  $email_message .= "Interested in: ".clean_string($interested_in)."\n";
 							  
 							  
 							  // create email headers
