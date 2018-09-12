@@ -92,15 +92,169 @@ include 'php/function.php';
 						?>
 					</div>
 
-					<p class="setmargin">
-						Any persons wishing to become a new member or renew their membership to Skibbereen & District Car Club can do so by attending one of the club's monthly meeting.<br /><br />
-						Please bring the relevant form(s) which may need to be stamped by the club, these can be downloaded below.<br /><br />
-						2017 RENEWAL COMPETITION LICENCE APPLICATION FORM - <a style="color:red" href="forms/2017/renewal_competition_licence_application_form.pdf"><b>DOWNLOAD</b></a><br />
-						2017 FIRST TIME COMPETITION LICENCE APPLICATION FORM - <a style="color:red" href="forms/2017/first_time_competition_licence_application_form.pdf"><b>DOWNLOAD</b></a><br />
-						MOTORSPORT IRELAND LICENCE HOLDERS ONLY IRDS RALLY & MULTI-VENUE AUTOTEST INSURANCE FIRST & RENEWAL APPLICATION - <a style="color:red" href="forms/2017/motorsport_ireland_licence_holders_only_irds_rally_&_multii_venue_autotest_insurance_first_&_renewal_application.pdf"><b>DOWNLOAD</b></a><br />
-						<br />
-						Club regristar Brian O'Mahony 0864031079
-					</p>
+					<?php if(!isset($_POST['email'])){ ?>
+						<div class = "padding">
+							<div class="bootstrap-iso ">
+							 <div class="container-fluid">
+							  <div class="row backgroundColor">
+							   <div class="col-md-6 col-sm-6 col-xs-12">
+								<form name="contactform" method="post" action="join_our_club.php" enctype="multipart/form-data">
+								 <div class="form-group ">
+								  <label class="control-label requiredField" for="first_name">
+								   First Name
+								   <span class="asteriskField">
+									*
+								   </span>
+								  </label>
+								  <input class="form-control" id="first_name" name="first_name" type="text"/>
+								 </div>
+								 <div class="form-group ">
+								  <label class="control-label requiredField" for="surname">
+								   Surname
+								   <span class="asteriskField">
+									*
+								   </span>
+								  </label>
+								  <input class="form-control" id="surname" name="surname" type="text"/>
+								 </div>
+								 <div class="form-group ">
+								  <label class="control-label requiredField" for="address">
+								   Address
+								   <span class="asteriskField">
+									*
+								   </span>
+								  </label>
+								  <input class="form-control" id="address" name="address" type="text"/>
+								 </div>
+								 <div class="form-group ">
+								  <label class="control-label requiredField" for="mobile_number">
+								   Mobile Number
+								   <span class="asteriskField">
+									*
+								   </span>
+								  </label>
+								  <input class="form-control" id="mobile_number" name="mobile_number" type="text"/>
+								 </div>
+								 <div class="form-group ">
+								  <label class="control-label requiredField" for="email">
+								   Email
+								   <span class="asteriskField">
+									*
+								   </span>
+								  </label>
+								  <input class="form-control" id="email" name="email" type="text"/>
+								 </div>
+								 <div class="form-group ">
+								 <label class="control-label requiredField" for="interests">
+								   Interests
+								   <span class="asteriskField">
+									*
+								   </span>
+								  </label>
+								  <br />
+								  	<input type="checkbox" name="Interested_in" id="autocross" value="Autocross">Autocross<br />
+								  	<input type="checkbox" name="Interested_in" id="autotest5" value="Autotest">Autotest<br />
+								  	<input type="checkbox" name="Interested_in" id="marshalling" value="Marshalling">Marshalling<br />
+								  	<input type="checkbox" name="Interested_in" id="night_navigation" value="Night navigation">Night navigation<br />
+								  	<input type="checkbox" name="Interested_in" id="endurance_trials" value="Endurance trials">Endurance trials<br />
+								  	<input type="checkbox" name="Interested_in" id="officiating" value="Officiating">Officiating<br />
+								  	<input type="checkbox" name="Interested_in" id="stage rallying" value="Stage rallying">Stage rallying<br />
+									<input type="checkbox" name="Interested_in" id="tarmac rallying" value="Tarmac rallying">Tarmac rallying<br />
+								 <br />	  
+								 </div>
+								 <div class="form-group">
+								  <div>
+								   <button class="btn btn-primary " name="submit" type="submit">
+									Submit
+								   </button>
+								  </div>
+								 </div>
+								</form>
+							   </div>
+							  </div>
+							 </div>
+							</div>
+						</div>
+					<?php 
+						  } 
+						  else
+						  {						
+							  $arrEmail = array('alanmugz@gmail.com');
+							  // EDIT THE 2 LINES BELOW AS REQUIRED
+							  $email_to = $arrEmail;
+							  $email_subject = 'Club Membership';  
+							  
+							  
+							  function died($error) {
+								  // your error code can go here
+								  $displayError = "We are very sorry, but there were error(s) found with the form you submitted. These errors appear below.<br /><br />".$error."<br /><br />"."Please go back and fix these errors.<br /><br />";
+								  die();
+							  }
+							  
+							  // validation expected data exists
+							  if(!isset($_POST['first_name']) ||
+								  !isset($_POST['surname']) ||
+								  !isset($_POST['address']) ||
+								  !isset($_POST['mobile_number']) ||
+								  !isset($_POST['email'])) {
+								  died('We are sorry, but there appears to be a problem with the form you submitted.');       
+							  }
+							  
+							  $name = $_POST['first_name']; // required
+							  $surname = $_POST['surname']; // required
+							  $address = $_POST['address']; // required
+							  $mobile_number = $_POST['mobile_number']; // required
+							  $email_from = $_POST['email']; // required
+							  
+							  $error_message = "";
+							  $email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
+							  if(!preg_match($email_exp,$email_from)) {
+								  $error_message .= 'The Email Address you entered does not appear to be valid.<br />';
+							  }
+							  $string_exp = "/^[A-Za-z .'-]+$/";
+							  
+							  if(!preg_match($string_exp,$name)) {
+								  $error_message .= 'The first Name you entered does not appear to be valid.<br />';
+							  }
+							  if(!preg_match($string_exp,$surname)) {
+								$error_message .= 'The surname you entered does not appear to be valid.<br />';
+							  }
+							  if(!preg_match($string_exp,$address)) {
+								  $error_message .= 'The address you entered does not appear to be valid.<br />';
+							  }
+							  
+							  if(strlen($error_message) > 0) {
+								  died($error_message);
+							  } 
+							  $email_message = "Form details below.\n\n";
+							  
+							  function clean_string($string) {
+								  $bad = array("content-type","bcc:","to:","cc:","href");
+								  return str_replace($bad,"",$string);
+							  }
+							  
+							  $email_message .= "First Name: ".clean_string($name)."\n";
+							  $email_message .= "Surname: ".clean_string($surname)."\n";
+							  $email_message .= "Address: ".clean_string($address)."\n";    
+							  $email_message .= "Mobile Number: ".clean_string($mobile_number)."\n";
+							  $email_message .= "Email: ".clean_string($email_from)."\n";
+							  
+							  
+							  // create email headers
+							  $headers = 'From: '.$email_from."\r\n".
+							  'Reply-To: '.$email_from."\r\n" .
+							  'X-Mailer: PHP/' . phpversion();
+							  foreach($arrEmail as $key => $email_to)
+							  {
+								  @mail($email_to, $email_subject, $email_message, $headers);
+							  }
+					?>
+						<div class = "padding <?php if(!isset($_POST['email'])){echo ".hidden";} ?>">
+							Thank you for contacting us. We will be in touch with you very soon.
+						</div>
+						<?php
+						  }
+						?>
 				</div>
 
 				<div class="panel panel-default visible-lg backgroundColor">
