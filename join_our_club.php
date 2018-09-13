@@ -83,23 +83,25 @@ include 'php/function.php';
 			<div class="col-md-8">
 				<div class="panel panel-default backgroundColor font">
 					<div class="panel-heading">
-						<h3 class="panel-title">Join Our Club</h3>
+						<h3 class="panel-title">Join/Renew Club Memership</h3>
 					</div>
 					<div id='pageheader'>
 						<?php Common::NewsTemplate(
-							"How to join Skibbereen & District Car Club",
+							"How to join/renew Skibbereen & District Car Club membership",
 							"13-09-2018 17:31")
 						?>
 					</div>
 
-					<div class = "padding">
+					<div class="padding">
 						<b>Fees</b>
 						<p>Club Membership €10
 						Club membership &amp; official stamp for competition licence €30.</p>
 
 						<b>Notice for bottom of the page</b>
-						<p>Club meetings are held on the 1 st Wednesday of each month in the Quality Hotel at 9pm
+						<p>Club meetings are held on the 1st Wednesday of each month in the Quality Hotel at 9pm
 						Club text system is in place for distribution of information.</p>
+
+						<p>Please complete the form below and the club registrar will contact you shortly.</p>
 					</div>
 
 					<?php if(!isset($_POST['email'])){ ?>
