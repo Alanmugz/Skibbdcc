@@ -88,7 +88,7 @@ include 'php/function.php';
 					<div id='pageheader'>
 						<?php Common::NewsTemplate(
 							"How to join Skibbereen & District Car Club",
-							"16-04-2017 21:31")
+							"13-09-2018 17:31")
 						?>
 					</div>
 
@@ -152,14 +152,14 @@ include 'php/function.php';
 								   </span>
 								  </label>
 								  <br />
-								  	<input type="checkbox" name="interested_in" id="autocross" value="Autocross">Autocross<br />
-								  	<input type="checkbox" name="interested_in" id="autotest" value="Autotest">Autotest<br />
-								  	<input type="checkbox" name="interested_in" id="marshalling" value="Marshalling">Marshalling<br />
-								  	<input type="checkbox" name="interested_in" id="night_navigation" value="Night navigation">Night navigation<br />
-								  	<input type="checkbox" name="interested_in" id="endurance_trials" value="Endurance trials">Endurance trials<br />
-								  	<input type="checkbox" name="interested_in" id="officiating" value="Officiating">Officiating<br />
-								  	<input type="checkbox" name="interested_in" id="stage rallying" value="Stage rallying">Stage rallying<br />
-									<input type="checkbox" name="interested_in" id="tarmac rallying" value="Tarmac rallying">Tarmac rallying<br />
+								  	<input type="checkbox" name="interested_in[]" id="autocross" value="Autocross"> Autocross<br />
+								  	<input type="checkbox" name="interested_in[]" id="autotest" value="Autotest"> Autotest<br />
+								  	<input type="checkbox" name="interested_in[]" id="marshalling" value="Marshalling"> Marshalling<br />
+								  	<input type="checkbox" name="interested_in[]" id="night_navigation" value="Night navigation"> Night navigation<br />
+								  	<input type="checkbox" name="interested_in[]" id="endurance_trials" value="Endurance trials"> Endurance trials<br />
+								  	<input type="checkbox" name="interested_in[]" id="officiating" value="Officiating"> Officiating<br />
+								  	<input type="checkbox" name="interested_in[]" id="stage rallying" value="Stage rallying"> Stage rallying<br />
+									<input type="checkbox" name="interested_in[]" id="tarmac rallying" value="Tarmac rallying"> Tarmac rallying<br />
 								 <br />	  
 								 </div>
 								 <div class="form-group">
