@@ -189,7 +189,7 @@ include 'php/function.php';
 						  } 
 						  else
 						  {						
-							  $arrEmail = array('alanmugz@gmail.com');
+							  $arrEmail = array('alanmugz@gmail.com, pro@skibbdcc.com');
 							  // EDIT THE 2 LINES BELOW AS REQUIRED
 							  $email_to = $arrEmail;
 							  $email_subject = 'Club Membership';  
