@@ -92,6 +92,16 @@ include 'php/function.php';
 						?>
 					</div>
 
+					<div class = "padding">
+						<b>Fees</b>
+						<p>Club Membership €10
+						Club membership &amp; official stamp for competition licence €30.</p>
+
+						<b>Notice for bottom of the page</b>
+						<p>Club meetings are held on the 1 st Wednesday of each month in the Quality Hotel at 9pm
+						Club text system is in place for distribution of information.</p>
+					</div>
+
 					<?php if(!isset($_POST['email'])){ ?>
 						<div class = "padding">
 							<div class="bootstrap-iso ">
@@ -205,17 +215,20 @@ include 'php/function.php';
 							  $address = $_POST['address']; // required
 							  $mobile_number = $_POST['mobile_number']; // required
 							  $email_from = $_POST['email']; // required
-							  $interested_in = implode(", ",$_POST['interested_in']);
+							  if(isset($_POST['interested_in']))
+							  {
+								  $interested_in = implode(", ",$_POST['interested_in']);
+							  }
 							  
 							  $error_message = "";
 							  $email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
 							  if(!preg_match($email_exp,$email_from)) {
-								  $error_message .= 'The Email Address you entered does not appear to be valid.<br />';
+								  $error_message .= 'The email address you entered does not appear to be valid.<br />';
 							  }
 							  $string_exp = "/^[A-Za-z .'-]+$/";
 							  
 							  if(!preg_match($string_exp,$name)) {
-								  $error_message .= 'The first Name you entered does not appear to be valid.<br />';
+								  $error_message .= 'The first name you entered does not appear to be valid.<br />';
 							  }
 							  if(!preg_match($string_exp,$surname)) {
 								$error_message .= 'The surname you entered does not appear to be valid.<br />';
@@ -225,6 +238,11 @@ include 'php/function.php';
 							  }
 							  
 							  if(strlen($error_message) > 0) {
+								  ?>
+								  <div class = "padding">
+								      <?php echo $error_message; ?>
+								  </div>
+								  <?php
 								  died($error_message);
 							  } 
 							  $email_message = "Form details below.\n\n";
