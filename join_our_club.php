@@ -205,7 +205,7 @@ include 'php/function.php';
 							  $address = $_POST['address']; // required
 							  $mobile_number = $_POST['mobile_number']; // required
 							  $email_from = $_POST['email']; // required
-							  $interested_in = $_POST['interested_in'];
+							  $interested_in = implode("|",$_POST['interested_in']);
 							  
 							  $error_message = "";
 							  $email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
