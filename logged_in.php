@@ -106,7 +106,7 @@ if($username && $password)
 </head><body>
 	<div class="container border10">	
 		<div class="row row-margin height visible-lg">
-			<div class="col-md-12 backgroundColor">
+			<div class="col-md-12 headerBackgroundColor">
 				<div id="header">
 					<?php 
 					include ('include/header.html');
