@@ -113,7 +113,7 @@ include 'php/eventenumertion.php';
 
 					foreach ($classDetails as $row) {
 					?>
-					<div class="container" style="padding-right:35px">
+					<div class="container" style="padding-right:35px; color:black">
 						<!-- 1, Driver, Co Driver, Cork, Honda Civic, 11 -->
 						<h2>
 							<?php echo $row['name']; ?>
