@@ -95,7 +95,7 @@ include 'php/eventenumertion.php';
 					$classDetails = array(
 						0 => array(
 							'name' => 'Main Field',
-							'file' => 'files/fastnet_2017/entry_list_main_field.csv'
+							'file' => 'files/fastnet_2018/entry_list_main_field.csv'
 						),
 						//0 => array(
 						//    'name' => 'Main Field - Late Entries',
@@ -107,7 +107,7 @@ include 'php/eventenumertion.php';
 						//),
 						2 => array(
 							'name' => 'Juniors',
-							'file' => 'files/fastnet_2017/entry_list_juniors.csv'
+							'file' => 'files/fastnet_2018/entry_list_juniors.csv'
 						)
 					);
 
