@@ -99,8 +99,8 @@ include 'php/function.php';
 					</div>
 					<p class="setmargin">
 					Marshalling meeting points:<br />
-						Chief marshal: Ger Hayes 0870560316<br />
-						Assistant cheif marshal: Richard Beadfield 0868503837<br />
+						Chief marshal: John Buttimer 0872371501<br />
+						Assistant cheif marshal: James Kingston<br />
 						<br />
 						Stage 1/4/7<br />
 						Meeting point Circle K Filling Station, Glengarriff @ 07:00<br />
