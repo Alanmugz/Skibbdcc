@@ -94,7 +94,7 @@ include 'php/function.php';
 					<div id='pageheader'>
 						<?php Common::NewsTemplate(
 							"Westlodge Hotel Fastnet Rally Marshals meeting points.",
-							"27-08-2017 17:05")
+							"22-10-2018 17:05")
 						?>
 					</div>
 					<p class="setmargin">
@@ -102,24 +102,14 @@ include 'php/function.php';
 						Chief marshal: Ger Hayes 0870560316<br />
 						Assistant cheif marshal: Richard Beadfield 0868503837<br />
 						<br />
-						Stage 1/4/7 Lough Bofinna<br />
-						Stage commander: Ted Murphy<br />
-						Deputy stage commander: Cathal Mansell<br />
-						Meeting point Collins Bar Kealkil @ 07:30<br />
+						Stage 1/4/7<br />
+						Meeting point Circle K Filling Station, Glengarriff @ 07:00<br />
 						<br />
-						Stage 2/5/8 Mount Kid<br />
-						Stage commander: Declan O'Leary<br />
-						Deputy stage commander: Martin Purcell<br />
-						Meeting point Collins Centra Drimoleague @ 07:30<br />
+						Stage 2/5/8<br />
+						Meeting point Ryans Village Shop, Durras @ 07:30<br />
 						<br />
-						Stage 3/6 the Goats Path<br />
-						Stage commander: Martin Farrell<br />
-						Deputy stage commander: Kevin Flannery<br />
-						Meeting point The Village Shop Durrus @ 08:00<br />
-						<br />
-						Service area The Square Bantry<br />
-						Service manager: Raymond Warrner 0860867318<br />
-						Meeting point The Fire Station Bantry @ 08:00
+						Stage 3/6/9<br />
+						Meeting point Camiers Filling Station, Ballydehob @ 08:00
 					</p>
 				</div>
 			</div>
