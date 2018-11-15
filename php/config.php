@@ -11,8 +11,8 @@ $environment = ($_SERVER['HTTP_HOST'] == 'www.skibbdcc.com') ? 'prod' : 'dev';
 
 //Timer
 //Timer date set in countdowntimerlights.html and countdowntimer.html
-$countdownEventName = 'Westlodge Hotel Fastnet Rally 2018';
-$countdownEventLink = 'fastnet_rally.php';
+$countdownEventName = 'Carbery Night Navigation Trial 2018';
+$countdownEventLink = 'carbery_night_nav.php';
 
 //Rally
 $rallyEventYear = '2018';
@@ -33,7 +33,7 @@ $IslesNightNavigationCOC = "C.O.C: Denis O Donovan 086 8773817";
 $LooseSurfaceAutocrossFebruaryDetails = "Loose Surface Autocross February 2019";
 $LooseSurfaceAutocrossFebruaryCOC = "C.O.C: Eric Calnan 087 7693052";
 $AutotestMayDetails = "Date TBA";//"Autotest 20th & 21st May 2017";
-$AutotestMayCOC = "C.O.C: TBA";//"C.O.C: Alan Clarke/DonGiles 0851744918/0868060604";
+$AutotestMayCOC = "C.O.C: TBA";//"C.O.C: Alan Clarke/Don Giles 0851744918/0868060604";
 $LooseSurfaceAutocrossJulyDetails = "Loose Surface Autocross 8th July 2018";
 $LooseSurfaceAutocrossJulyCOC = "C.O.C: Leslie Wolfe 0860666688";
 $AutotestAugustDetails = "Date TBA";//"Autotest 19th & 20th August 2017";
