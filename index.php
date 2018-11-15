@@ -113,7 +113,7 @@ if($environment == 'prod')
 			include ('include/mobilemenu.html');
 			?>
 		</div>
-		<<!--div class="alert alert-danger font">
+		<!--div class="alert alert-danger font">
 			<strong>Alert !! </strong>Sunday, 28th October 2018 — Daylight Saving Time Ends. Clocks move backward 1 hour.
 		</div>-->
 		<div class="row">
