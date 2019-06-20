@@ -11,8 +11,8 @@ $environment = ($_SERVER['HTTP_HOST'] == 'www.skibbdcc.com') ? 'prod' : 'dev';
 
 //Timer
 //Timer date set in countdowntimerlights.html and countdowntimer.html
-$countdownEventName = '100 Isle Night Navigation Trial 2019';
-$countdownEventLink = '100_isles_night_nav.php';
+$countdownEventName = 'Loose Surface AutoCross 2019';
+$countdownEventLink = 'loose_surface_autocross_july.php';
 
 //Rally
 $rallyEventYear = '2018';
@@ -34,8 +34,8 @@ $LooseSurfaceAutocrossFebruaryDetails = "Loose Surface Autocross February 2019";
 $LooseSurfaceAutocrossFebruaryCOC = "C.O.C: Eric Calnan 087 7693052";
 $AutotestMayDetails = "Date TBA";//"Autotest 20th & 21st May 2017";
 $AutotestMayCOC = "C.O.C: TBA";//"C.O.C: Alan Clarke/Don Giles 0851744918/0868060604";
-$LooseSurfaceAutocrossJulyDetails = "Loose Surface Autocross 8th July 2018";
-$LooseSurfaceAutocrossJulyCOC = "C.O.C: Leslie Wolfe 0860666688";
+$LooseSurfaceAutocrossJulyDetails = "Loose Surface Autocross 7th July 2019";
+$LooseSurfaceAutocrossJulyCOC = "C.O.C: Iarla McCarthy 0879532202";
 $AutotestAugustDetails = "Date TBA";//"Autotest 19th & 20th August 2017";
 $AutotestAugustCOC = "C.O.C: TBA";//"C.O.C: Michael Walsh/Michael Lynch 0862363901/0868909183";
 $CarberyNightNavigationTrialDetails = "Carbery Night Navigation Trial 24th - 25th November 2018";
