@@ -15,9 +15,9 @@ $countdownEventName = 'Loose Surface AutoCross 2019';
 $countdownEventLink = 'loose_surface_autocross_july.php';
 
 //Rally
-$rallyEventYear = '2018';
+$rallyEventYear = '2019';
 $rallySponsor = 'Westlodge Hotel';
-$FastnetRallyCOC = 'C.O.C: John Buttimer 0872371501';
+$FastnetRallyCOC = 'TBC';
 
 //Club Championship
 $ClubChampionshipYear = '2018';
